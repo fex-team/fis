@@ -1,0 +1,23 @@
+{
+    "name" : "fis",
+    "description" : "Front End Integrated Solution.",
+    "version" : "0.0.1",
+    "author" : "FIS Team <fis@baidu.com>",
+    "homepage" : "http://fis.baidu.com/",
+    "bin" : {
+        "fis" : "bin/fis"
+    },
+    "engines" : {
+        "node" : ">= 0.8.0"
+    },
+    "main" : "fis.js",
+    "scripts" : {
+        "test" : "mocha test/ut --recursive"
+    },
+    "dependencies" : {
+        "fis-kernel" : "*"
+    },
+    "devDependencies": {
+        "chai" : "*"
+    }
+}
