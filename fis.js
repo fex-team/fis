@@ -96,6 +96,7 @@ fis.cli.version = function(){
     console.log(content);
 };
 
+//run cli tools
 fis.cli.run = function(argv){
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
