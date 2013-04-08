@@ -107,15 +107,14 @@ fis.cli = {
                 Array.prototype.splice.apply(argv, [2, 1].concat(alias));
             }
             var commander = fis.cli.commander = require('commander');
-            commander
-                .version(fis.cli.info.version)
-                .usage('<command>');
             var cmd = fis.require('command', argv[2]);
-            commander
-                .command(cmd.name || first)
-                .usage(cmd.usage)
-                .description(cmd.desc);
-            cmd.register(commander, fis);
+            cmd.register(
+                commander
+                    .command(cmd.name || first)
+                    .usage(cmd.usage)
+                    .description(cmd.desc),
+                fis
+            );
             commander.parse(argv);
         }
     }
