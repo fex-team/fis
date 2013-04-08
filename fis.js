@@ -48,15 +48,18 @@ fis.cli.help = function(){
         ],
         prefix = 'fis-command-',
         prefixLen = prefix.length;
-    fis.util.map(fis.cli.info.dependencies, function(name, version){
+    var deps = {};
+    fis.util.merge(deps, fis.cli.info.dependencies);
+    fis.util.merge(deps, fis.cli.info.devDependencies);
+    fis.util.map(deps, function(name, version){
         if(name.indexOf(prefix) === 0){
             name = name.substring(prefixLen);
             try {
                 var cmd = fis.require('command', name);
                 name = fis.util.pad(cmd.name || name, 12);
                 content.push('    ' + name + (cmd.desc || ''));
-            } catch(e){
-                //do nothing.
+            } catch (e){
+                //maybe devDependencies.
             }
         }
     });
