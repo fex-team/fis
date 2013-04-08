@@ -44,7 +44,7 @@ fis.cli = {
             ],
             prefix = 'fis-command-',
             prefixLen = prefix.length;
-        fis.util.map(this.info.dependencies, function(name, version){
+        fis.util.map(fis.cli.info.dependencies, function(name, version){
             if(name.indexOf(prefix) === 0){
                 name = name.substring(prefixLen);
                 var cmd = fis.require('command', name);
@@ -66,7 +66,7 @@ fis.cli = {
     version : function(){
         var content = [
             '',
-            '   v' + this.info.version,
+            '   v' + fis.cli.info.version,
             '',
             '  ┏┛┻━━━┛┻┓',
             '  ┃｜｜｜｜｜｜｜┃',
@@ -93,22 +93,22 @@ fis.cli = {
     run : function(argv){
         var first = argv[2];
         if(argv.length < 3 || first === '-h' ||  first === '--help'){
-            this.help();
+            fis.cli.help();
         } else if(first === '-v' || first === '--version'){
-            this.version();
+            fis.cli.version();
         } else if(first[0] === '-'){
-            this.help();
+            fis.cli.help();
         } else {
             //read runtime config
-            var rc = this.rc = fis.util.readJSON(this.getRCFile());
+            var rc = fis.cli.rc = fis.util.readJSON(fis.cli.getRCFile());
             //command alias
             if(rc.alias && rc.alias[first]){
                 var alias = rc.alias[first].split(/\s+/);
                 Array.prototype.splice.apply(argv, [2, 1].concat(alias));
             }
-            var commander = this.commander = require('commander');
+            var commander = fis.cli.commander = require('commander');
             commander
-                .version(this.info.version)
+                .version(fis.cli.info.version)
                 .usage('<command>');
             var cmd = fis.require('command', argv[2]);
             commander
