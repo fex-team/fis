@@ -16,7 +16,6 @@
     },
     "dependencies" : {
         "fis-kernel" : "*",
-        "chokidar"   : "~0.6.2",
         "commander"  : "~1.1.1"
     },
     "devDependencies": {
