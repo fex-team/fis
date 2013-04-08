@@ -48,9 +48,14 @@ fis.cli.help = function(){
         ],
         prefix = 'fis-command-',
         prefixLen = prefix.length;
+    
+    //built-in commands
     var deps = {};
+    //from package.json dependencies
     fis.util.merge(deps, fis.cli.info.dependencies);
+    //from package.json devDependencies
     fis.util.merge(deps, fis.cli.info.devDependencies);
+    //traverse
     fis.util.map(deps, function(name, version){
         if(name.indexOf(prefix) === 0){
             name = name.substring(prefixLen);
