@@ -51,9 +51,13 @@ fis.cli.help = function(){
     fis.util.map(fis.cli.info.dependencies, function(name, version){
         if(name.indexOf(prefix) === 0){
             name = name.substring(prefixLen);
-            var cmd = fis.require('command', name);
-            name = fis.util.pad(cmd.name || name, 12);
-            content.push('    ' + name + (cmd.desc || ''));
+            try {
+                var cmd = fis.require('command', name);
+                name = fis.util.pad(cmd.name || name, 12);
+                content.push('    ' + name + (cmd.desc || ''));
+            } catch(e){
+                //do nothing.
+            }
         }
     });
     content = content.concat([
