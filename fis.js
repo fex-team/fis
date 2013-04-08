@@ -14,18 +14,11 @@ fis.cli = {};
 //runtime config
 fis.cli.rc = {};
 
-//commander object
-fis.cli.commander = null;
-
-//package.json
-fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
-
 //get rc file
-fis.cli.getRCFile = function(){
-    var list = ['LOCALAPPDATA', 'APPDATA', 'USERPROFILE', 'HOME'],
-        name = '.fisrc', conf;
-    for(var i = 0, len = list.length; i < len; i++){
-        var dir = process.env[list[i]];
+fis.cli.rcFile = (function(){
+    var name = '.fisrc', conf;
+    for(var i = 0, len = arguments.length; i < len; i++){
+        var dir = process.env[arguments[i]];
         if(dir){
             conf = fis.util(dir, name);
             break;
@@ -36,7 +29,13 @@ fis.cli.getRCFile = function(){
         fis.util.write(conf, '{}');
     }
     return conf;
-};
+})('LOCALAPPDATA', 'APPDATA', 'USERPROFILE', 'HOME');
+
+//commander object
+fis.cli.commander = null;
+
+//package.json
+fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 
 //output help info
 fis.cli.help = function(){
@@ -107,7 +106,7 @@ fis.cli.run = function(argv){
         fis.cli.help();
     } else {
         //read runtime config
-        var rc = fis.cli.rc = fis.util.readJSON(fis.cli.getRCFile());
+        var rc = fis.cli.rc = fis.util.readJSON(fis.cli.rcFile);
         //command alias
         if(rc.alias && rc.alias[first] && fis.util.is(rc.alias[first], 'Array')){
             Array.prototype.splice.apply(argv, [2, 1].concat(rc.alias[first]));
