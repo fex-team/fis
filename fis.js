@@ -108,9 +108,8 @@ fis.cli.run = function(argv){
         //read runtime config
         var rc = fis.cli.rc = fis.util.readJSON(fis.cli.getRCFile());
         //command alias
-        if(rc.alias && rc.alias[first]){
-            var alias = rc.alias[first].split(/\s+/);
-            Array.prototype.splice.apply(argv, [2, 1].concat(alias));
+        if(rc.alias && rc.alias[first] && fis.util.is(rc.alias[first], 'Array')){
+            Array.prototype.splice.apply(argv, [2, 1].concat(rc.alias[first]));
         }
         var commander = fis.cli.commander = require('commander');
         var cmd = fis.require('command', argv[2]);
