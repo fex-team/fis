@@ -8,11 +8,16 @@
 //kernel
 var fis = module.exports = require('fis-kernel');
 
+//cli
 fis.cli = {
-    conf : null,
+    //runtime config
+    rc : {},
+    //commander object
     commander : null,
+    //package.json
     info : fis.util.readJSON(fis.util(__dirname, 'package.json')),
-    rc : function(){
+    //get rc file
+    getRCFile : function(){
         var list = ['LOCALAPPDATA', 'APPDATA', 'USERPROFILE', 'HOME'],
             name = '.fisrc', conf;
         for(var i = 0, len = list.length; i < len; i++){
@@ -28,6 +33,7 @@ fis.cli = {
         }
         return conf;
     },
+    //output help info
     help : function(){
         var content = [
                 '',
@@ -56,6 +62,7 @@ fis.cli = {
         ]);
         console.log(content.join('\n'));
     },
+    //output version info
     version : function(){
         var content = [
             '',
@@ -82,6 +89,7 @@ fis.cli = {
         ].join('\n');
         console.log(content);
     },
+    //run cli tools
     run : function(argv){
         var first = argv[2];
         if(argv.length < 3 || first === '-h' ||  first === '--help'){
@@ -91,9 +99,11 @@ fis.cli = {
         } else if(first[0] === '-'){
             this.help();
         } else {
-            var conf = this.conf = fis.util.readJSON(this.rc());
-            if(conf.alias && conf.alias[first]){
-                var alias = conf.alias[first].split(/\s+/);
+            //read runtime config
+            var rc = this.rc = fis.util.readJSON(this.getRCFile());
+            //command alias
+            if(rc.alias && rc.alias[first]){
+                var alias = rc.alias[first].split(/\s+/);
                 Array.prototype.splice.apply(argv, [2, 1].concat(alias));
             }
             var commander = this.commander = require('commander');
