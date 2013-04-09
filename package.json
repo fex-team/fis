@@ -1,7 +1,7 @@
 {
     "name" : "fis",
     "description" : "Front End Integrated Solution.",
-    "version" : "0.0.1",
+    "version" : "1.0.0",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "bin" : {
