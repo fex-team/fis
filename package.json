@@ -16,7 +16,8 @@
     },
     "dependencies" : {
         "fis-kernel" : "*",
-        "commander"  : "~1.1.1"
+        "commander"  : "~1.1.1",
+        "fis-command-release" : "*"
     },
     "devDependencies": {
         "chai" : "*"

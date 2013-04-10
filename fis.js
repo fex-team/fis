@@ -109,6 +109,7 @@ fis.cli.version = function(){
 
 //run cli tools
 fis.cli.run = function(argv){
+    
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
         fis.cli.help();
@@ -119,10 +120,14 @@ fis.cli.run = function(argv){
     } else {
         //read runtime config
         var rc = fis.cli.rc = fis.util.readJSON(fis.cli.rcFile);
-        //command alias
-        if(rc.alias && rc.alias[first] && fis.util.is(rc.alias[first], 'Array')){
-            Array.prototype.splice.apply(argv, [2, 1].concat(rc.alias[first]));
-        }
+        
+        //set log config
+        var logrc = rc.log || {};
+        fis.log.throw = logrc.throw == 1;
+        fis.log.level = logrc.debug == 1 ? fis.log.L_ALL : fis.log.L_NORMAL;
+        fis.log.beauty = logrc.beauty != 0;
+        
+        //register command
         var commander = fis.cli.commander = require('commander');
         var cmd = fis.require('command', argv[2]);
         cmd.register(
