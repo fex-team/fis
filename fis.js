@@ -11,6 +11,9 @@ var fis = module.exports = require('fis-kernel');
 //exports cli object
 fis.cli = {};
 
+//colors
+fis.cli.colors = require('colors');
+
 //runtime config
 fis.cli.rc = {};
 
