@@ -24,7 +24,7 @@ fis.cli.rcFile = (function(){
             break;
         }
     }
-    conf = conf || fis.path.getTempPath(name);
+    conf = conf || fis.project.getTempPath(name);
     if(!fis.util.exists(conf)){
         fis.util.write(conf, '{}');
     }
