@@ -1,9 +1,10 @@
 {
     "name" : "fis",
     "description" : "Front End Integrated Solution.",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
+    "keywords": [ "fis" ],
     "bin" : {
         "fis" : "bin/fis"
     },
