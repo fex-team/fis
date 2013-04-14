@@ -23,6 +23,6 @@
         "fis-command-release" : "*"
     },
     "devDependencies": {
-        "chai" : "*"
+        "fis-command-server" : "*"
     }
 }
