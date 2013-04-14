@@ -44,9 +44,9 @@ fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 fis.cli.help = function(){
     var content = [
             '',
-            '  usage: fis <command>',
+            '  Usage: fis <command>',
             '',
-            '  commands:',
+            '  Commands:',
             ''
         ],
         prefix = 'fis-command-',
@@ -73,7 +73,7 @@ fis.cli.help = function(){
     });
     content = content.concat([
         '',
-        '  options:',
+        '  Options:',
         '',
         '    -h, --help     output usage information',
         '    -v, --version  output the version number',
