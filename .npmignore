@@ -1,11 +1,9 @@
-.idea/
-.settings/
-.project/
-node_modules/
+/.idea
+/.settings
+/.project
+/.gitignore
+/node_modules
 /test
-/lib/ext/remote
-/lib/ext/framework
-fis-ext
 /.tmp
 
 .DS_Store

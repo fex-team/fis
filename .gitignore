@@ -1,9 +1,6 @@
-.idea/
-.settings/
-.project/
-/lib/ext/remote
-/lib/ext/framework
-fis-ext
+/.idea
+/.settings
+/.project
 /.tmp
 /node_modules/.bin
 
