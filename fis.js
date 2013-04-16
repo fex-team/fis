@@ -59,7 +59,7 @@ fis.cli.help = function(){
     //from package.json devDependencies
     fis.util.merge(deps, fis.cli.info.devDependencies);
     //traverse
-    fis.util.map(deps, function(name, version){
+    fis.util.map(deps, function(name){
         if(name.indexOf(prefix) === 0){
             name = name.substring(prefixLen);
             try {
