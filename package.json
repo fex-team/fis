@@ -23,8 +23,6 @@
         "fis-command-release" : "*",
         "fis-command-server" : "*",
         
-        "fis-parser-extjs" : "*",
-        "fis-parser-extcss" : "*",
-        "fis-parser-exthtml" : "*"
+        "fis-parser-extlang" : "*"
     }
 }
