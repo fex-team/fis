@@ -128,7 +128,8 @@ fis.cli.run = function(argv){
         var logrc = rc.log || {};
         fis.log.throw = logrc.throw == 1;
         fis.log.level = logrc.debug == 1 ? fis.log.L_ALL : fis.log.L_NORMAL;
-        fis.log.beauty = logrc.beauty != 0;
+        fis.log.beauty = typeof logrc.beauty === 'undefined' ? true : logrc.beauty == 1;
+        fis.log.alert = typeof logrc.alert === 'undefined' ? true : logrc.alert == 1;
         
         //register command
         var commander = fis.cli.commander = require('commander');
