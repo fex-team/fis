@@ -24,6 +24,7 @@
         "fis-command-server" : "*",
         
         "fis-parser-extjs" : "*",
-        "fis-parser-extcss" : "*"
+        "fis-parser-extcss" : "*",
+        "fis-parser-exthtml" : "*"
     }
 }
