@@ -24,6 +24,8 @@
         "fis-command-server" : "*",
         
         "fis-parser-extlang" : "*",
-        "fis-modular-reqlang" : "*"
+        "fis-modular-reqlang" : "*",
+        "fis-optimizer-uglify-js" : "*",
+        "fis-optimizer-clean-css" : "*"
     }
 }
