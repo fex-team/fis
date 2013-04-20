@@ -4,4 +4,4 @@
 
 ## Installation
 
-    $ npm install fis
+    $ npm install -g fis
