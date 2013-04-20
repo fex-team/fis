@@ -1,10 +1,11 @@
 {
     "name" : "fis",
     "description" : "front-end integrated solution.",
-    "version" : "0.9.14",
+    "version" : "0.9.15",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "keywords": [ "fis" ],
+    "license": "MIT",
     "bin" : {
         "fis" : "bin/fis"
     },
