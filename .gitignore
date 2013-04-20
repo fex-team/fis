@@ -1,12 +1,7 @@
 /.idea
-/.settings
-/.project
-/.tmp
-/.npmignore
 node_modules/
 
 .DS_Store
-
 *.db
 *.bak
 *.tmp
