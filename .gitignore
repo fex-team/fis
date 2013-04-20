@@ -2,7 +2,6 @@
 /.settings
 /.project
 /.tmp
-/node_modules/.bin
 
 .DS_Store
 
