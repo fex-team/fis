@@ -108,8 +108,7 @@ fis.cli.run = function(argv){
             commander
                 .command(cmd.name || first)
                 .usage(cmd.usage)
-                .description(cmd.desc),
-            fis
+                .description(cmd.desc)
         );
         commander.parse(argv);
     }
