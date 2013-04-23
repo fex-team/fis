@@ -14,26 +14,6 @@ fis.cli = {};
 //colors
 fis.cli.colors = require('colors');
 
-//runtime config
-fis.cli.rc = {};
-
-//get rc file
-fis.cli.rcFile = (function(){
-    var name = '.fisrc', conf;
-    for(var i = 0, len = arguments.length; i < len; i++){
-        var dir = process.env[arguments[i]];
-        if(dir){
-            conf = fis.util(dir, name);
-            break;
-        }
-    }
-    conf = conf || fis.project.getTempPath(name);
-    if(!fis.util.exists(conf)){
-        fis.util.write(conf, '{}');
-    }
-    return conf;
-})('LOCALAPPDATA', 'APPDATA', 'USERPROFILE', 'HOME');
-
 //commander object
 fis.cli.commander = null;
 
@@ -121,16 +101,6 @@ fis.cli.run = function(argv){
     } else if(first[0] === '-'){
         fis.cli.help();
     } else {
-        //read runtime config
-        var rc = fis.cli.rc = fis.util.readJSON(fis.cli.rcFile);
-        
-        //set log config
-        var logrc = rc.log || {};
-        fis.log.throw = logrc.throw == 1;
-        fis.log.level = logrc.debug == 1 ? fis.log.L_ALL : fis.log.L_NORMAL;
-        fis.log.beauty = typeof logrc.beauty === 'undefined' ? true : logrc.beauty == 1;
-        fis.log.alert = typeof logrc.alert === 'undefined' ? true : logrc.alert == 1;
-        
         //register command
         var commander = fis.cli.commander = require('commander');
         var cmd = fis.require('command', argv[2]);
