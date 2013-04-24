@@ -31,7 +31,7 @@
       -w, --watch         monitor the changes of project
       -c, --clean         clean cache before releasing
       --md5 <level>       md5 release option
-      --domain            add domain
+      --domains           add domain
       --lint              with lint
       --optimize          with optimize
       --pack              with package
