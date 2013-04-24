@@ -93,6 +93,8 @@ fis.cli.version = function(){
 //run cli tools
 fis.cli.run = function(argv){
     
+    fis.log.alert = true;
+    
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
         fis.cli.help();
