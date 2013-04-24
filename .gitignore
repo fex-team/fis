@@ -5,6 +5,7 @@ node_modules/
 *.db
 *.bak
 *.tmp
+*.cmd
 ~*
 
 upload.py
