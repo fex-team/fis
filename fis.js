@@ -36,19 +36,13 @@ fis.cli.help = function(){
     var deps = {};
     //from package.json dependencies
     fis.util.merge(deps, fis.cli.info.dependencies);
-    //from package.json devDependencies
-    fis.util.merge(deps, fis.cli.info.devDependencies);
     //traverse
     fis.util.map(deps, function(name){
         if(name.indexOf(prefix) === 0){
             name = name.substring(prefixLen);
-            try {
-                var cmd = fis.require('command', name);
-                name = fis.util.pad(cmd.name || name, 12);
-                content.push('    ' + name + (cmd.desc || ''));
-            } catch (e){
-                //maybe devDependencies.
-            }
+            var cmd = fis.require('command', name);
+            name = fis.util.pad(cmd.name || name, 12);
+            content.push('    ' + name + (cmd.desc || ''));
         }
     });
     content = content.concat([
