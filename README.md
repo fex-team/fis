@@ -72,6 +72,9 @@
     fis.config.merge({          //merge user settings
         namespace : 'photo',    //using namespace, it can be omitted.
         roadmap : {             //configure directory and release specification.
+            ext : {
+                less : 'css'    //all the less files will be compiled into css files.
+            }，
             domain : {
                 '*.js' : 'http://img.baidu.com'  //add domain to all js files.
             },
@@ -112,6 +115,19 @@
             'rd-test' : {   //a deploy example
                 receiver : 'http://zhangyunlong.fe.baidu.com/receiver.php',     //receiver
                 to : '/home/zhangyunlong/public_html/'                          //post all released files to the reciever, and save them to "/home/zhangyunlong/public_html/"
+            }
+        },
+        modules : {             //plugins
+            parser : {
+                less : 'less'   //parse less file with "fis-parser-less" plugin
+            }
+        },
+        settings : {                //plugin settings
+            optimizer : {
+                'uglify-js' : {     //configure uglify-js plugin
+                    booleans : true,
+                    if_return : false,
+                }
             }
         }
     });
