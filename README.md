@@ -62,3 +62,56 @@
       --php_fcgi_children <int>      the number of php-cgi processes
       --php_fcgi_max_requests <int>  the max number of requests
       --no-rewrite                   disable rewrite feature
+
+## fis-conf.js
+
+### vim path/to/project/fis-conf.js
+
+### settings
+
+    fis.config.merge({          //merge user settings
+        namespace : 'photo',    //using namespace, it can be omitted.
+        roadmap : {             //configure directory and release specification.
+            domain : {
+                '*.js' : 'http://img.baidu.com'  //add domain to all js files.
+            },
+            path : [            //configure directory specification.
+                {
+                    reg : /^\/test\//i,     //all the files in "/test/" directory
+                    release : false         //will not release
+                },
+                {
+                    reg : /^\/widget\/.*\.(js|css)$/i,  //all the js & css files in "/widget/" directory
+                    isMod : true,                       //is modular file
+                    release : '/static/${namespace}$&'  //release into "path/to/output/static/photo/..."
+                },
+                {
+                    reg : /^\/widget\/(.*\.tpl)$/i,     //all the tpl files in "/widget/" directory
+                    isMod : true,                       //is modular file
+                    url : 'widget/${namespace}/$1',     //resource locator is "widget/photo/..."
+                    release : '/template/widget/${namespace}/$1'    //release into "path/to/output/template/widget/photo/..."
+                },
+                {
+                    reg : /^\/plugin\//i                //all the files in "/plugin/" directory will be released into "path/to/output/plugin/..."
+                },
+                {
+                    reg : /^\/.+\.tpl$/i,                   //other tpl files
+                    release : '/template/${namespace}$&'    //release into "path/to/output/template/photo/..."
+                },
+                {
+                    reg : /^\/photo-map\.json$/i,           //photo-map.json
+                    release : '/config$&'                   //release into "path/to/output/config/photo-map.json"
+                },
+                {
+                    reg : /^.*$/,                           //any other files
+                    release : '/static/${namespace}$&'      //release into "path/to/output/static/photo/..."
+                }
+            ]
+        },
+        deploy : {
+            'rd-test' : {   //a deploy example
+                receiver : 'http://zhangyunlong.fe.baidu.com/receiver.php',     //receiver
+                to : '/home/zhangyunlong/public_html/'                          //post all released files to the reciever, and save them to "/home/zhangyunlong/public_html/"
+            }
+        }
+    });
