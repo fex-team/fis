@@ -81,50 +81,50 @@
             path : [            //configure directory specification.
                 {
                     reg : /^\/test\//i,     //all the files in "/test/" directory
-                    release : false         //will not release
+                    release : false         //will not be released
                 },
                 {
                     reg : /^\/widget\/.*\.(js|css)$/i,  //all the js & css files in "/widget/" directory
                     isMod : true,                       //is modular file
-                    release : '/static/${namespace}$&'  //release into "path/to/output/static/photo/..."
+                    release : '/static/${namespace}$&'  //release to "path/to/output/static/photo/..."
                 },
                 {
                     reg : /^\/widget\/(.*\.tpl)$/i,     //all the tpl files in "/widget/" directory
                     isMod : true,                       //is modular file
                     url : 'widget/${namespace}/$1',     //resource locator is "widget/photo/..."
-                    release : '/template/widget/${namespace}/$1'    //release into "path/to/output/template/widget/photo/..."
+                    release : '/template/widget/${namespace}/$1'    //release to "path/to/output/template/widget/photo/..."
                 },
                 {
-                    reg : /^\/plugin\//i                //all the files in "/plugin/" directory will be released into "path/to/output/plugin/..."
+                    reg : /^\/plugin\//i                //all the files in "/plugin/" directory will be released to "path/to/output/plugin/..."
                 },
                 {
                     reg : /^\/.+\.tpl$/i,                   //other tpl files
-                    release : '/template/${namespace}$&'    //release into "path/to/output/template/photo/..."
+                    release : '/template/${namespace}$&'    //release to "path/to/output/template/photo/..."
                 },
                 {
                     reg : /^\/photo-map\.json$/i,           //photo-map.json
-                    release : '/config$&'                   //release into "path/to/output/config/photo-map.json"
+                    release : '/config$&'                   //release to "path/to/output/config/photo-map.json"
                 },
                 {
                     reg : /^.*$/,                           //any other files
-                    release : '/static/${namespace}$&'      //release into "path/to/output/static/photo/..."
+                    release : '/static/${namespace}$&'      //release to "path/to/output/static/photo/..."
                 }
             ]
         },
         deploy : {
             'rd-test' : {   //a deploy example
                 receiver : 'http://zhangyunlong.fe.baidu.com/receiver.php',     //receiver
-                to : '/home/zhangyunlong/public_html/'                          //post all released files to the reciever, and save them to "/home/zhangyunlong/public_html/"
+                to : '/home/zhangyunlong/public_html/'                          //post all the released files to the reciever, and save them to "/home/zhangyunlong/public_html/" directory of remote
             }
         },
-        modules : {             //plugins
+        modules : {             //using plugins
             parser : {
-                less : 'less'   //parse less file with "fis-parser-less" plugin
+                less : 'less'   //parse less file with "fis-parser-less" plugin (not built-in, install it with npm)
             }
         },
         settings : {                //plugin settings
             optimizer : {
-                'uglify-js' : {     //configure uglify-js plugin
+                'uglify-js' : {     //configure uglify-js plugin, @see https://npmjs.org/package/uglify-js
                     booleans : true,
                     if_return : false,
                 }
