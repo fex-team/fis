@@ -27,6 +27,7 @@
         
         "fis-kernel" : "*",
         "fis-command-release" : "*",
+        "fis-command-install" : "*",
         "fis-command-server" : "*",
         
         "fis-parser-extlang" : "*",
