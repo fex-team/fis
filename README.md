@@ -2,9 +2,29 @@
 
 *Unfinished until version 1.0.0*
 
-## Installation
-
+## Usage
+    
+    # install fis
     $ npm install -g fis
+    
+    # start local server
+    $ fis server start
+    
+    # install service
+    $ fis server install pc2
+    
+    $ mkdir project
+    
+    $ cd project
+     
+    # install a pc2-demo project
+    $ fis install pc2-demo
+     
+    # release your project to local server
+    $ fis release --watch
+     
+    # browse http://localhost:8080/photo
+
 
 ## commands
 
