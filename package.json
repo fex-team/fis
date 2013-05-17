@@ -25,8 +25,8 @@
         "colors" : "0.6.0-1",
         "commander" : "1.1.1",
         
-        "fis-kernel" : "1.0.8",
-        "fis-command-release" : "0.4.9",
+        "fis-kernel" : "1.0.9",
+        "fis-command-release" : "0.5.0",
         "fis-command-install" : "0.0.3",
         "fis-command-server" : "0.5.2",
         
