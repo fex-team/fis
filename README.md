@@ -40,9 +40,11 @@
       -h, --help     output usage information
       -v, --version  output the version number
 
-    See:
-        [fis-command-release](https://github.com/fouber/fis-command-release)
-        [fis-command-server](https://github.com/fouber/fis-command-server)
+
+more information:
+
+* [fis release --help](https://github.com/fouber/fis-command-release "fis-command-release")
+* [fis server --help](https://github.com/fouber/fis-command-server "fis-command-server")
 
 ## Configure fis
 
