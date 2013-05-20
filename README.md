@@ -94,7 +94,7 @@
         roadmap : {             //configure directory and release specification.
             ext : {
                 less : 'css'    //all the less files will be compiled into css files.
-            }，
+            },
             domain : {
                 '*.js' : 'http://img.baidu.com'  //add domain to all js files.
             },
