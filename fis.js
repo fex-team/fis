@@ -51,6 +51,8 @@ fis.cli.help = function(){
         '',
         '    -h, --help     output usage information',
         '    -v, --version  output the version number',
+        '    --no-color     disable colored output',
+        '    --no-alert     disable error beep',
         ''
     ]);
     console.log(content.join('\n'));
@@ -79,7 +81,21 @@ fis.cli.version = function(){
 //run cli tools
 fis.cli.run = function(argv){
     
-    fis.log.alert = true;
+    var pos = argv.indexOf('--no-color');
+    if(pos > 0){
+        argv.splice(pos, 1);
+        fis.cli.colors.mode = 'none';
+    } else {
+        fis.cli.colors.mode = 'console';
+    }
+    
+    pos = argv.indexOf('--no-alert');
+    if(pos > 0){
+        argv.splice(pos, 1);
+        fis.log.alert = false;
+    } else {
+        fis.log.alert = true;
+    }
     
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){

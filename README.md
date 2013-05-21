@@ -33,6 +33,7 @@
     Commands:
     
       release     build and deploy your project
+      install     install components and demos
       server      launch a php-cgi server
     
     Options:
