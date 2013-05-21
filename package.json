@@ -1,7 +1,7 @@
 {
     "name" : "fis",
     "description" : "front-end integrated solution.",
-    "version" : "0.9.37",
+    "version" : "0.9.38",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "keywords": [ "fis" ],
@@ -31,7 +31,7 @@
         "fis-command-server" : "0.5.2",
         
         "fis-parser-extlang" : "0.0.8",
-        "fis-modular-reqlang" : "0.1.4",
+        "fis-modular-reqlang" : "0.1.5",
         "fis-optimizer-uglify-js" : "0.0.4",
         "fis-optimizer-clean-css" : "0.0.3"
     }
