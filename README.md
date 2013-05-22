@@ -40,6 +40,7 @@
     
       -h, --help     output usage information
       -v, --version  output the version number
+      --no-color     disable colored output
 
 more information:
 

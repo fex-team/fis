@@ -12,7 +12,7 @@ var fis = module.exports = require('fis-kernel');
 fis.cli = {};
 
 //colors
-fis.cli.colors = require('colors');
+fis.cli.colors = require('colours');
 
 //commander object
 fis.cli.commander = null;
@@ -51,6 +51,7 @@ fis.cli.help = function(){
         '',
         '    -h, --help     output usage information',
         '    -v, --version  output the version number',
+        '    --no-color     disable colored output',
         ''
     ]);
     console.log(content.join('\n'));
@@ -76,8 +77,23 @@ fis.cli.version = function(){
     console.log(content);
 };
 
+function hasArgv(argv, search){
+    var pos = argv.indexOf(search);
+    var ret = false;
+    while(pos > -1){
+        argv.splice(pos, 1);
+        pos = argv.indexOf(search);
+        ret = true;
+    }
+    return ret;
+}
+
 //run cli tools
 fis.cli.run = function(argv){
+    
+    if(hasArgv(argv, '--no-color')){
+        fis.cli.colors.mode = 'none';
+    }
     
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
