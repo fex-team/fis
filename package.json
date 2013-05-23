@@ -26,7 +26,7 @@
         "commander" : "1.1.1",
         
         "fis-kernel" : "1.0.18",
-        "fis-command-release" : "0.5.2",
+        "fis-command-release" : "0.5.3",
         "fis-command-install" : "0.0.4",
         "fis-command-server" : "0.5.2",
         
