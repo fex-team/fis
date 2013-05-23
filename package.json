@@ -1,7 +1,7 @@
 {
     "name" : "fis",
     "description" : "front-end integrated solution.",
-    "version" : "0.9.46",
+    "version" : "0.9.47",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "keywords": [ "fis" ],
@@ -25,14 +25,14 @@
         "colours" : "0.6.0-2",
         "commander" : "1.1.1",
         
-        "fis-kernel" : "1.0.17",
+        "fis-kernel" : "1.0.18",
         "fis-command-release" : "0.5.2",
         "fis-command-install" : "0.0.4",
         "fis-command-server" : "0.5.2",
         
         "fis-parser-extlang" : "0.0.8",
         "fis-modular-reqlang" : "0.1.5",
-        "fis-optimizer-uglify-js" : "0.0.6",
-        "fis-optimizer-clean-css" : "0.0.3"
+        "fis-optimizer-uglify-js" : "0.0.7",
+        "fis-optimizer-clean-css" : "0.0.4"
     }
 }
