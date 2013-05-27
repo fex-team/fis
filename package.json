@@ -30,7 +30,7 @@
         "fis-command-install" : "0.0.4",
         "fis-command-server" : "0.5.2",
         
-        "fis-postprocessor-jswrapper" : "0.0.1",
+        "fis-postprocessor-jswrapper" : "0.0.2",
         
         "fis-optimizer-uglify-js" : "0.0.8",
         "fis-optimizer-clean-css" : "0.0.4"
