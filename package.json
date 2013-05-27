@@ -26,12 +26,11 @@
         "commander" : "1.1.1",
         
         "fis-kernel" : "1.1.0",
-        "fis-command-release" : "0.5.6",
+        "fis-command-release" : "0.5.7",
         "fis-command-install" : "0.0.4",
         "fis-command-server" : "0.5.2",
         
-        "fis-parser-extlang" : "0.0.8",
-        "fis-modular-reqlang" : "0.1.5",
+        "fis-modular-jswrapper" : "0.0.1",
         "fis-optimizer-uglify-js" : "0.0.8",
         "fis-optimizer-clean-css" : "0.0.4"
     }
