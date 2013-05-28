@@ -1,7 +1,7 @@
 {
     "name" : "fis",
     "description" : "front-end integrated solution.",
-    "version" : "0.9.54",
+    "version" : "0.9.55",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "keywords": [ "fis" ],
@@ -25,9 +25,9 @@
         "colours" : "0.6.0-2",
         "commander" : "1.1.1",
         
-        "fis-kernel" : "1.1.2",
+        "fis-kernel" : "1.1.3",
         "fis-command-release" : "0.6.1",
-        "fis-command-install" : "0.0.4",
+        "fis-command-install" : "0.0.5",
         "fis-command-server" : "0.5.2",
         
         "fis-postprocessor-jswrapper" : "0.0.2",
