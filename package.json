@@ -25,15 +25,15 @@
         "colours" : "0.6.0-2",
         "commander" : "1.1.1",
         
-        "fis-kernel" : "1.2.6",
+        "fis-kernel" : "1.2.7",
         "fis-command-release" : "0.6.5",
         "fis-command-install" : "0.0.5",
         "fis-command-server" : "0.5.3",
         
         "fis-postprocessor-jswrapper" : "0.0.3",
         
-        "fis-optimizer-html-minifier" : "0.0.1",
         "fis-optimizer-uglify-js" : "0.0.8",
-        "fis-optimizer-clean-css" : "0.0.4"
+        "fis-optimizer-clean-css" : "0.0.4",
+        "fis-optimizer-html-minifier" : "0.0.2"
     }
 }
