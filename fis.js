@@ -11,6 +11,8 @@ var fis = module.exports = require('fis-kernel');
 //exports cli object
 fis.cli = {};
 
+fis.cli.name = 'fis';
+
 //colors
 fis.cli.colors = require('colours');
 
@@ -24,7 +26,7 @@ fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 fis.cli.help = function(){
     var content = [
             '',
-            '  Usage: fis <command>',
+            '  Usage: ' + fis.cli.name + ' <command>',
             '',
             '  Commands:',
             ''
