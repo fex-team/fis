@@ -33,7 +33,7 @@
         "fis-postprocessor-jswrapper" : "0.0.3",
         
         "fis-optimizer-uglify-js" : "0.0.8",
-        "fis-optimizer-clean-css" : "0.0.4",
+        "fis-optimizer-clean-css" : "0.0.5",
         "fis-optimizer-html-minifier" : "0.0.4"
     }
 }
