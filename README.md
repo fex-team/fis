@@ -107,36 +107,36 @@ ok，回到刚刚的firstblood示例项目，进入到output目录，你将看�
 
 此时firstblood项目目录下会多出一个fis-conf.js文件，让我们看一下里面的内容：
 
-    '''javascript
-    fis.config.merge({
-        roadmap : {
-            domain : {
-                //所有css文件添加http://localhost:8080作为域名
-                '**.css' : 'http://localhost:8080'
+'''javascript
+fis.config.merge({
+    roadmap : {
+        domain : {
+            //所有css文件添加http://localhost:8080作为域名
+            '**.css' : 'http://localhost:8080'
+        },
+        path : [
+            {
+                //所有的js文件
+                reg : '**.js',
+                //发布到/static/js/xxx目录下
+                release : '/static/js$&'
             },
-            path : [
-                {
-                    //所有的js文件
-                    reg : '**.js',
-                    //发布到/static/js/xxx目录下
-                    release : '/static/js$&'
-                },
-                {
-                    //所有的css文件
-                    reg : '**.css',
-                    //发布到/static/css/xxx目录下
-                    release : '/static/css$&'
-                },
-                {
-                    //所有image目录下的.png，.gif文件
-                    reg : /^\/images\/(.*\.(?:png|gif))/i,
-                    //发布到/static/pic/xxx目录下
-                    release : '/static/pic/$1'
-                }
-            ]
-        }
-    });
-    '''
+            {
+                //所有的css文件
+                reg : '**.css',
+                //发布到/static/css/xxx目录下
+                release : '/static/css$&'
+            },
+            {
+                //所有image目录下的.png，.gif文件
+                reg : /^\/images\/(.*\.(?:png|gif))/i,
+                //发布到/static/pic/xxx目录下
+                release : '/static/pic/$1'
+            }
+        ]
+    }
+});
+'''
 
 删除一下output目录，再次执行编译命令：
 
