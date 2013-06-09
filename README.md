@@ -44,9 +44,9 @@
 
 more information:
 
-* [fis release --help](https://github.com/fouber/fis-command-release "fis-command-release")
-* [fis install --help](https://github.com/fouber/fis-command-install "fis-command-install")
-* [fis server --help](https://github.com/fouber/fis-command-server "fis-command-server")
+* [fis release --help](https://github.com/fis-dev/fis-command-release "fis-command-release")
+* [fis install --help](https://github.com/fis-dev/fis-command-install "fis-command-install")
+* [fis server --help](https://github.com/fis-dev/fis-command-server "fis-command-server")
 
 ## Configure fis
 
