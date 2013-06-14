@@ -8,6 +8,21 @@
 //kernel
 var fis = module.exports = require('fis-kernel');
 
+//merge standard conf
+fis.config.merge({
+    modules : {
+        postprocessor : {
+            js : 'jswrapper'
+        },
+        optimizer : {
+            js : 'uglify-js',
+            css : 'clean-css',
+            htm : 'html-minifier',
+            html : 'html-minifier'
+        }
+    }
+});
+
 //exports cli object
 fis.cli = {};
 
