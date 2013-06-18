@@ -19,7 +19,8 @@ fis.config.merge({
             css : 'clean-css',
             htm : 'html-minifier',
             html : 'html-minifier'
-        }
+        },
+        packager : 'map'
     }
 });
 
