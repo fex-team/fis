@@ -146,7 +146,7 @@ fis.config.merge({
 
 fis release命令还有强大的自动上传功能，这篇文档不会详细介绍此功能的使用方式，但小编可以先发个截图表示一下。截图中显示的是我在windows下编译了firstblood项目，然后自动同步到我的linux测试机上的截图。之后我修改了index.html文件，它又帮我秒传上去了，嚯嚯！
 
-![自动上传功能](http://fis-dev.github.io/fis/images/wiki/deploy.png?v=2)
+![自动上传功能](http://fis-dev.github.io/fis/images/wiki/deploy.png?v=3)
 
 当你学习到这里时，恭喜你，你已掌握了F.I.S自动化/辅助开发工具的大部分功能，下面一条命令，会给你带来更爽的开发体验。
 
