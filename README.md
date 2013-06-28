@@ -173,6 +173,6 @@ fis的调试服务器依赖于用户本地的 **jre** 和 **php-cgi** 环境，�
 
 在刚刚的firstblood项目中执行命令：
 
-    $ fis release --md5 --optimize --watch
+    $ fis release --md5 --optimize --watch --live
 
 现在，fis已经将编译好的代码发布到调试服务器中啦，刷新浏览器，你会看到我们的firstblood示例项目的运行效果。此时，你修改项目文件都将自动编译并发布到调试服务器目录下，看看页面源代码，你会发现更多惊喜！顺便恭喜你，至此你已完全掌握了fis的基本用法，你可以借助fis这个利器去挑战大型商业产品开发了！
