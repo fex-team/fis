@@ -69,13 +69,46 @@ install命令被设计用来 **各种安装**，无论你是想初始化一个�
 
 release是一个非常强大的命令，它的主要任务就是进行代码的 **编译** 与 **部署**，它的参数囊括了前端开发所需的各种基础功能：
 
-1. 添加 **--watch** 参数，支持对项目进行增量编译，监听文件变化再触发编译
-1. 添加 **--dest [path|name]** 参数，来指定编译后的代码部署路径，支持发布到 **本地目录、本地调试服务器目录、远程机器目录(需要配置)**，它与--watch参数配合使用，可以让你的代码保存就上传！而且--dest值支持逗号分隔，这也就意味着，你 **一次编译可以同时发布到本地以及多台远程机器上**！
-1. 添加 **--md5 [level]** 参数，在编译的时候可以对文件自动加md5戳，从此告别在静态资源url后面写?version=xxx的时代
-1. 添加 **--lint** 参数，支持在编译的时候根据项目配置自动代码检查
-1. 添加 **--test** 参数，支持在编译的时候对代码进行自动化测试
-1. 添加 **--pack** 参数，对产出文件根据项目配置进行打包
-1. 添加 **--optimize** 参数，对js、css、html进行压缩
+1. 添加 **--watch** 或 **-w** 参数，支持对项目进行增量编译，监听文件变化再触发编译
+1. 添加 **--live** 或 **-L** 参数，支持编译后自动刷新浏览器。fis需要使用 [LiveReload浏览器扩展](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-) 来连接fis的livereload服务器：
+    * [Safari](http://download.livereload.com/2.0.9/LiveReload-2.0.9.safariextz)
+    * [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+    * [Firefox](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
+    * [IE](https://github.com/dvdotsenko/livereload_ie_extension/downloads) - 真应该滚粗地球
+1. 添加 **--dest [path|name]** 或 **-d** 参数，来指定编译后的代码部署路径，支持发布到 **本地目录、本地调试服务器目录、远程机器目录(需要配置)**，它与--watch参数配合使用，可以让你的代码保存就上传！而且--dest值支持逗号分隔，这也就意味着，你 **一次编译可以同时发布到本地以及多台远程机器上**！举几个栗子：
+    * 发布到fis server open目录下用于本地调试
+        ```bash
+        fis release
+        # or
+        fis release --dest preview
+        ```
+    * 发布到项目根目录的output目录下， _注意，这里的output其实是一个内置的部署配置名，而不是一个目录名_。
+        ```bash
+        fis release -d output
+        ```
+    * 发布到相对 ``工作目录`` 的路径
+        ```bash
+        fis release -d ../output
+        ```
+    * 发布到绝对路径
+        ```bash
+        fis release -d /home/work/ouput
+        # win
+        fis release -d d:/work/output
+        ```
+    * 使用配置文件的 [deploy节点配置](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#deploy) 进行发布，此配置可将代码上传至远端
+        ```bash
+        fis release -d remote
+        ```
+    * 以上所有发布规则任意组合使用（一次编译同时上传到多台远端机器 & 项目根目录下的output & 调试服务器根目录 & 本地绝对路径）
+        ```bash
+        fis releaes -d remote,qa,rd,output,preview,D:/work/output
+        ```
+1. 添加 **--md5 [level]** 或 **-m [level]** 参数，在编译的时候可以对文件自动加md5戳，从此告别在静态资源url后面写?version=xxx的时代
+1. 添加 **--lint** 或 **-l** 参数，支持在编译的时候根据项目配置自动代码检查
+1. 添加 **--test** 或 **-t** 参数，支持在编译的时候对代码进行自动化测试
+1. 添加 **--pack** 或 **-p** 参数，对产出文件根据项目配置进行打包
+1. 添加 **--optimize** 或 **-o** 参数，对js、css、html进行压缩
 
 初步了解之后，让我们对刚刚下载的项目做一次编译，look at me：
 
