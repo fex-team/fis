@@ -25,7 +25,7 @@
         "colours" : "0.6.0-2",
         "commander" : "1.2.0",
         
-        "fis-kernel" : "1.6.9",
+        "fis-kernel" : "1.7.0",
         
         "fis-command-install" : "0.0.7",
         "fis-command-release" : "0.8.2",
@@ -37,6 +37,6 @@
         "fis-optimizer-clean-css" : "0.0.7",
         "fis-optimizer-html-minifier" : "0.0.5",
         
-        "fis-packager-map" : "0.0.4"
+        "fis-packager-map" : "0.0.5"
     }
 }
