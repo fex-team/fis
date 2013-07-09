@@ -1,4 +1,4 @@
-## 1.0.4
+## 1.0.5
 
     升级fis-kernel至v1.7.0
     升级fis-packager-map至v0.0.5
