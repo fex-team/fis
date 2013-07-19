@@ -1,3 +1,9 @@
+## 1.0.8
+
+    升级fis-kernel至v1.7.3
+
+* 修复fis.util.clone的bug
+
 ## 1.0.7
 
     升级fis-kernel至v1.7.2
