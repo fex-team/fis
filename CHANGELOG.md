@@ -1,3 +1,11 @@
+## 1.0.9
+
+    升级fis-kernel至v1.7.4
+    升级fis-command-release至v0.8.4
+
+* 支持对图片进行pipe处理和缓存控制，为图片压缩做准备
+* 修复新建文件没有添加文件监听的bug
+
 ## 1.0.8
 
     升级fis-kernel至v1.7.3
