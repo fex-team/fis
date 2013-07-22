@@ -1,5 +1,11 @@
 ## 1.1.0
 
+    升级fis-packager-map至v0.0.7
+
+* 修复打包配置不支持单独的正则bug
+
+## 1.1.0
+
     内置fis-optimizer-pngcrush插件
 
 * 推出png图片自动压缩功能
