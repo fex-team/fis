@@ -1,3 +1,9 @@
+## 1.1.2
+
+    升级fis-command-server至v0.6.1
+
+* 采用spawn的detached参数技术替代实现nohup功能
+
 ## 1.1.1
 
     升级fis-packager-map至v0.0.7
