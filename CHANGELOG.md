@@ -1,3 +1,9 @@
+## 1.1.3
+
+    升级fis-kernel至v1.7.7
+
+* 修复无后缀文件的处理失败的bug
+
 ## 1.1.2
 
     升级fis-command-server至v0.6.1
