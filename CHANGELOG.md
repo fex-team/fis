@@ -1,3 +1,11 @@
+## 1.1.5
+
+    升级fis-optimizer-clean-css至v0.0.8
+    升级fis-optimizer-pngcrush至v0.0.4
+
+* 升级clean-css依赖的版本至v1.0.12，并且不允许clean-css处理@import标记，由fis接管
+* 升级node-pngcrush版本至v0.0.6，超强的压缩效果
+
 ## 1.1.3
 
     升级fis-kernel至v1.7.7
