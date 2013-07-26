@@ -1,3 +1,9 @@
+## 1.1.6
+
+    升级fis-optimizer-pngcrush至v0.0.6
+
+* 修复pngcrush压缩压缩时图片不是png格式的bug
+
 ## 1.1.5
 
     升级fis-optimizer-clean-css至v0.0.8
