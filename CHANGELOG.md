@@ -1,3 +1,12 @@
+## 1.1.7
+
+    升级fis-kernel至v1.7.8
+    升级fis-command-release至v0.8.5
+
+* 允许没有pack配置仍然进入打包逻辑
+* 修复打包处理阶段不能修改内容的bug
+* .ico文件默认不做hash输出
+
 ## 1.1.6
 
     升级fis-optimizer-pngcrush至v0.0.6
