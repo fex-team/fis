@@ -1,4 +1,4 @@
-![fis logo](http://fis-dev.github.io/fis/images/wiki/logo.png)
+![fis logo](http://fis-dev.github.io/fis/images/wiki/logo.png?v=2)
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
