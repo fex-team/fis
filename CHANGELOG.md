@@ -21,7 +21,7 @@
 
     升级fis-command-release至v0.8.6
 
-* deploy支持subOnly参数，支持只发布子目录的需求，例如：
+* deploy支持 ``subOnly`` 参数，支持只发布子目录的需求，例如：
 
     ```javascript
     fis.config.merge({
