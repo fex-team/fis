@@ -34,7 +34,7 @@
     });
     ```
     
-    如果执行 fis release -d ``local``，则把编译后的 ``/static`` 目录复制到 ``../output`` 中，得到 ``../output/static``
+    如果执行 fis release -d ``local``，则把编译后的 ``/static`` 目录复制到 ``../output`` 中，得到 ``../output/static``，添加 ``subOnly`` 参数后：
 
     ```javascript
     fis.config.merge({
