@@ -1,5 +1,38 @@
 ## 1.1.7
 
+    升级fis-command-release至v0.8.6
+
+* deploy支持subOnly参数，支持只发布子目录的需求，例如：
+
+    ```javascript
+    fis.config.merge({
+        deploy : {
+            local : {
+                from : '/static',
+                to : '../output'
+            }
+        }
+    });
+    ```
+    
+    如果执行 fis release -d ``local``，则把编译后的 ``/static`` 目录复制到 ``../output`` 中，得到 ``../output/static``
+
+    ```javascript
+    fis.config.merge({
+        deploy : {
+            local : {
+                from : '/static',
+                to : '../output',
+                subOnly : true
+            }
+        }
+    });
+    ```
+    
+    如果执行 fis release -d ``local``，则把编译后的/static的 ``子目录`` 复制到 ``../output`` 中，得到 ``../output/**``
+
+## 1.1.7
+
     升级fis-kernel至v1.7.8
     升级fis-command-release至v0.8.5
 
