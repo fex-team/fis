@@ -1,4 +1,23 @@
-## 1.1.7
+## 1.1.9
+
+    升级fis-kernel至v1.7.9
+
+* 支持roadmap.path配置指定文件不经过编译处理，例：
+
+    ```javascript
+    fis.config.merge({
+        roadmap : {
+            path : [
+                {
+                    reg : '**.js',      //所有的js文件
+                    useCompile : false  //不要经过编译处理
+                }
+            ]
+        }
+    });
+    ```
+
+## 1.1.8
 
     升级fis-command-release至v0.8.6
 
