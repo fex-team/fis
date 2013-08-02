@@ -1,3 +1,9 @@
+## 1.2.0
+
+    升级fis-optimizer-pngcrush至v0.0.6
+
+* 修复小于1k的png图片压缩bug
+
 ## 1.1.9
 
     升级fis-kernel至v1.7.9
