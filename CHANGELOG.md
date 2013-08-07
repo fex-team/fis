@@ -1,3 +1,29 @@
+## 1.2.1
+
+    使用fis-optimizer-png-compressor作为png图片压缩插件
+
+* 图片压缩支持pngcrush和pngquant压缩器选择，默认为pngcrush，如果要切换为pngquant，可在配置文件中设置：
+
+    ```javascript
+    fis.config.set('settings.optimizer.png-compressor.type', 'pngquant');
+    ```
+    
+    或者：
+    
+    ```javascript
+    fis.config.merge({
+        settings : {
+            optimizer : {
+                'png-compressor' : {
+                    type : 'pngquant' //default is pngcrush
+                }
+            }
+        }
+    });
+    ```
+    
+    pngcrush压缩会保持原来的色彩位数，如果原图片的色彩超过256色，在ie背景无法透明，会出现灰色的填充色背景。pngquant会强制把png图片压缩为png8格式，因此对于png24的图片压缩后会出现一定的质量折损（基本都是可以接受的），对于需要兼容ie6的产品线推荐使用pngquant作为压缩器。
+
 ## 1.2.0
 
     升级fis-optimizer-pngcrush至v0.0.6
