@@ -1,3 +1,11 @@
+## 1.2.3
+
+    升级fis-kernel至v1.8.1
+    升级fis-optimizer-html-minifier至v0.0.6
+
+* 修复roadmap.path的release中出现多个'//'的时候被替换为空字符串的bug
+* 修改html压缩器的默认配置，不移除多余属性，因为这些属性可能是css选择器需要的
+
 ## 1.2.2
 
     升级fis-kernel至v1.8.0
