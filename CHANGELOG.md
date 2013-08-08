@@ -1,3 +1,9 @@
+## 1.2.2
+
+    升级fis-kernel至v1.8.0
+
+* fis.compile方法支持对不存在的文件对象进行编译，不过没有缓存
+
 ## 1.2.1
 
     使用fis-optimizer-png-compressor作为png图片压缩插件
