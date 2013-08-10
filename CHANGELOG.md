@@ -1,7 +1,7 @@
 ## 1.2.4
 
     升级fis-kernel至v1.8.2
-    删除对 ``fis-optimizer-html-minifier`` 的依赖， **不再** 压缩html
+    删除对 fis-optimizer-html-minifier 的依赖， 不再压缩html
 
 * 区分script标签的type属性，如果有type属性，而且属性值不为text/javascript，则当做html处理
 * 从核心中剔除html压缩工具，理由是：
