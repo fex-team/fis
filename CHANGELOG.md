@@ -16,6 +16,15 @@
         <script type=text/template>a<!--div</script>
         ```
     1. 就算所有压缩选项都关闭，只保留空格压缩选项，也有问题。删除空格后会影响元素间距，这会给平时开发带来困扰，因为平时开发fis release通常不会加 ``--optimize`` 参数，等到上线才会加上，一旦加上，却和开发中的效果不一致，这是非常郁闷的。
+    1. 对于特别留恋html-minifier的同学，不要桑心，它还在npm上，只是不是fis内核提供而已，要想使用它，你需要：
+        ```shell
+        # 安装它
+        npm install -g fis-optimizer-html-minifier
+        ```
+        再在项目的配置文件里使用它就可以了：
+        ```javascript
+        fis.config.set('modules.optimizer.html', 'html-minifier');
+        ```
 
 ## 1.2.3
 
