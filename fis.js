@@ -17,9 +17,7 @@ fis.config.merge({
         optimizer : {
             js : 'uglify-js',
             css : 'clean-css',
-            png : 'png-compressor',
-            htm : 'html-minifier',
-            html : 'html-minifier'
+            png : 'png-compressor'
         },
         packager : 'map'
     }

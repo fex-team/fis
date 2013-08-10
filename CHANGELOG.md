@@ -1,3 +1,22 @@
+## 1.2.4
+
+    升级fis-kernel至v1.8.2
+    删除对 ``fis-optimizer-html-minifier`` 的依赖， **不再** 压缩html
+
+* 区分script标签的type属性，如果有type属性，而且属性值不为text/javascript，则当做html处理
+* 从核心中剔除html压缩工具，理由是：
+    1. 收益非常非常小。大多数产品线线上都开启了gzip，线下压缩相当多余，最后送达到用户浏览器的html大小没差别
+    1. 各种压缩选项非常危险。比如 ``removeRedundantAttributes`` 会删除 &lt;input type="text"&gt; 元素的type属性，虽然逻辑上是等价的，但是会导致有些css属性选择器失效
+    1. ``removeCDATASectionsFromCDATA`` 压缩选项有bug，如下html：
+        ```html
+        <script type="text/template">a<!--div--></script>
+        ```
+        压缩完得到：
+        ```html
+        <script type=text/template>a<!--div</script>
+        ```
+    1. 就算所有压缩选项都关闭，只保留空格压缩选项，也有问题。删除空格后会影响元素间距，这会给平时开发带来困扰，因为平时开发fis release通常不会加 ``--optimize`` 参数，等到上线才会加上，一旦加上，却和开发中的效果不一致，这是非常郁闷的。
+
 ## 1.2.3
 
     升级fis-kernel至v1.8.1
