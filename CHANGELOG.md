@@ -1,3 +1,7 @@
+## 1.2.6
+
+* 默认配置开启csssprites
+
 ## 1.2.5
 
 > 正式集成 [fis-spriter-csssprites](https://github.com/xiangshouding/fis-spriter-csssprites)
