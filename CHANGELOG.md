@@ -1,3 +1,7 @@
+## 1.2.5
+
+    正式集成 [fis-spriter-csssprites](https://github.com/xiangshouding/fis-spriter-csssprites)
+
 ## 1.2.4
 
     升级fis-kernel至v1.8.2
