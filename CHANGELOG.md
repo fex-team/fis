@@ -1,11 +1,11 @@
 ## 1.2.5
 
-    正式集成 [fis-spriter-csssprites](https://github.com/xiangshouding/fis-spriter-csssprites)
+> 正式集成 [fis-spriter-csssprites](https://github.com/xiangshouding/fis-spriter-csssprites)
 
 ## 1.2.4
 
-    升级fis-kernel至v1.8.2
-    删除对 fis-optimizer-html-minifier 的依赖， 不再压缩html
+> 升级fis-kernel至v1.8.2
+> 删除对 fis-optimizer-html-minifier 的依赖， 不再压缩html
 
 * 区分script标签的type属性，如果有type属性，而且属性值不为text/javascript，则当做html处理
 * 从核心中剔除html压缩工具，理由是：
@@ -38,15 +38,15 @@
 
 ## 1.2.3
 
-    升级fis-kernel至v1.8.1
-    升级fis-optimizer-html-minifier至v0.0.6
+> 升级fis-kernel至v1.8.1
+> 升级fis-optimizer-html-minifier至v0.0.6
 
 * 修复roadmap.path的release中出现多个'//'的时候被替换为空字符串的bug
 * 修改html压缩器的默认配置，不移除多余属性，因为这些属性可能是css选择器需要的
 
 ## 1.2.2
 
-    升级fis-kernel至v1.8.0
+> 升级fis-kernel至v1.8.0
 
 * fis.compile方法支持对不存在的文件对象进行编译，不过没有缓存
 
@@ -78,13 +78,13 @@
 
 ## 1.2.0
 
-    升级fis-optimizer-pngcrush至v0.0.6
+> 升级fis-optimizer-pngcrush至v0.0.6
 
 * 修复小于1k的png图片压缩bug
 
 ## 1.1.9
 
-    升级fis-kernel至v1.7.9
+> 升级fis-kernel至v1.7.9
 
 * 支持roadmap.path配置指定文件不经过编译处理，例：
 
@@ -103,7 +103,7 @@
 
 ## 1.1.8
 
-    升级fis-command-release至v0.8.6
+> 升级fis-command-release至v0.8.6
 
 * deploy支持 ``subOnly`` 参数，支持只发布子目录的需求，例如：
 
@@ -136,8 +136,8 @@
 
 ## 1.1.7
 
-    升级fis-kernel至v1.7.8
-    升级fis-command-release至v0.8.5
+> 升级fis-kernel至v1.7.8
+> 升级fis-command-release至v0.8.5
 
 * 允许没有pack配置仍然进入打包逻辑
 * 修复打包处理阶段不能修改内容的bug
@@ -145,67 +145,67 @@
 
 ## 1.1.6
 
-    升级fis-optimizer-pngcrush至v0.0.6
+> 升级fis-optimizer-pngcrush至v0.0.6
 
 * 修复pngcrush压缩压缩时图片不是png格式的bug
 
 ## 1.1.5
 
-    升级fis-optimizer-clean-css至v0.0.8
-    升级fis-optimizer-pngcrush至v0.0.4
+> 升级fis-optimizer-clean-css至v0.0.8
+> 升级fis-optimizer-pngcrush至v0.0.4
 
 * 升级clean-css依赖的版本至v1.0.12，并且不允许clean-css处理@import标记，由fis接管
 * 升级node-pngcrush版本至v0.0.6，超强的压缩效果
 
 ## 1.1.3
 
-    升级fis-kernel至v1.7.7
+> 升级fis-kernel至v1.7.7
 
 * 修复无后缀文件的处理失败的bug
 
 ## 1.1.2
 
-    升级fis-command-server至v0.6.1
+> 升级fis-command-server至v0.6.1
 
 * 采用spawn的detached参数技术替代实现nohup功能
 
 ## 1.1.1
 
-    升级fis-packager-map至v0.0.7
+> 升级fis-packager-map至v0.0.7
 
 * 修复打包配置不支持单独的正则bug
 
 ## 1.1.0
 
-    内置fis-optimizer-pngcrush插件
+> 内置fis-optimizer-pngcrush插件
 
 * 推出png图片自动压缩功能
 
 ## 1.0.10
 
-    升级fis-kernel至v1.7.5
+> 升级fis-kernel至v1.7.5
 
 * 修复文本文件缓存处理bug
 
 ## 1.0.9
 
-    升级fis-kernel至v1.7.4
-    升级fis-command-release至v0.8.4
+> 升级fis-kernel至v1.7.4
+> 升级fis-command-release至v0.8.4
 
 * 支持对图片进行pipe处理和缓存控制，为图片压缩做准备
 * 修复新建文件没有添加文件监听的bug
 
 ## 1.0.8
 
-    升级fis-kernel至v1.7.3
+> 升级fis-kernel至v1.7.3
 
 * 修复fis.util.clone的bug
 
 ## 1.0.7
 
-    升级fis-kernel至v1.7.2
-    升级fis-command-release至v0.8.3
-    升级fis-packager-map至v0.0.6
+> 升级fis-kernel至v1.7.2
+> 升级fis-command-release至v0.8.3
+> 升级fis-packager-map至v0.0.6
 
 * 自动上传限制了并发数，一次最多只开启5个并发的上传请求
 * 调整了打包策略，例如：
@@ -223,7 +223,7 @@
 
 ## 1.0.6
 
-    升级fis-kernel至v1.7.1
+> 升级fis-kernel至v1.7.1
 
 * roadmap.path支持使用 ``useMap`` 指定文件是否入map.json表。用法：
 
@@ -246,8 +246,8 @@
 
 ## 1.0.5
 
-    升级fis-kernel至v1.7.0
-    升级fis-packager-map至v0.0.5
+> 升级fis-kernel至v1.7.0
+> 升级fis-packager-map至v0.0.5
 
 * 用户可以使用namespaceConnector配置节点来定义命名空间连接符，默认为“:”。用法：
 
