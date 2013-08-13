@@ -19,6 +19,7 @@ fis.config.merge({
             css : 'clean-css',
             png : 'png-compressor'
         },
+        spriter : 'csssprites',
         packager : 'map'
     }
 });
