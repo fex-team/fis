@@ -5,6 +5,7 @@
 ## 1.2.4
 
 > 升级fis-kernel至v1.8.2
+>
 > 删除对 fis-optimizer-html-minifier 的依赖， 不再压缩html
 
 * 区分script标签的type属性，如果有type属性，而且属性值不为text/javascript，则当做html处理
@@ -39,6 +40,7 @@
 ## 1.2.3
 
 > 升级fis-kernel至v1.8.1
+>
 > 升级fis-optimizer-html-minifier至v0.0.6
 
 * 修复roadmap.path的release中出现多个'//'的时候被替换为空字符串的bug
@@ -137,6 +139,7 @@
 ## 1.1.7
 
 > 升级fis-kernel至v1.7.8
+>
 > 升级fis-command-release至v0.8.5
 
 * 允许没有pack配置仍然进入打包逻辑
@@ -190,6 +193,7 @@
 ## 1.0.9
 
 > 升级fis-kernel至v1.7.4
+>
 > 升级fis-command-release至v0.8.4
 
 * 支持对图片进行pipe处理和缓存控制，为图片压缩做准备
@@ -204,7 +208,9 @@
 ## 1.0.7
 
 > 升级fis-kernel至v1.7.2
+>
 > 升级fis-command-release至v0.8.3
+>
 > 升级fis-packager-map至v0.0.6
 
 * 自动上传限制了并发数，一次最多只开启5个并发的上传请求
@@ -247,6 +253,7 @@
 ## 1.0.5
 
 > 升级fis-kernel至v1.7.0
+>
 > 升级fis-packager-map至v0.0.5
 
 * 用户可以使用namespaceConnector配置节点来定义命名空间连接符，默认为“:”。用法：
