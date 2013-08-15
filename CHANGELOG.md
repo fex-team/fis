@@ -1,3 +1,9 @@
+## 1.2.7
+
+> 升级fis-postprocessor-jswrapper至v0.0.5
+
+* 如果文件已经自己手写了define，则不对其进行强制包装
+
 ## 1.2.6
 
 * 默认配置开启csssprites
