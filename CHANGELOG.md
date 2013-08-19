@@ -1,3 +1,10 @@
+## 1.2.9
+> 升级fis-spriter-csssprites至v0.1.2
+> 升级fis-optimizer-png-compressor至v0.0.2
+
+* PNG压缩工具支持Windows X64（64位node）
+* csssprites支持Windows X64（64位node）
+
 ## 1.2.8
 
 > 升级fis-command-release至v0.8.7
