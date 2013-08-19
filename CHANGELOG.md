@@ -1,3 +1,9 @@
+## 1.2.8
+
+> 升级fis-command-release至v0.8.7
+
+* 将--debug参数修改为--verbose
+
 ## 1.2.7
 
 > 升级fis-postprocessor-jswrapper至v0.0.5
