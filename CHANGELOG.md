@@ -2,6 +2,7 @@
 
 > 升级fis-kernel至v1.8.3
 
+* 完善核心的报错信息
 * 在类html文件中使用link标签嵌入资源可以保留link标签上的属性给编译后的style标签。例如：
 
     ```html
