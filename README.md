@@ -1,6 +1,6 @@
 ![fis logo](http://fis-dev.github.io/fis/images/wiki/logo.png?v=2)
 
-[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis)
+[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fis-dev/fis.png)](https://david-dm.org/fis-dev/fis)
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
