@@ -1,3 +1,19 @@
+## 1.3.0
+
+> 升级fis-kernel至v1.8.3
+
+* 在类html文件中使用link标签嵌入资源可以保留link标签上的属性给编译后的style标签。例如：
+
+    ```html
+    <link rel="stylesheet" type="text/css" href="pdf.css?__inline" media="print" data-test="msg">
+    ```
+    
+    编译后得到
+
+    ```html
+    <style type="text/css" media="print" data-test="msg">...</style>
+    ```
+
 ## 1.2.9
 > 升级fis-spriter-csssprites至v0.1.2
 >
