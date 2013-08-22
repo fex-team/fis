@@ -1,3 +1,9 @@
+## 1.3.1
+
+> 升级fis-kernel至v1.8.4
+
+* 修复html中使用 &lt;link href="xx.css?__inline"/&gt; 嵌入时的编译bug
+
 ## 1.3.0
 
 > 升级fis-kernel至v1.8.3
