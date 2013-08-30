@@ -1,3 +1,9 @@
+## 1.3.2
+
+> 升级fis-command-server至v0.6.2
+
+* 修复gnome下不能打开目录的bug
+
 ## 1.3.1
 
 > 升级fis-kernel至v1.8.4
