@@ -30,7 +30,7 @@ fis.cli = {};
 fis.cli.name = 'fis';
 
 //colors
-fis.cli.colors = require('colours');
+fis.cli.colors = require('colors');
 
 //commander object
 fis.cli.commander = null;
