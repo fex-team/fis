@@ -1,3 +1,9 @@
+## 1.3.3
+
+> 升级fis-command-server至v0.6.3
+
+* 支持没有php-cgi环境时，server启动一个简单的静态资源服务器
+
 ## 1.3.2
 
 > 升级fis-command-server至v0.6.2
