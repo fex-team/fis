@@ -1,3 +1,9 @@
+## 1.3.4
+
+> 升级colors至v0.6.2
+
+* 使用原版的colors，不再使用fix的版本
+
 ## 1.3.3
 
 > 升级fis-command-server至v0.6.3
