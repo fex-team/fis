@@ -1,3 +1,9 @@
+## 1.3.7
+
+> 升级fis-command-release至v0.8.8
+
+* 升级chokidar依赖到最新版的0.6.3，使用后台运行watch
+
 ## 1.3.6
 
 > 升级fis-command-server至v0.6.4
