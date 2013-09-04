@@ -1,3 +1,9 @@
+## 1.3.8
+
+> 升级fis-optimizer-uglify-js至v0.1.0
+
+* 升级fis-optimizer-uglify-js依赖的压缩工具uglify-js至v2.4.0
+
 ## 1.3.7
 
 > 升级fis-command-release至v0.8.8
