@@ -1,3 +1,9 @@
+## 1.3.9
+
+> 升级fis-spriter-csssprites至v0.1.3
+
+* 修复找不到图片时csssprite的替换处理操作，提升运行性能
+
 ## 1.3.8
 
 > 升级fis-optimizer-uglify-js至v0.1.0
