@@ -1,3 +1,9 @@
+## 1.4.0
+
+> 升级fis-kernel至v1.8.4
+
+* 将postpackager插件的调用时机提到map.json文件创建之前，如果有在postpackager插件中处理map.json的地方，请谨慎升级这个版本
+
 ## 1.3.9
 
 > 升级fis-spriter-csssprites至v0.1.3
