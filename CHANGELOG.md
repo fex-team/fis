@@ -1,10 +1,25 @@
+## 1.4.2
+
+> 升级fis-kernel至v1.8.6
+
+* 文件对象添加useCache属性，默认值是 ``true``，如果设置为false，则不会对编译结果建立缓存。例如：
+
+```javascript
+fis.config.set('roadmap.path', [
+    {
+        reg : '**.oncache.js',
+        useCache : false
+    }
+]);
+```
+
 ## 1.4.1
 
 > 升级commander至v1.3.2
 
 ## 1.4.0
 
-> 升级fis-kernel至v1.8.4
+> 升级fis-kernel至v1.8.5
 
 * 将postpackager插件的调用时机提到map.json文件创建之前，如果有在postpackager插件中处理map.json的地方， ``请谨慎升级这个版本``
 
