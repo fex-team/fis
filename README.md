@@ -1,6 +1,6 @@
 ![fis logo](http://fis.baidu.com/static/docs/img/logo_3b5cdda.png)
 
-[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fis-dev/fis.png)](https://david-dm.org/fis-dev/fis)
+[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fouber/fis.png)](https://david-dm.org/fouber/fis)
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
