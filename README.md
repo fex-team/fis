@@ -1,4 +1,4 @@
-![fis logo](http://fis-dev.github.io/fis/images/wiki/logo.png?v=2)
+![fis logo](http://fis.baidu.com/static/docs/img/logo_3b5cdda.png)
 
 [![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fis-dev/fis.png)](https://david-dm.org/fis-dev/fis)
 
@@ -21,7 +21,7 @@ fis的 **自动化/辅助开发工具** 被发布为一套 [npm包](https://npmj
 
 安装好fis之后，执行 **fis -v**，如果看到下面信息，恭喜，你已拥有fis的开发调试环境啦！
 
-![fis -v](http://fis-dev.github.io/fis/images/wiki/mac.version.png)
+![fis -v](http://fis.baidu.com/static/docs/img/mac.version_0e7880c.png)
 
 ## 三条命令，满足你的所有需求。
 
@@ -56,7 +56,7 @@ fis的 **自动化/辅助开发工具** 被发布为一套 [npm包](https://npmj
 
 install命令被设计用来 **各种安装**，无论你是想初始化一个模块，还是想下载一个前端基础库，亦或下载一份配置文件，总之但凡开发需要的，只要fis仓库里有，你就用它来安装就对了。 理论上任何资源都可以通过这个命令来获取，因为它的实现非常简单： **从fis代码仓库下载->解压到当前目录**。
 
-![fis install](http://fis-dev.github.io/fis/images/wiki/install.png)
+![fis install](http://fis.baidu.com/static/docs/img/install_43e5fd6.png)
 
 少说多练，咱们先来装个小东西瞧瞧：
 
@@ -181,7 +181,7 @@ fis.config.merge({
 
 fis release命令还有强大的自动上传功能，这篇文档不会详细介绍此功能的使用方式，但小编可以先发个截图表示一下。截图中显示的是我在windows下编译了firstblood项目，然后自动同步到我的linux测试机上的截图。之后我修改了index.html文件，它又帮我秒传上去了，嚯嚯！
 
-![自动上传功能](http://fis-dev.github.io/fis/images/wiki/deploy.png?v=3)
+![自动上传功能](http://fis.baidu.com/static/docs/img/deploy_92bd467.png)
 
 当你学习到这里时，恭喜你，你已掌握了F.I.S自动化/辅助开发工具的大部分功能，下面一条命令，会给你带来更爽的开发体验。
 
