@@ -1,12 +1,14 @@
 ![fis logo](http://fis.baidu.com/static/docs/img/logo_3b5cdda.png)
 
-[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fis-dev/fis.png)](https://david-dm.org/fis-dev/fis)
+[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fouber/fis.png)](https://david-dm.org/fouber/fis)
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
 > 解决前端工程的根本问题！
 
+## 视频教程
 
+[![视频教程](http://fis.baidu.com/static/docs/img/video_c729398.png)](http://v.youku.com/v_show/id_XNjA3NzQzNDY0.html)
 
 ## 安装
 
