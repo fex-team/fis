@@ -6,7 +6,9 @@
 
 > 解决前端工程的根本问题！
 
+## 视频教程
 
+[![视频教程](http://fis.baidu.com/static/docs/img/video_c729398.png)](http://v.youku.com/v_show/id_XNjA3NzQzNDY0.html)
 
 ## 安装
 
