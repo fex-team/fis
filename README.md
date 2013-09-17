@@ -120,7 +120,7 @@ release是一个非常强大的命令，它的主要任务就是进行代码的 
     $ fis release --md5 --dest ./output
     [WARNI] missing fis-conf.js
 
-这里有个小小的warinig，说找不到fis的配置文件，咱们不用管它，因为我们要体验 **零配置** 使用。接下来进入到firstblood/output目录看一下产出的文件，尤其是index.html，你将看到fis的自动化工具对 **html、js、css各自扩展了三种语言能力**：
+这里有个小小的warning，说找不到fis的配置文件，咱们不用管它，因为我们要体验 **零配置** 使用。接下来进入到firstblood/output目录看一下产出的文件，尤其是index.html，你将看到fis的自动化工具对 **html、js、css各自扩展了三种语言能力**：
 
 * **资源定位**：获取任何开发中所使用资源的线上路径；
 * **内容嵌入**：把一个文件的内容(文本)或者base64编码(图片)嵌入到另一个文件中；
