@@ -1,3 +1,16 @@
+## 1.4.6 / Tue Sep 17 2013
+
+> 升级fis-kernel至v1.8.8
+
+* project配置节点支持include、exclude配置，用以排除项目中不是源码的文件。它与roadmap.path中的release为false功能一样，只是这里是全局的配置而已。用法：
+
+```javascript
+//支持通配，请从项目根目录开始写起，如果配了include，则要发布的源码只匹配的文件。
+fis.config.set('project.include', '/static/**');
+//也支持正则
+fis.confis.set('project.exclude', /\/_debug\//i);
+```
+
 ## 1.4.5 / Tue Sep 17 2013
 
 > 升级fis-postprocessor-jswrapper至v0.0.6
