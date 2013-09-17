@@ -1,3 +1,9 @@
+## 1.4.7 / Tue Sep 17 2013
+
+> 升级fis-command-release至v0.8.9
+
+* 修复超多文件时发布任务队列递归爆栈的bug
+
 ## 1.4.6 / Tue Sep 17 2013
 
 > 升级fis-kernel至v1.8.8
