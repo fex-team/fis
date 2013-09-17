@@ -1,3 +1,14 @@
+## 1.4.5 / Tue Sep 17 2013
+
+> 升级fis-postprocessor-jswrapper至v0.0.6
+
+* 支持模板包装方式，配置为：
+
+```javascript
+//${content}作为源码替换的标记
+fis.config.set('settings.postprocessor.jswrapper.tempalte', '!function(){${content}}();');
+```
+
 ## 1.4.4 / Sun Sep 15 2013
 
 > 升级fis-kernel至v1.8.7
