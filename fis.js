@@ -51,7 +51,11 @@ fis.cli.help = function(){
         prefixLen = prefix.length;
     
     //built-in commands
-    var deps = {};
+    var deps = {
+        'fis-command-release' : true,
+        'fis-command-install' : true,
+        'fis-command-server' : true
+    };
     //from package.json dependencies
     fis.util.merge(deps, fis.cli.info.dependencies);
     //traverse
