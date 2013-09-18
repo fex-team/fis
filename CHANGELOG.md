@@ -1,3 +1,9 @@
+## 1.4.10 / Wed Sep 18 2013
+
+> 升级fis-kernel至v1.8.11
+
+* 修复fis.uri.getId如果指向一个目录时居然会返回id的bug
+
 ## 1.4.9 / Wed Sep 18 2013
 
 > 升级fis-kernel至v1.8.10
