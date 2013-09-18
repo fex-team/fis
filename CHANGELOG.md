@@ -1,3 +1,11 @@
+## 1.4.8 / Wed Sep 18 2013
+
+> 升级fis-kernel至v1.8.9
+
+* 新增asp.NET体系下的文件识别
+* 对于不是图片也也不是文本的文件设置useCompile为false
+* 修复uglify插件报错不识别的bug
+
 ## 1.4.7 / Tue Sep 17 2013
 
 > 升级fis-command-release至v0.8.9
