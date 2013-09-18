@@ -1,3 +1,7 @@
+## 1.4.11 / Thu Sep 19 2013
+
+* 包装fis的系统能自动识别release\install\server三条命令
+
 ## 1.4.10 / Wed Sep 18 2013
 
 > 升级fis-kernel至v1.8.11
