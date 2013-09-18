@@ -1,3 +1,23 @@
+## 1.4.9 / Wed Sep 18 2013
+
+> 升级fis-kernel至v1.8.10
+>
+> 升级fis-command-server至v0.6.5
+>
+> 升级fis-command-release至v0.8.10
+
+* fis server clean支持使用 ``--include`` 、 ``--exclude`` 参数来指定清除调试目录时的过滤器，例如：
+
+    ```bash
+    fis server clean --include template_c/**
+    ```
+
+* fis release 支持使用 ``-C`` 或者 ``--conf`` 参数制定配置文件名称，默认是 ``fis-conf.js``，配置文件请尽量使用 ``fis-`` 作为文件名前缀，并放置到项目根目录下。例如：
+
+    ```bash
+    fis release --conf fis-conf-dev.js
+    ```
+
 ## 1.4.8 / Wed Sep 18 2013
 
 > 升级fis-kernel至v1.8.9
