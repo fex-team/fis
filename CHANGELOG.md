@@ -1,3 +1,9 @@
+## 1.4.12 / Thu Sep 19 2013
+
+> 升级fis-kernel至v1.8.12
+
+* 修复csssprite针对单文件处理之后文件发布时md5不匹配的bug
+
 ## 1.4.11 / Thu Sep 19 2013
 
 * 包装fis的系统能自动识别release\install\server三条命令
