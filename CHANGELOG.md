@@ -1,3 +1,32 @@
+## 1.4.13 / Wed Sep 25 2013
+
+> 升级fis-kernel至v1.8.13
+
+* 支持配置文件的md5连接符：
+
+    ```javascript
+    //默认是'_'
+    fis.config.set('project.md5Connector', '.');
+    ```
+
+* 修复定义文件query属性时输出的bug
+
+## 1.4.12 / Thu Sep 19 2013
+
+> 升级fis-kernel至v1.8.12
+
+* 修复csssprite针对单文件处理之后文件发布时md5不匹配的bug
+
+## 1.4.11 / Thu Sep 19 2013
+
+* 包装fis的系统能自动识别release\install\server三条命令
+
+## 1.4.10 / Wed Sep 18 2013
+
+> 升级fis-kernel至v1.8.11
+
+* 修复fis.uri.getId如果指向一个目录时居然会返回id的bug
+
 ## 1.4.9 / Wed Sep 18 2013
 
 > 升级fis-kernel至v1.8.10
