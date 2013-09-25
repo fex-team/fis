@@ -1,3 +1,16 @@
+## 1.4.13 / Wed Sep 25 2013
+
+> 升级fis-kernel至v1.8.13
+
+* 支持配置文件的md5连接符：
+
+    ```javascript
+    //默认是'_'
+    fis.config.set('project.md5Connector', '.');
+    ```
+
+* 修复定义文件query属性时输出的bug
+
 ## 1.4.12 / Thu Sep 19 2013
 
 > 升级fis-kernel至v1.8.12
