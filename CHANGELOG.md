@@ -1,3 +1,9 @@
+## 1.4.14 / Thu Sep 26 2013
+
+> 升级fis-kernel至v1.8.14
+
+* html不会自动添加对useMap为false的文件的依赖
+
 ## 1.4.13 / Wed Sep 25 2013
 
 > 升级fis-kernel至v1.8.13
