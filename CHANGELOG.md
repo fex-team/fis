@@ -7,7 +7,7 @@
 > 升级fis-spriter-csssprites至v0.1.4
 
 * 修改 fis release ``-C`` &lt;path&gt; 参数为 fis release ``-f`` &lt;path&gt;
-* 升级压缩器插件，减少文件体积，提升性能
+* 升级压缩器插件，减少文件体积，提升安装速度
 
 ## 1.4.14 / Thu Sep 26 2013
 
