@@ -1,3 +1,14 @@
+## 1.4.15 / Fri Sep 27 2013
+
+> 升级fis-command-release至v0.8.11
+>
+> 升级fis-optimizer-png-compressor至v0.0.3
+>
+> 升级fis-spriter-csssprites至v0.1.4
+
+* 修改 fis release ``-C`` &lt;path&gt; 参数为 fis release ``-f`` &lt;path&gt;
+* 升级压缩器插件，减少文件体积，提升性能
+
 ## 1.4.14 / Thu Sep 26 2013
 
 > 升级fis-kernel至v1.8.14
