@@ -1,3 +1,9 @@
+## 1.4.16 / Mon Sep 30 2013
+
+> 升级fis-kernel至v1.8.15
+
+* 修复url中有hash路径时识别不到文件的bug
+
 ## 1.4.15 / Fri Sep 27 2013
 
 > 升级fis-command-release至v0.8.11
@@ -7,7 +13,7 @@
 > 升级fis-spriter-csssprites至v0.1.4
 
 * 修改 fis release ``-C`` &lt;path&gt; 参数为 fis release ``-f`` &lt;path&gt;
-* 升级压缩器插件，减少文件体积，提升性能
+* 升级压缩器插件，减少文件体积，提升安装速度
 
 ## 1.4.14 / Thu Sep 26 2013
 
