@@ -1,3 +1,9 @@
+## 1.4.16 / Mon Sep 30 2013
+
+> 升级fis-kernel至v1.8.15
+
+* 修复url中有hash路径时识别不到文件的bug
+
 ## 1.4.15 / Fri Sep 27 2013
 
 > 升级fis-command-release至v0.8.11
