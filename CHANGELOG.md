@@ -1,3 +1,9 @@
+## 1.4.17 / Sun Oct 06 2013
+
+> 升级fis-kernel至v1.8.16
+
+* 不强制map.json的useHash属性为false，交由roadmap.path配置决定。
+
 ## 1.4.16 / Mon Sep 30 2013
 
 > 升级fis-kernel至v1.8.15
