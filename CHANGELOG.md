@@ -1,3 +1,9 @@
+## 1.4.18 / Thu Oct 10 2013
+
+> 升级fis-packager-map至v0.0.8
+
+* 打包css时删除多余的@charset标记。
+
 ## 1.4.17 / Sun Oct 06 2013
 
 > 升级fis-kernel至v1.8.16
