@@ -1,3 +1,9 @@
+## 1.4.19 / Thu Oct 10 2013
+
+> 升级fis-command-release至v0.8.12
+
+* 修复deploy的include、exclude匹配的是file.subpath的bug，应该是匹配file.release
+
 ## 1.4.18 / Thu Oct 10 2013
 
 > 升级fis-packager-map至v0.0.8
