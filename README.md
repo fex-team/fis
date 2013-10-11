@@ -215,6 +215,6 @@ fis的调试服务器依赖于用户本地的 **jre** 和 **php-cgi** 环境，�
 
 ## 更多资料
 
-* [wiki](https://github.com/fis-dev/fis/wiki)
+* 详细使用手册 [wiki](https://github.com/fis-dev/fis/wiki)
 * 纯前端组件化 [demo](https://github.com/fouber/modjs-todo-demo/)
 * [spmx](https://github.com/fouber/spmx) 通过包装fis得到适应seajs架构的集成解决方案
