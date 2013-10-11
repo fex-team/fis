@@ -19,7 +19,6 @@ fis的 **自动化/辅助开发工具** 被发布为一套 [npm包](https://npmj
 * 操作系统：任何能安装 [nodejs](http://nodejs.org/) 的操作系统
 * node版本：>= v0.8.0
 * jre版本：>= v1.5.0 _【如果不需要本地调试服务器，可以忽略java环境要求】_
-* php-cgi版本：>= v5.0.0 _【如果不需要本地调试服务器，可以忽略php-cgi环境要求】_
 
 安装好fis之后，执行 **fis -v**，如果看到下面信息，恭喜，你已拥有fis的开发调试环境啦！
 
@@ -213,3 +212,9 @@ fis的调试服务器依赖于用户本地的 **jre** 和 **php-cgi** 环境，�
     $ fis release --md5 --optimize --watch --live
 
 现在，fis已经将编译好的代码发布到调试服务器中啦，刷新浏览器，你会看到我们的firstblood示例项目的运行效果。此时，你修改项目文件都将自动编译并发布到调试服务器目录下，看看页面源代码，你会发现更多惊喜！顺便恭喜你，至此你已完全掌握了fis的基本用法，你可以借助fis这个利器去挑战大型商业产品开发了！
+
+## 更多资料
+
+* 详细使用手册 [wiki](https://github.com/fis-dev/fis/wiki)
+* 纯前端组件化 [demo](https://github.com/fouber/modjs-todo-demo/)
+* [spmx](https://github.com/fouber/spmx) 通过包装fis得到适应seajs架构的集成解决方案
