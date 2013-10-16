@@ -44,7 +44,7 @@ then
 	#tieba
 	rm -rf ${TIEBA_OUTPUT_PATH}/output_new
 	cd ${TIEBA_CODE_PATH}
-	node ${FIS_PATH}/bin/fis release -md ${TIEBA_OUTPUT_PATH}/output_new
+	node ${FIS_PATH}/bin/fis release -md ${TIEBA_OUTPUT_PATH}/output_new --no-color
 	echo $v > ${TIEBA_OUTPUT_PATH}/output_new/fis_version.txt
     chmod 777 ${TIEBA_OUTPUT_PATH}
 	
@@ -68,7 +68,7 @@ else
 	#tieba
 	rm -rf ${TIEBA_OUTPUT_PATH}/output_old
 	cd ${TIEBA_CODE_PATH}
-	fis release -md ${TIEBA_OUTPUT_PATH}/output_old
+	fis release -md ${TIEBA_OUTPUT_PATH}/output_old --no-color
 	echo $v > ${TIEBA_OUTPUT_PATH}/output_old/fis_version.txt
     chmod 777 -R ${TIEBA_OUTPUT_PATH}/output_old
 	
