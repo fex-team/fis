@@ -7,4 +7,5 @@ npm install
 npm install fis-preprocessor-inline
 npm install fis-preprocessor-extlang
 npm install fis-parser-less
+npm install fis-preprocessor-image-set
 sh ${TEST_PATH}/release.sh new
