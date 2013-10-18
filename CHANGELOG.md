@@ -1,3 +1,28 @@
+## 1.5.0 / Fri Oct 18 2013
+
+> 升级fis-command-release至v0.9.0
+
+* 支持发布前替换文本内容，例如：
+
+```javascript
+fis.config.set('deploy', {
+    d1 : {
+        to : '../output-1',
+        replace : {
+            from : 'http://www.online.com',
+            to : 'http://www.offline.com'
+        }
+    },
+    d2 : {
+        to : '../output-2',
+        replace : {
+            from : /(http:\/\/www)\.online\.(com)/g,
+            to : '$1.offline.$2'
+        }
+    }
+});
+```
+
 ## 1.4.19 / Thu Oct 10 2013
 
 > 升级fis-command-release至v0.8.12
