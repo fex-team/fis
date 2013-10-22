@@ -1,6 +1,6 @@
 ![fis logo](http://fis.baidu.com/static/docs/img/logo_3b5cdda.png)
 
-[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fouber/fis.png)](https://david-dm.org/fouber/fis)
+[![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fis-dev/fis.png)](https://david-dm.org/fis-dev/fis)
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
@@ -217,4 +217,5 @@ fis的调试服务器依赖于用户本地的 **jre** 和 **php-cgi** 环境，�
 
 * 详细使用手册 [wiki](https://github.com/fis-dev/fis/wiki)
 * 纯前端组件化 [demo](https://github.com/fouber/modjs-todo-demo/)
+* PHP组件化解决方案 [phiz](https://github.com/fouber/phiz/)
 * [spmx](https://github.com/fouber/spmx) 通过包装fis得到适应seajs架构的集成解决方案
