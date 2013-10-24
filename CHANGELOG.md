@@ -1,3 +1,9 @@
+## 1.5.1 / Thu Oct 24 2013
+
+> 升级fis-command-release至v0.9.1
+
+* 使用fork版的livereload-server
+
 ## 1.5.0 / Fri Oct 18 2013
 
 > 升级fis-command-release至v0.9.0
