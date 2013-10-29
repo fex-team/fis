@@ -219,3 +219,4 @@ fis的调试服务器依赖于用户本地的 **jre** 和 **php-cgi** 环境，�
 * [demo](https://github.com/fouber/modjs-todo-demo/) 纯前端组件化解决方案
 * [phiz](https://github.com/fouber/phiz/) PHP组件化解决方案
 * [spmx](https://github.com/fouber/spmx) 通过包装fis得到适应seajs架构的集成解决方案
+* [sublime plugin](https://github.com/yuanfang829/fis-sublime-command) 支持FIS编译的sublime插件，可以替代watch功能
