@@ -1,3 +1,9 @@
+## 1.5.2 / Thu Oct 24 2013
+
+> 升级fis-kernel至v1.8.17
+
+* 修复css中url(xxx )代码xx之后有空格的bug
+
 ## 1.5.1 / Thu Oct 24 2013
 
 > 升级fis-command-release至v0.9.1
