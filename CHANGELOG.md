@@ -1,3 +1,28 @@
+## 1.5.3 / Thu Oct 31 2013
+
+> 升级fis-kernel至v1.8.19
+>
+> 升级fis-postpreprocessor-jswrapper至v0.0.8
+
+* 修复preprocessor插件中不能插入内置require语法的bug，内置编译语法被修改为&lt;&lt;&lt;require:path&gt;&gt;&gt;
+* jswrapper插件支持template参数
+
+## settings
+
+    $ vi path/to/project/fis-conf.js
+
+```javascript
+fis.config.merge({
+    settings : {
+        postprocessor : {
+            jswrapper : {
+                template : 'define("${id}", function(require, exports, module){ ${content} });',
+            }
+        }
+    }
+});
+```
+
 ## 1.5.2 / Thu Oct 24 2013
 
 > 升级fis-kernel至v1.8.17
