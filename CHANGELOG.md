@@ -1,3 +1,9 @@
+## 1.5.4 / Tue Nov 05 2013
+
+> 升级fis-command-release至v0.9.2
+
+* 支持在deploy阶段给isHtmlLike文件的&lt;/body&gt;前自动插入livereload.js脚本，从而告别插件
+
 ## 1.5.3 / Thu Oct 31 2013
 
 > 升级fis-kernel至v1.8.19
