@@ -1,3 +1,9 @@
+## 1.5.5 / Tue Nov 05 2013
+
+> 升级fis-command-release至v0.9.3
+
+* 修复fis release命令的 ``-r`` 参数指定了项目根目录之后读取配置文件路径错误的bug
+
 ## 1.5.4 / Tue Nov 05 2013
 
 > 升级fis-command-release至v0.9.2
