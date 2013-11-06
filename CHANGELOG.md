@@ -7,20 +7,24 @@
 * 在js中使用__inline()语法来嵌入资源时，如果被嵌入的文件是一个 ``文本文件``，并且文件的 ``isJsLike`` 不为true的话，则会把文件以字符串的形式嵌入到js中。比如：
 
     ```javascript
-    var html = __inline('a.html');
-    var css = __inline('a.css');
-    var txt = __inline('a.txt');
+    __inline('a.js');                //embed another js file
+    var html = __inline('a.html');   //embed html content
+    var css = __inline('a.css');     //embed css content
+    var txt = __inline('a.txt');     //embed text content
+    var img = __inline('a.png');     //embed image
     ```
     
     编译后得到：
 
     ```javascript
-    var html = "<h1>the content of a.html</h1>";
-    var css = "body{\n    color: red;\n}";
-    var txt = "hello world\nthis is the content of a.txt";
+    alert('this is content of a.js');                //embed another js file
+    var html = "<h1>the content of a.html</h1>";   //embed html content
+    var css = "body{\n    color: red;\n}";     //embed css content
+    var txt = "hello world\nthis is the content of a.txt";     //embed text content
+    var img = 'data:image/gif;base64,R0lGODlhDgGBALMAAGBn6eYxLvvy9PnKyfO...Jzna6853wjKc850nPeoYgAgA7';     //embed image
     ```
     
-    这种修改会影响到前端模板，如果你当前使用前端模板时，把模板文件的属性标记为 ``isHtmlLike`` 为 ``true`` 的话，会导致编译得到的模板函数变成了字符串插入到js中，请根据情况适当修改这里的配置，有问题可以在issues中留言。
+    这种修改会 **影响到前端模板的个别使用情况**，你当前使用前端模板时，如果把模板文件的属性标记为 ``isHtmlLike`` 为 ``true`` 的话，会导致编译得到的模板函数变成了字符串插入到js中，请根据情况适当修改这样的配置，有问题可以在issues中留言。
     
 * 添加 ``.vm`` 后缀为文本文件，并且 ``isHtmlLike`` 为true，vm文件是velocity模板引擎文件的常用后缀。
 
