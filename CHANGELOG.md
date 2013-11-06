@@ -1,3 +1,29 @@
+## 1.5.6 / Wed Nov 06 2013
+
+> 升级fis-kernel至v1.9.0
+
+    注意，这可能是一个需要注意的升级，有一定的兼容性问题。
+    
+* 在js中使用__inline()语法来嵌入资源时，如果被嵌入的文件是一个 ``文本文件``，并且文件的 ``isJsLike`` 不为true的话，则会把文件以字符串的形式嵌入到js中。比如：
+
+    ```javascript
+    var html = __inline('a.html');
+    var css = __inline('a.css');
+    var txt = __inline('a.txt');
+    ```
+    
+    编译后得到：
+
+    ```javascript
+    var html = "<h1>the content of a.html</h1>";
+    var css = "body{\n    color: red;\n}";
+    var txt = "hello world\nthis is the content of a.txt";
+    ```
+    
+    这种修改会影响到前端模板，如果你当前使用前端模板时，把模板文件的属性标记为 ``isHtmlLike`` 为 ``true`` 的话，会导致编译得到的模板函数变成了字符串插入到js中，请根据情况适当修改这里的配置，有问题可以在issues中留言。
+    
+* 添加 ``.vm`` 后缀为文本文件，并且 ``isHtmlLike`` 为true，vm文件是velocity模板引擎文件的常用后缀。
+
 ## 1.5.5 / Tue Nov 05 2013
 
 > 升级fis-command-release至v0.9.3
