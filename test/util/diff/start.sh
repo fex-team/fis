@@ -7,6 +7,8 @@ if [ -f "result/report.xml" ];then
 fi
 sh product_code.sh
 sh new_fis_ready.sh
+chmod +x old_fis_scp.sh
+./old_fis_scp.sh
 chmod +x old_fis_ready.sh
 ./old_fis_ready.sh
 rm -rf result/*.html
