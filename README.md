@@ -19,10 +19,10 @@
 * 自动生成静态资源表（map.json），可用于 [连接前后端开发框架](https://github.com/fis-dev/fis/wiki/基于map.json的前后端架构设计指导)
 * 所有静态资源自动加 ``md5版本戳``
 * 支持给所有静态资源添加域名前缀
-* 非常易用的自动 ``csssprites``
 * 灵活可扩展的插件系统，可对构建过程和命令功能进行扩展，现已发布N多 [插件](https://npmjs.org/search?q=fis)
 * 轻松配置插件可以使用 [less](https://github.com/fouber/fis-parser-less)、[coffee](https://github.com/fouber/fis-parser-coffee-script)、[markdown](https://github.com/fouber/fis-parser-marked)、[jade](https://npmjs.org/package/fis-parser-jade)等语言开发
-* 内置png图片压缩插件，采用c++编写的node扩展，具有极高的性能，支持 ``将png24压缩为png8``
+* 内置 [css sprites插件](https://github.com/xiangshouding/fis-spriter-csssprites)
+* 内置 [png图片压缩插件](https://github.com/fis-dev/fis-optimizer-png-compressor)，采用c++编写的node扩展，具有极高的性能，支持 [将png24压缩为png8](https://github.com/fis-dev/fis-optimizer-png-compressor)
 * 内置本地开发调试服务器，支持运行 ``jsp``、``php``
 * 支持文件监听，保存即发布
 * 支持浏览器自动刷新，保存即刷新
