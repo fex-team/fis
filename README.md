@@ -30,21 +30,19 @@
 * 超低学习成本，只须记忆 ``3`` 条命令即可完成开发
 * 抹平编码差异，开发中无论是gbk、gb2312、utf8、utf8-bom等编码的文件，输出时都能统一指定为utf8无bom（默认）或者gbk文件
 
-## Demos
-
-* [纯前端组件化方案](https://github.com/fouber/modjs-todo-demo/)
-* [官网示例](http://fis.baidu.com/#section-6)
-
 ## 快速上手
 
-* [安装](https://github.com/fis-dev/fis/wiki/快速上手) [![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis)
+* [安装](https://github.com/fis-dev/fis/wiki/快速上手)
     * npm install **-g** fis
 * 三条命令，满足你的所有开发需求：
     * [fis install &lt;name&gt;](https://github.com/fis-dev/fis/wiki/快速上手#fis-install-name)
     * [fis release &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#fis-release-options)
     * [fis server &lt;command&gt; &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#fis-server-command-options)
+* 试手样例
+    * [纯前端组件化方案](https://github.com/fouber/modjs-todo-demo/)
+    * [fis官网](http://fis.baidu.com/#section-6)
 
-## 三种语言能力
+## 三种语言能力扩展
 
 * [关于三种语言能力](https://github.com/fis-dev/fis/wiki/三种语言能力)
 * 在html中：[定位资源](https://github.com/fis-dev/fis/wiki/在html中定位资源)、[嵌入资源](https://github.com/fis-dev/fis/wiki/在html中嵌入资源)、[声明依赖](https://github.com/fis-dev/fis/wiki/在html中声明依赖)
@@ -57,7 +55,7 @@
 * [插件调用机制](https://github.com/fis-dev/fis/wiki/插件调用机制)
 * [插件扩展点列表](https://github.com/fis-dev/fis/wiki/插件扩展点列表)
 
-## 配置API
+## 配置文档
 
 * [零配置](https://github.com/fis-dev/fis/wiki/配置API)
 * [使用配置文件](https://github.com/fis-dev/fis/wiki/配置API)
