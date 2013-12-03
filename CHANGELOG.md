@@ -1,3 +1,17 @@
+## 1.6.0 / Tue Dec 03 2013
+
+> 升级fis-spriter-csssprites至v0.1.7
+
+* 修复图片使用query时不能合并csssprite的bug
+
+> 升级fis-optimizer-clean-css至v0.0.9
+
+* 升级依赖的clean-css包至v2.0.2
+
+> 升级fis-optimizer-uglify-js至v0.1.1
+
+* 升级依赖的uglify-js包至v2.4.6
+
 ## 1.5.8 / Tue Dec 03 2013
 
 > 升级fis-command-release至v0.9.4
