@@ -1,3 +1,26 @@
+## 1.5.7 / Tue Dec 03 2013
+
+> 升级fis-spriter-csssprites至v0.1.6
+
+* 新增矩阵布局算法，配置方法：
+
+    ```javascript
+    //此配置的默认值是'linear'，线性布局
+    fis.config.set('settings.spriter.csssprites.layout', 'matrix');
+    ```
+
+> 升级fis-kernel至v1.9.0
+
+* 不同的解决方案使用不同的缓存目录，彼此不会干扰
+
+> 升级fis-command-server至v0.6.6
+
+* 不同的解决方案使用不同的缓存目录，彼此不会干扰
+
+> 升级fis-packager-map至v0.0.9
+
+* 修复资源不如表时打包引用会访问的bug
+
 ## 1.5.6 / Wed Nov 06 2013
 
 > 升级fis-kernel至v1.9.0
