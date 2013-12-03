@@ -1,3 +1,16 @@
+## 1.5.8 / Tue Dec 03 2013
+
+> 升级fis-command-release至v0.9.4
+> 
+> 升级fis-command-server至v0.6.7
+
+* 支持从环境变量中读取 ``FIS_SERVER_DOCUMENT_ROOT`` 变量作为server的文档根目录
+
+> 升级fis-kernel值v1.9.2
+
+* 支持从环境变量中读取 ``FIS_TEMP_DIR`` 变量作为fis的缓存目录
+
+
 ## 1.5.7 / Tue Dec 03 2013
 
 > 升级fis-spriter-csssprites至v0.1.6
