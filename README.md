@@ -79,6 +79,12 @@
     * [modules.spriter](https://github.com/fis-dev/fis/wiki/配置API#modulesspriter)
     * [modules.postpackager](https://github.com/fis-dev/fis/wiki/配置API#modulespostpackager)
     * [settings](https://github.com/fis-dev/fis/wiki/配置API#settings)
+* 内置插件运行配置
+    * [settings.postprocessor.jswrapper](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingspostprocessorjswrapper)
+    * [settings.optimizer.uglify-js](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsoptimizeruglify-js)
+    * [settings.optimizer.clean-css](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsoptimizerclean-css)
+    * [settings.optimizer.png-compressor](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsoptimizerpng-compressor)
+    * [settings.spriter.csssprites](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsspritercsssprites)
 * 目录规范与域名配置
     * [roadmap.path](https://github.com/fis-dev/fis/wiki/配置API#roadmappath)
     * [roadmap.ext](https://github.com/fis-dev/fis/wiki/配置API#roadmapext)
