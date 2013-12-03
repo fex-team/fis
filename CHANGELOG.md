@@ -6,7 +6,7 @@
 
 > 升级fis-optimizer-clean-css至v0.0.9
 
-* 升级依赖的clean-css包至v2.0.2
+* 升级依赖的clean-css包至v1.1.7
 
 > 升级fis-optimizer-uglify-js至v0.1.1
 
