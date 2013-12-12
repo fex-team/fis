@@ -101,6 +101,8 @@
 
 ## 更多资料
 
+* [fistool](https://github.com/kaven85/fistool) 可视化界面工具
+* [gois](https://github.com/xiangshouding/gois) go语言组件化解决方案
 * [phiz](https://github.com/fouber/phiz/) PHP组件化解决方案
 * [spmx](https://github.com/fouber/spmx) 通过包装fis得到适应seajs架构的集成解决方案
 * [sublime plugin](https://github.com/yuanfang829/fis-sublime-command) 支持FIS编译的sublime插件，可以替代watch功能

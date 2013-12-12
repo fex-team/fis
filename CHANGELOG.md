@@ -1,3 +1,9 @@
+## 1.6.1 / Thu Dec 12 2013
+
+> 升级fis-kernel至v1.9.3
+
+* roadmap.path支持useParser，usePreprocessor，useStandard，usePostprocessor，useLint，useTest，useOptimizer属性，用以细粒度控制编译过程
+
 ## 1.6.0 / Tue Dec 03 2013
 
 > 升级fis-spriter-csssprites至v0.1.7
@@ -20,7 +26,7 @@
 
 * 支持从环境变量中读取 ``FIS_SERVER_DOCUMENT_ROOT`` 变量作为server的文档根目录
 
-> 升级fis-kernel值v1.9.2
+> 升级fis-kernel至v1.9.2
 
 * 支持从环境变量中读取 ``FIS_TEMP_DIR`` 变量作为fis的缓存目录
 
@@ -236,10 +242,10 @@ fis.config.set('deploy', {
     fis server clean --include template_c/**
     ```
 
-* fis release 支持使用 ``-C`` 或者 ``--conf`` 参数制定配置文件名称，默认是 ``fis-conf.js``，配置文件请尽量使用 ``fis-`` 作为文件名前缀，并放置到项目根目录下。例如：
+* fis release 支持使用 ``-f`` 或者 ``--file`` 参数制定配置文件名称，默认是 ``fis-conf.js``，配置文件请尽量使用 ``fis-`` 作为文件名前缀，并放置到项目根目录下。例如：
 
     ```bash
-    fis release --conf fis-conf-dev.js
+    fis release --file fis-conf-dev.js
     ```
 
 ## 1.4.8 / Wed Sep 18 2013
