@@ -3,6 +3,9 @@
 TEST_PATH=/home/work/repos/fis/test/util/diff
 cd ${TEST_PATH}
 
+PLACE_SVN=https://svn.baidu.com/app/search/lbs-webapp/trunk/pcmap/place
+PLACE_DIR=./product_code/place
+
 BATMAN_SVN=https://svn.baidu.com/app/search/lbs-webapp/trunk/mmap/batman
 BATMAN_DIR=./product_code/batman
 
@@ -12,6 +15,13 @@ WENKU_DIR=./product_code/wenku
 TIEBA_SVN=https://svn.baidu.com/app/search/forum/branches/fe/pad/xpad/pb/xpadpb_1-0-0_BRANCH
 TIEBA_DIR=./product_code/tieba
 
+HAO123_SVN=https://svn.baidu.com/app/global/hao123/trunk/fe
+HAO123_DIR=./product_code/hao123
+
+svn co --username=tianlili --password=tianlili --no-auth-cache ${PLACE_SVN} ${PLACE_DIR}
 svn co --username=tianlili --password=tianlili --no-auth-cache ${BATMAN_SVN} ${BATMAN_DIR}
 svn co --username=tianlili --password=tianlili --no-auth-cache ${WENKU_SVN} ${WENKU_DIR}
 svn co --username=tianlili --password=tianlili --no-auth-cache ${TIEBA_SVN} ${TIEBA_DIR}
+svn co --username=tianlili --password=tianlili --no-auth-cache ${HAO123_SVN}/common ${HAO123_DIR}/common
+svn co --username=tianlili --password=tianlili --no-auth-cache ${HAO123_SVN}/home ${HAO123_DIR}/home
+svn co --username=tianlili --password=tianlili --no-auth-cache ${HAO123_SVN}/lv2 ${HAO123_DIR}/lv2
