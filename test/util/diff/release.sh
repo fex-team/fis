@@ -23,6 +23,10 @@ HAO123_CODE_PATH=${TEST_PATH}/product_code/hao123
 HAO123_OUTPUT_PATH=${TEST_PATH}/product_output/hao123
 HAO123_MODULES=(common home lv2)
 
+SUPERMAN_CODE_PATH=${TEST_PATH}/product_code/superman
+SUPERMAN_OUTPUT_PATH=${TEST_PATH}/product_output/superman
+SUPERMAN_MODULES=(transit place common index addr feedback drive walk third taxi user)
+
 #获取fis version
 if [ $1 = 'new' ]
 then
@@ -83,6 +87,17 @@ then
     done
     echo $v > ${HAO123_OUTPUT_PATH}/output_new/fis_version.txt
     chmod 777 ${HAO123_OUTPUT_PATH}
+
+    #superman
+    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_new
+    for module in ${SUPERMAN_MODULES[@]}
+    do
+        cd ${SUPERMAN_CODE_PATH}/$module
+        fisp release -copmd ${SUPERMAN_OUTPUT_PATH}/output_new --no-color
+    done
+    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_new/fis_version.txt
+    chmod 777 ${SUPERMAN_OUTPUT_PATH}
+
 else
 	#wenku
 	rm -rf ${WENKU_OUTPUT_PATH}/output_old
@@ -127,4 +142,15 @@ else
     done
     echo $v > ${HAO123_OUTPUT_PATH}/output_old/fis_version.txt
     chmod 777 -R ${HAO123_OUTPUT_PATH}/output_old
+
+    #superman
+    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_old
+    for module in ${SUPERMAN_MODULES[@]}
+    do
+        cd ${SUPERMAN_CODE_PATH}/$module
+        fisp release -copmd ${SUPERMAN_OUTPUT_PATH}/output_old --no-color
+    done
+    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_old/fis_version.txt
+    chmod 777 -R ${SUPERMAN_OUTPUT_PATH}/output_old
+
 fi

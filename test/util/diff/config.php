@@ -7,6 +7,7 @@ if(!defined('BATMAN_PATH')) define('BATMAN_PATH',DIFF_ROOT_PATH.'product_output/
 if(!defined('PLACE_PATH')) define('PLACE_PATH',DIFF_ROOT_PATH.'product_output/place/' );
 if(!defined('TIEBA_PATH')) define('TIEBA_PATH',DIFF_ROOT_PATH.'product_output/tieba/' );
 if(!defined('HAO123_PATH')) define('HAO123_PATH',DIFF_ROOT_PATH.'product_output/hao123/' );
+if(!defined('SUPERMAN_PATH')) define('SUPERMAN_PATH',DIFF_ROOT_PATH.'product_output/superman/' );
 
 $config = array(
     'product'=>array(      //产品线目录
@@ -44,6 +45,13 @@ $config = array(
             'oldoutputdir' => HAO123_PATH.'output_old',  //使用旧版本编译后的产出
             "modules" =>"common,home,lv2", //待编译的模块
             'result' => HAO123_PATH.'result/'
+        ),
+        'superman'=>array(
+            'name'=>'superman',
+            'newoutputdir' => SUPERMAN_PATH.'output_new',    //使用新版本编译后的产出
+            'oldoutputdir' => SUPERMAN_PATH.'output_old',  //使用旧版本编译后的产出
+            "modules" =>"transit,place,common,index,addr,feedback,drive,walk,third,taxi,user", //待编译的模块
+            'result' => SUPERMAN_PATH.'result/'
         )
     ),
     'smarty' => array(
