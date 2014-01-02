@@ -1,3 +1,9 @@
+## 1.6.3 / Thu Jan 01 2014
+
+> 升级fis-kernel至v1.9.5
+
+* 文件useCompile为false的文本文件依旧支持编码转换和deploy的字符串替换
+
 ## 1.6.2 / Thu Jan 01 2014
 
 > 升级fis-command-server至v.0.6.8
