@@ -1,3 +1,18 @@
+## 1.6.3 / Thu Jan 01 2014
+
+> 升级fis-kernel至v1.9.5
+
+* 文件useCompile为false的文本文件依旧支持编码转换和deploy的字符串替换
+
+## 1.6.2 / Thu Jan 01 2014
+
+> 升级fis-command-server至v.0.6.8
+
+* 新增nodejs版本server支持
+* 合并--no-rewrite和--script参数，为--rewrite [script]参数
+* 支持fis的包装版本在配置中指定server的各项参数
+
+
 ## 1.6.1 / Thu Dec 12 2013
 
 > 升级fis-kernel至v1.9.3
