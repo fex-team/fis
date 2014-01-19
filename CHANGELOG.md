@@ -40,7 +40,7 @@
         <link href="/url/of/xxx?__inline"/>
         ```
 
-    * 之所以这样修改，是因为link标签不仅仅是css外联标签，还包括很多其他资源，延伸阅读请参考w3c的 [link类别](http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#linkTypes)
+    * 之所以这样修改，是因为link标签不仅仅是css外联标签，还包括很多其他资源，延伸阅读请参考 [link类别](http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#linkTypes)
 
 ## 1.6.3 / Thu Jan 01 2014
 
