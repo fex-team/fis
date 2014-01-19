@@ -1,3 +1,47 @@
+## 1.6.4 / Sun Jan 19 2014
+
+> 升级fis-kernel至v1.9.6
+
+* 只允许rel属性为 ``stylesheet`` 的link标签，在inline的时候内嵌为style标签，例如：
+
+    * v1.6.3或之前
+
+        - 源码：
+
+        ```html
+        <link rel="stylesheet" href="xxx?__inline"/>
+        <link rel="abc" href="xxx?__inline"/>
+        <link href="xxx?__inline"/>
+        ```
+
+        - 编译后（未考虑rel属性） ：
+
+        ```html
+        <link rel="stylesheet" href="xxx?__inline"/>
+        <link rel="abc" href="xxx?__inline"/>
+        <link href="xxx?__inline"/>
+        ```
+
+    * v1.6.4之后
+
+        - 源码：
+
+        ```html
+        <link rel="stylesheet" href="xxx?__inline"/>
+        <link rel="abc" href="xxx?__inline"/>
+        <link href="xxx?__inline"/>
+        ```
+
+        - 编译后（仅对rel属性为stylesheet的link标签有效）：
+
+        ```html
+        <style>xxx的内容</style>
+        <link rel="abc" href="/url/of/xxx?__inline"/>
+        <link href="/url/of/xxx?__inline"/>
+        ```
+
+    * 之所以这样修改，是因为link标签不仅仅是css外联标签，还包括很多其他资源，延伸阅读请参考w3c的 [link类别](http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#linkTypes)
+
 ## 1.6.3 / Thu Jan 01 2014
 
 > 升级fis-kernel至v1.9.5
