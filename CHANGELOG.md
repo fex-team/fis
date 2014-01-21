@@ -1,3 +1,9 @@
+## 1.6.5 / Wed Jan 22 2014
+
+> 升级fis-kernel至v1.9.7
+
+* 在html中支持使用&lt;link rel="import" href="xxx?__inline"&gt;来嵌入资源，参考w3c [html imports](http://www.w3.org/TR/2013/WD-html-imports-20130514/)
+
 ## 1.6.4 / Sun Jan 19 2014
 
 > 升级fis-kernel至v1.9.6
