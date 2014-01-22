@@ -47,14 +47,14 @@ then
 	#wenku
 	rm -rf ${WENKU_OUTPUT_PATH}/output_new
 	cd ${WENKU_CODE_PATH} 
-	fisp release -cmd ${WENKU_OUTPUT_PATH}/output_new --no-color
+	${NEW_FISP_FIS_PATH}/bin/fis release -cmd ${WENKU_OUTPUT_PATH}/output_new --no-color
 	echo $v > ${WENKU_OUTPUT_PATH}/output_new/fis_version.txt
     chmod 777 ${WENKU_OUTPUT_PATH}	
 	
 	#tieba
 	rm -rf ${TIEBA_OUTPUT_PATH}/output_new
 	cd ${TIEBA_CODE_PATH}
-	fisp release -copmd ${TIEBA_OUTPUT_PATH}/output_new --no-color
+	${NEW_FISP_FIS_PATH}/bin/fis release -copmd ${TIEBA_OUTPUT_PATH}/output_new --no-color
 	echo $v > ${TIEBA_OUTPUT_PATH}/output_new/fis_version.txt
     chmod 777 ${TIEBA_OUTPUT_PATH}
 	
@@ -102,14 +102,14 @@ else
 	#wenku
 	rm -rf ${WENKU_OUTPUT_PATH}/output_old
 	cd ${WENKU_CODE_PATH}
-	fisp release -cmd ${WENKU_OUTPUT_PATH}/output_old --no-color
+	${OLD_FISP_FIS_PATH}/bin/fis release -cmd ${WENKU_OUTPUT_PATH}/output_old --no-color
 	echo $v > ${WENKU_OUTPUT_PATH}/output_old/fis_version.txt
     chmod 777 -R ${WENKU_OUTPUT_PATH}/output_old	
 	
 	#tieba
 	rm -rf ${TIEBA_OUTPUT_PATH}/output_old
 	cd ${TIEBA_CODE_PATH}
-	fisp release -copmd ${TIEBA_OUTPUT_PATH}/output_old --no-color
+	${OLD_FISP_FIS_PATH}/bin/fis release -copmd ${TIEBA_OUTPUT_PATH}/output_old --no-color
 	echo $v > ${TIEBA_OUTPUT_PATH}/output_old/fis_version.txt
     chmod 777 -R ${TIEBA_OUTPUT_PATH}/output_old
 	
