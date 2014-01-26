@@ -1,3 +1,9 @@
+## 1.6.6 / Sun Jan 26 2014
+
+> 升级fis-kernel至v1.9.8
+
+* 支持html中的source标签相关资源定位和嵌入功能
+
 ## 1.6.5 / Wed Jan 22 2014
 
 > 升级fis-kernel至v1.9.7
