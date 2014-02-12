@@ -1,3 +1,9 @@
+## 1.6.7 / Wed Feb 12 2014
+
+> 升级fis-kernel至v1.9.9
+
+* 修复html的script标签中js嵌入其他非js的文本文件时结果不是字符串的bug
+
 ## 1.6.6 / Sun Jan 26 2014
 
 > 升级fis-kernel至v1.9.8
