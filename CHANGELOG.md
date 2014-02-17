@@ -1,3 +1,9 @@
+## 1.6.8 / Wed Feb 12 2014
+
+> 升级fis-command-release至0.9.5
+
+* 修复mac系统下livereload报错的bug
+
 ## 1.6.7 / Wed Feb 12 2014
 
 > 升级fis-kernel至v1.9.9
