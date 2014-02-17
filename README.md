@@ -13,7 +13,7 @@
 ## 功能概述
 
 * 跨平台支持win、mac、linux等系统
-* 无内置规范，可配置 [开发和部署规范](https://github.com/fis-dev/fis/wiki/配置API#roadmappath)，用于满足任何前后端框架的部署需求
+* 无内置规范，可配置 [开发和部署规范](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmappath)，用于满足任何前后端框架的部署需求
 * 对html、js、css实现 [三种语言能力](https://github.com/fis-dev/fis/wiki/三种语言能力) 扩展，解决绝大多数前端构建问题
 * 支持二次包装，比如 [spmx](github.com/fouber/spmx)、 [phiz](https://github.com/fouber/phiz/)、 [chassis](https://github.com/xspider/fis-chassis)，对fis进行包装后可内置新的插件、配置，从而打造属于你们团队的自己的开发工具
 * 自动生成静态资源表关系表（map.json），可用于 [连接前后端开发框架](https://github.com/fis-dev/fis/wiki/基于map.json的前后端架构设计指导)
@@ -35,9 +35,9 @@
 * [安装](https://github.com/fis-dev/fis/wiki/快速上手)
     * npm install **-g** fis
 * 三条命令，满足你的所有开发需求：
-    * [fis install &lt;name&gt;](https://github.com/fis-dev/fis/wiki/快速上手#fis-install-name)
-    * [fis release &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#fis-release-options)
-    * [fis server &lt;command&gt; &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#fis-server-command-options)
+    * [fis install &lt;name&gt;](https://github.com/fis-dev/fis/wiki/快速上手#wiki-fis-install-name)
+    * [fis release &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#wiki-fis-release-options)
+    * [fis server &lt;command&gt; &#91;options&#93;](https://github.com/fis-dev/fis/wiki/快速上手#wiki-fis-server-command-options)
 * 试手样例
     * [纯前端组件化方案](https://github.com/fouber/modjs-todo-demo/)
     * [fis官网](http://fis.baidu.com/#section-6)
@@ -60,25 +60,25 @@
 * [零配置](https://github.com/fis-dev/fis/wiki/配置API)
 * [使用配置文件](https://github.com/fis-dev/fis/wiki/配置API)
 * 系统配置
-    * [project.charset](https://github.com/fis-dev/fis/wiki/配置API#projectcharset)
-    * [project.md5Length](https://github.com/fis-dev/fis/wiki/配置API#projectmd5length)
-    * [project.md5Connector](https://github.com/fis-dev/fis/wiki/配置API#projectmd5connector)
-    * [project.include](https://github.com/fis-dev/fis/wiki/配置API#projectinclude)
-    * [project.exclude](https://github.com/fis-dev/fis/wiki/配置API#projectexclude)
-    * [project.fileType.text](https://github.com/fis-dev/fis/wiki/配置API#projectfiletypetext)
-    * [project.fileType.image](https://github.com/fis-dev/fis/wiki/配置API#projectfiletypeimage)
+    * [project.charset](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectcharset)
+    * [project.md5Length](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectmd5length)
+    * [project.md5Connector](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectmd5connector)
+    * [project.include](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectinclude)
+    * [project.exclude](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectexclude)
+    * [project.fileType.text](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectfiletypetext)
+    * [project.fileType.image](https://github.com/fis-dev/fis/wiki/配置API#wiki-projectfiletypeimage)
 * 插件配置
-    * [modules.parser](https://github.com/fis-dev/fis/wiki/配置API#modulesparser)
-    * [modules.preprocessor](https://github.com/fis-dev/fis/wiki/配置API#modulespreprocessor)
-    * [modules.postprocessor](https://github.com/fis-dev/fis/wiki/配置API#modulespostprocessor)
-    * [modules.lint](https://github.com/fis-dev/fis/wiki/配置API#moduleslint)
-    * [modules.test](https://github.com/fis-dev/fis/wiki/配置API#modulestest)
-    * [modules.optimizer](https://github.com/fis-dev/fis/wiki/配置API#modulesoptimizer)
-    * [modules.prepackager](https://github.com/fis-dev/fis/wiki/配置API#modulesprepackager)
-    * [modules.packager](https://github.com/fis-dev/fis/wiki/配置API#modulespackager)
-    * [modules.spriter](https://github.com/fis-dev/fis/wiki/配置API#modulesspriter)
-    * [modules.postpackager](https://github.com/fis-dev/fis/wiki/配置API#modulespostpackager)
-    * [settings](https://github.com/fis-dev/fis/wiki/配置API#settings)
+    * [modules.parser](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulesparser)
+    * [modules.preprocessor](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulespreprocessor)
+    * [modules.postprocessor](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulespostprocessor)
+    * [modules.lint](https://github.com/fis-dev/fis/wiki/配置API#wiki-moduleslint)
+    * [modules.test](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulestest)
+    * [modules.optimizer](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulesoptimizer)
+    * [modules.prepackager](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulesprepackager)
+    * [modules.packager](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulespackager)
+    * [modules.spriter](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulesspriter)
+    * [modules.postpackager](https://github.com/fis-dev/fis/wiki/配置API#wiki-modulespostpackager)
+    * [settings](https://github.com/fis-dev/fis/wiki/配置API#wiki-settings)
 * 内置插件运行配置
     * [settings.postprocessor.jswrapper](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingspostprocessorjswrapper)
     * [settings.optimizer.uglify-js](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsoptimizeruglify-js)
@@ -86,14 +86,14 @@
     * [settings.optimizer.png-compressor](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsoptimizerpng-compressor)
     * [settings.spriter.csssprites](https://github.com/fis-dev/fis/wiki/%E9%85%8D%E7%BD%AEAPI#settingsspritercsssprites)
 * 目录规范与域名配置
-    * [roadmap.path](https://github.com/fis-dev/fis/wiki/配置API#roadmappath)
-    * [roadmap.ext](https://github.com/fis-dev/fis/wiki/配置API#roadmapext)
-    * [roadmap.domain](https://github.com/fis-dev/fis/wiki/配置API#roadmapdomain)
-    * [roadmap.domain.image](https://github.com/fis-dev/fis/wiki/配置API#roadmapdomainimage)
+    * [roadmap.path](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmappath)
+    * [roadmap.ext](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmapext)
+    * [roadmap.domain](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmapdomain)
+    * [roadmap.domain.image](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmapdomainimage)
 * 部署配置
-    * [deploy](https://github.com/fis-dev/fis/wiki/配置API#deploy)
+    * [deploy](https://github.com/fis-dev/fis/wiki/配置API#wiki-deploy)
 * 打包配置
-    * [pack](https://github.com/fis-dev/fis/wiki/配置API#pack)
+    * [pack](https://github.com/fis-dev/fis/wiki/配置API#wiki-pack)
 
 ## 高级使用
 
