@@ -19,6 +19,12 @@
 
     配置后，fis会优先尝试加载 ``your_package_name-xxx`` 插件，后尝试加载 ``fis-xxx`` 插件，此功能用于fis的包装产品中。
 
+* 包装器负责指定 ``--help`` 需要显示帮助的命令，例如：
+
+    ```javascript
+    fis.cli.help.commands = [ 'release', 'server', 'install' ];
+    ```
+
 ## 1.6.8 / Wed Feb 12 2014
 
 > 升级fis-command-release至0.9.5

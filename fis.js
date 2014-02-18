@@ -47,26 +47,14 @@ fis.cli.help = function(){
         '  Commands:',
         ''
     ];
-    
-    //built-in commands
-    var deps = {
-        'fis-command-release' : true,
-        'fis-command-install' : true,
-        'fis-command-server' : true
-    };
-    //from package.json dependencies
-    fis.util.merge(deps, fis.cli.info.dependencies);
-    //traverse
-    fis.util.map(deps, function(name){
-        name = name.split('-');
-        if(name.length > 2 && name[1] === 'command'){
-            name = name.slice(2).join('-');
-            var cmd = fis.require('command', name);
-            name = cmd.name || name;
-            name = fis.util.pad(name, 12);
-            content.push('    ' + name + (cmd.desc || ''));
-        }
+
+    fis.cli.help.commands.forEach(function(name){
+        var cmd = fis.require('command', name);
+        name = cmd.name || name;
+        name = fis.util.pad(name, 12);
+        content.push('    ' + name + (cmd.desc || ''));
     });
+
     content = content.concat([
         '',
         '  Options:',
@@ -78,6 +66,8 @@ fis.cli.help = function(){
     ]);
     console.log(content.join('\n'));
 };
+
+fis.cli.help.commands = [ 'release', 'install', 'server' ];
 
 //output version info
 fis.cli.version = function(){
