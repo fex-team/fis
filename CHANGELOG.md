@@ -1,3 +1,24 @@
+## 1.7.0 / Tue Feb 18 2014
+
+> 升级fis-kernel至2.0.0
+
+* 内核支持事件监听和派发（仅增加接口，尚未派发任何事件）：
+
+    ```javascript
+    fis.emitter.on('compile.optimier', function(file){
+        //TODO
+    });
+    fis.emitter.emit('release', file);
+    ```
+
+* 支持多种前缀的插件调用
+
+    ```javascript
+    fis.require.prefixes = [ 'your_package_name', 'fis' ];
+    ```
+
+    配置后，fis会优先尝试加载 ``your_package_name-xxx`` 插件，后尝试加载 ``fis-xxx`` 插件，此功能用于fis的包装产品中。
+
 ## 1.6.8 / Wed Feb 12 2014
 
 > 升级fis-command-release至0.9.5

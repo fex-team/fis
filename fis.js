@@ -41,14 +41,12 @@ fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 //output help info
 fis.cli.help = function(){
     var content = [
-            '',
-            '  Usage: ' + fis.cli.name + ' <command>',
-            '',
-            '  Commands:',
-            ''
-        ],
-        prefix = 'fis-command-',
-        prefixLen = prefix.length;
+        '',
+        '  Usage: ' + fis.cli.name + ' <command>',
+        '',
+        '  Commands:',
+        ''
+    ];
     
     //built-in commands
     var deps = {
@@ -60,10 +58,12 @@ fis.cli.help = function(){
     fis.util.merge(deps, fis.cli.info.dependencies);
     //traverse
     fis.util.map(deps, function(name){
-        if(name.indexOf(prefix) === 0){
-            name = name.substring(prefixLen);
+        name = name.split('-');
+        if(name.length > 2 && name[1] === 'command'){
+            name = name.slice(2).join('-');
             var cmd = fis.require('command', name);
-            name = fis.util.pad(cmd.name || name, 12);
+            name = cmd.name || name;
+            name = fis.util.pad(name, 12);
             content.push('    ' + name + (cmd.desc || ''));
         }
     });
