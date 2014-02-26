@@ -2,7 +2,7 @@
 
 > 升级fis-command-release至v0.9.6
 
-* 修复fis-conf.js中配置了livereload监听端口和hostname，但是发布的文件添加livereload.js脚本的url地址引用错误的bug。
+* 修复fis-conf.js中配置了livereload监听端口和hostname，但是发布的文件添加livereload.js脚本的url地址引用错误的bug。 感谢来自 [@qdsang](https://github.com/qdsang) 的贡献 [pull#2](https://github.com/fis-dev/fis-command-release/pull/2)
 
 ## 1.7.1 / Tue Feb 18 2014
 
