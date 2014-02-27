@@ -15,7 +15,7 @@
 * 跨平台支持win、mac、linux等系统
 * 无内置规范，可配置 [开发和部署规范](https://github.com/fis-dev/fis/wiki/配置API#wiki-roadmappath)，用于满足任何前后端框架的部署需求
 * 对html、js、css实现 [三种语言能力](https://github.com/fis-dev/fis/wiki/三种语言能力) 扩展，解决绝大多数前端构建问题
-* 支持二次包装，比如 [spmx](github.com/fouber/spmx)、 [phiz](https://github.com/fouber/phiz/)、 [chassis](https://github.com/xspider/fis-chassis)，对fis进行包装后可内置新的插件、配置，从而打造属于你们团队的自己的开发工具
+* 支持二次包装，比如 [spmx](https://github.com/fouber/spmx)、 [phiz](https://github.com/fouber/phiz/)、 [chassis](https://github.com/xspider/fis-chassis)，对fis进行包装后可内置新的插件、配置，从而打造属于你们团队的自己的开发工具
 * 自动生成静态资源表关系表（map.json），可用于 [连接前后端开发框架](https://github.com/fis-dev/fis/wiki/基于map.json的前后端架构设计指导)
 * 所有静态资源自动加 ``md5版本戳``，服务端可放心开启永久强缓存
 * 支持给所有静态资源添加域名前缀
