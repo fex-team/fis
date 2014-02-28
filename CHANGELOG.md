@@ -1,3 +1,28 @@
+## 1.7.3 / Sat Mar 01 2014
+
+> 升级fis-spriter-csssprites至v0.1.8
+
+* 添加对内联css的支持
+
+    ```javascript
+    fis.config.set('settings.spriter.csssprites', {
+        //开启模板内联css处理,默认关闭
+        htmlUseSprite: true,
+        //默认针对html原生<style></style>标签内的内容处理。
+        //用户可以通过配置styleTag来扩展要识别的css片段
+        //以下是默认<style></style>标签的匹配正则
+        styleReg: /(<style(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/style\s*>|$)/ig
+
+        //**styleReg规则**
+        //1. 默认不配置styleReg，仅支持html中默认style标签中的css内容
+        //2. 配置styleReg时候，仅支持styleReg匹配到的内容。
+        //3. styleReg正则必须捕获三个分组，
+        //     $1为：开始标签（start tag），
+        //     $2为：内容(content) ,
+        //     $3为：结束标签(end tag)
+    });
+    ```
+
 ## 1.7.2 / Wed Feb 26 2014
 
 > 升级fis-command-release至v0.9.6
