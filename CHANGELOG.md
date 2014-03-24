@@ -1,11 +1,15 @@
 ## 1.7.4 / Mon Mar 24 2014 
 
 > 升级fis-spriter-csssprites至v0.1.9
+
 > 升级fis-command-release至v0.9.7
+
 > 升级fis-command-server至v0.6.9
 
-* 启动node服务器时，在服务器根目录执行`npm install`安装依赖
+* 启动node服务器时，在document_root执行`npm install`安装依赖
+* 添加<!--livereload-->注释语法，当`release -L`时替换为livereload.js的链接，这样就不需要安装浏览器插件了。
 
+    **注意：如果页面有`</body>`标签，就不需要再在页面使用`<!--livereload-->`了。因为它跟`</body>`起到相同的作用。这个功能主要提供给那些包装了`body`标签的解决方案使用。**
 
 ## 1.7.3 / Sat Mar 01 2014
 
