@@ -28,8 +28,8 @@
         "fis-kernel" : "2.0.0",
 
         "fis-command-install" : "0.0.7",
-        "fis-command-release" : "0.9.6",
-        "fis-command-server" : "0.6.8",
+        "fis-command-release" : "0.9.7",
+        "fis-command-server" : "0.6.9",
 
         "fis-postprocessor-jswrapper" : "0.0.8",
 
@@ -37,7 +37,7 @@
         "fis-optimizer-clean-css" : "0.0.9",
         "fis-optimizer-png-compressor" : "0.0.3",
 
-        "fis-spriter-csssprites" : "0.1.8",
+        "fis-spriter-csssprites" : "0.1.9",
 
         "fis-packager-map" : "0.0.9"
     }
