@@ -1,3 +1,12 @@
+## 1.7.5 / Wed Apr 16 2014
+
+> 升级fis-kernel至v2.0.2
+
+> 升级fis-spriter-csssprites至v0.2.0
+
+* [bugfix] 单机多用户编译缓存冲突bug
+* [bugfix] csssprites 合并后css一个规则有太多selector导致在ie6下失效的bug
+
 ## 1.7.4 / Mon Mar 24 2014 
 
 > 升级fis-spriter-csssprites至v0.1.9
