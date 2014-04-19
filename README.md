@@ -21,7 +21,7 @@
 * 支持给所有静态资源添加域名前缀
 * 可灵活扩展的插件系统，支持对构建过程和命令功能进行扩展，现已发布N多 [插件](https://npmjs.org/search?q=fis)
 * 通过插件配置可以在一个项目中无缝使用 [less](https://github.com/fouber/fis-parser-less)、[coffee](https://github.com/fouber/fis-parser-coffee-script)、[markdown](https://github.com/fouber/fis-parser-marked)、[jade](https://npmjs.org/package/fis-parser-jade)等语言开发
-* 内置 [css sprites插件](https://github.com/xiangshouding/fis-spriter-csssprites)，简单易用
+* 内置 [css sprites插件](https://github.com/fex-team/fis-spriter-csssprites)，简单易用
 * 内置 [png图片压缩插件](https://github.com/fis-dev/fis-optimizer-png-compressor)，采用c++编写的node扩展，具有极高的性能，支持 [将png24压缩为png8](https://github.com/fis-dev/fis-optimizer-png-compressor)
 * 内置本地开发调试服务器，支持完美运行 ``java``、``jsp``、``php`` 等服务端语言
 * 支持文件监听，保存即发布
