@@ -1,3 +1,17 @@
+## 1.7.8 / Tue Apr 22 2014
+
+> 升级fis-kernel至v2.0.3
+
+[feature] 将jsx、styl纳入默认识别的文件中
+
+* jsx
+        isText: true
+        isJsLike: true
+        mime: text/javascript
+* style
+         isText: true
+         isCssLike: true
+         mime: text/css
 ## 1.7.7 / Wed Apr 16 2014
 
 > 升级fis-kernel至v2.0.2
