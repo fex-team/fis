@@ -1,0 +1,30 @@
+[submodule "node_modules/fis-command-install"]
+	path = node_modules/fis-command-install
+	url = https://github.com/fex-team/fis-command-install.git
+[submodule "node_modules/fis-command-release"]
+	path = node_modules/fis-command-release
+	url = https://github.com/fex-team/fis-command-release
+[submodule "node_modules/fis-command-server"]
+	path = node_modules/fis-command-server
+	url = https://github.com/fex-team/fis-command-server
+[submodule "node_modules/fis-kernel"]
+	path = node_modules/fis-kernel
+	url = https://github.com/fex-team/fis-kernel
+[submodule "node_modules/fis-optimizer-clean-css"]
+	path = node_modules/fis-optimizer-clean-css
+	url = https://github.com/fex-team/fis-optimizer-clean-css
+[submodule "node_modules/fis-optimizer-png-compressor"]
+	path = node_modules/fis-optimizer-png-compressor
+	url = https://github.com/fex-team/fis-optimizer-png-compressor
+[submodule "node_modules/fis-optimizer-uglify-js"]
+	path = node_modules/fis-optimizer-uglify-js
+	url = https://github.com/fex-team/fis-optimizer-uglify-js
+[submodule "node_modules/fis-packager-map"]
+	path = node_modules/fis-packager-map
+	url = https://github.com/fex-team/fis-packager-map
+[submodule "node_modules/fis-postprocessor-jswrapper"]
+	path = node_modules/fis-postprocessor-jswrapper
+	url = https://github.com/fex-team/fis-postprocessor-jswrapper
+[submodule "node_modules/fis-spriter-csssprites"]
+	path = node_modules/fis-spriter-csssprites
+	url = https://github.com/fex-team/fis-spriter-csssprites
