@@ -6,17 +6,13 @@
 
 * [feature] csssprites支持background-size
 
-background-size 只支持图片同倍率缩小或者放大；scale < 1缩小, scale > 1放大；其配置如下，当设置scale时，不需要给每一个规则都写上background-size，csssprites会根据scale产出正确的结果。
+    background-size 只支持图片同倍率缩小或者放大；scale < 1缩小, scale > 1放大；其配置如下，当设置scale时，不需要给每一个规则都写上background-size，csssprites会根据scale产出正确的结果。
 
-支持情况
-不支持跟background-repeat一起用。
-设置了scale，则规则不允许写background-size。
-
-```javascript
-fis.config.set('settings.spriter.csssprites', {
-    scale: 0.5
-});
-```
+    ```javascript
+    fis.config.set('settings.spriter.csssprites', {
+        scale: 0.5
+    });
+    ```
 
 ## 1.7.8 / Tue Apr 22 2014
 
