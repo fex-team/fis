@@ -28,6 +28,7 @@
          isText: true
          isCssLike: true
          mime: text/css
+
 ## 1.7.7 / Wed Apr 16 2014
 
 > 升级fis-kernel至v2.0.2
