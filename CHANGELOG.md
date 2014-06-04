@@ -1,3 +1,7 @@
+## 1.7.10 / Wed Jun 04 2014
+
+> 升级fis-optimizer-png-compressor至v0.0.5
+
 ## 1.7.9 / Mon May 12 2014
 
 > 升级fis-spriter-csssprites至v0.2.3
