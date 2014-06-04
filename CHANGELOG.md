@@ -1,3 +1,12 @@
+## 1.7.11 / Wed Jun 04 2014
+
+> 升级fis-optimizer-clean-css至v0.0.10
+
+> 升级fis-optimizer-uglify-js至v0.1.2
+
++ uglifyjs升级至v2.4.13
++ clean-css升级至v2.1.8
+
 ## 1.7.10 / Wed Jun 04 2014
 
 > 升级fis-optimizer-png-compressor至v0.0.5
