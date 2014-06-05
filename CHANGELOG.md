@@ -1,3 +1,7 @@
+## 1.7.12 / Thu Jun 05 2014
+
+> clean-css 有bug，降级到1.x版本
+
 ## 1.7.11 / Wed Jun 04 2014
 
 > 升级fis-optimizer-clean-css至v0.0.10
