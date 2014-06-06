@@ -5,9 +5,10 @@
 
 'use strict';
 
+//加载了核心模块
 //kernel
 var fis = module.exports = require('fis-kernel');
-
+//fis默认的配置
 //merge standard conf
 fis.config.merge({
     modules : {
@@ -102,11 +103,11 @@ function hasArgv(argv, search){
 
 //run cli tools
 fis.cli.run = function(argv){
-    
+    //输出是否带颜色
     if(hasArgv(argv, '--no-color')){
         fis.cli.colors.mode = 'none';
     }
-    
+    //我们可以断点看看这个`argv`是什么
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
         fis.cli.help();
@@ -115,15 +116,23 @@ fis.cli.run = function(argv){
     } else if(first[0] === '-'){
         fis.cli.help();
     } else {
+        //commander是一个开源的nodejs命令工具
         //register command
         var commander = fis.cli.commander = require('commander');
+        //在fis-kernel.js里面定义的方法
+        //fis-command-[release | install | server]
         var cmd = fis.require('command', argv[2]);
+        //例如，调用fis-command-release方法
         cmd.register(
             commander
+                //这里会返回一个Command实例，命中执行第一个参数时会匹配这个实例里面通过option注册的格式的命令
                 .command(cmd.name || first)
+                //输入帮助信息时返回使用方法，这里没有传入
                 .usage(cmd.usage)
+                //命令说明
                 .description(cmd.desc)
         );
+        //上面已经注册(register option)好命令，开始解析并触发(trigger)命令
         commander.parse(argv);
     }
 };
