@@ -1,10 +1,11 @@
 
-####对`fis release`流程源码添加了中文注释，想看源码的同学可以了解。
+##对`fis release`流程源码添加了中文注释，想看源码的同学可以了解。
 
 
 ---
 
-描述`fis release`的执行过程
+
+简单描述`fis release`的执行过程，建议以看源码注释加此文字来理解。
 
 使用命令查看npm安装目录：`npm config get prefix`
 
@@ -36,7 +37,7 @@
 
 引入`commander`https://github.com/visionmedia/commander.js
 
-通过commander绑定命令监听(cd /Users/zhangnan/develop/Dropbox/code/testcommander node index.js conan -s hello)
+通过commander绑定命令监听
 
 引入`fis-command-release`模块（此模块主要用于使用commander接口进行注册）
 
@@ -231,6 +232,9 @@
 
 
 -----
+
+https://github.com/fex-team/fis
+
 
 ###fis用来干嘛？
 
