@@ -21,7 +21,7 @@ if [ $? -eq 0 ]; then {
         fis release -m
         cd ../common
         fis release -m
- 	cd ..
+ 	    cd ..
         root="/root/.fis-tmp/www"
 }
 fi

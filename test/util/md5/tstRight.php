@@ -21,7 +21,7 @@
                                 break;
                          }
                         $arrSrc=explode('/',$src);
-  			$arrDes=explode('/',$des);
+  			            $arrDes=explode('/',$des);
                         $lastSrc=$arrSrc[count($arrSrc)-1];
                         $lastDes=$arrDes[count($arrDes)-1];
                         if($lastSrc==$lastDes){
