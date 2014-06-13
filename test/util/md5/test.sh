@@ -1,38 +1,15 @@
 #!/bin/sh
-echo `pwd` | grep -q "jello"
-if [ $? -eq 0 ]; then {
-        jello release -m
-        root="/root/.jello-tmp/www"
-}
-fi
-echo `pwd` | grep -q "pc-demo"
-if [ $? -eq 0 ]; then {
-        if [ ! -d "./home" ]; then {
-                echo "can't find home!"
-                exit
-        }
-        fi
-        if [ ! -d "./common" ]; then {
-                echo "can't find common!"
-                exit
-        }
-        fi
-        cd ./home
-        fis release -m
-        cd ../common
-        fis release -m
- 	    cd ..
-        root="/root/.fis-tmp/www"
-}
-fi
+lights install pc-demo
+cd ./pc-demo
+cd ./home
+fis release -m
+cd ../common
+fis release -m
+cd ../..
+root="/home/work/.fis-tmp/www"
 if [ -z "$root" ]; then {
         echo "can't find project!"
         exit;
-}
-fi
-if [ ! -d  "$root" ]; then {
-        echo "$root file not exist!";
-        exit 1;
 }
 fi
 touch exchange.txt
