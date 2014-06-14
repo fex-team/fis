@@ -26,4 +26,3 @@ if [  -f  "${root}/exchange.txt" ]; then {
 fi
 npm uninstall -g lights
 rm -r pc-demo
-rm -r result
