@@ -37,27 +37,43 @@ $tatalFailure = 0;
 if(file_exists($xmlFile)){
     $dom->load($xmlFile);
     $testsuite = $dom->getElementsByTagName("testsuite")->item(0);
-    $tatalCount = $testsuite->getAttribute("tests");
-    $tatalFailure = $testsuite->getAttribute("failures");
+    $totalCount = $testsuite->getAttribute("tests");
+    $totalFailure = $testsuite->getAttribute("failures");
 }else{
     $testsuites = $dom->createElement("testsuites");
     $dom->appendChild($testsuites);
     $testsuite = $dom->createElement("testsuite");
     $testsuites->appendChild($testsuite);
 }
-if(!file_exists($xmlFile)){
+if($flag){
+    $totalCount+=1;
+    $totalFailure+=1;
     $testsuite->setAttribute("name","md5*  ");
-    $testsuite->setAttribute("tests",1);
-    $testsuite->setAttribute("time",1);
-    $testsuite->setAttribute("failures",0);
-    $testsuite->setAttribute("total",1);
+    $testsuite->setAttribute("tests",$totalCount);
+    $testsuite->setAttribute("time",$totalCount);
+    $testsuite->setAttribute("failures",$totalFailure);
+    $testsuite->setAttribute("total",$totalCount);
 
     $testcase=$dom->createElement("testcase");
     $testsuite->appendChild($testcase);
     $testcase->setAttribute("name","testcase0");
     $testcase->setAttribute("time","1");
-    $testcase->setAttribute("failures","0");
+    $testcase->setAttribute("failures","1");
     $testcase->setAttribute("total","1");
+}else{
+    $totalCount++;
+    $testsuite->setAttribute("name","md5*  ");
+    $testsuite->setAttribute("tests",$totalCount);
+    $testsuite->setAttribute("time",$totalCount);
+    $testsuite->setAttribute("failures",$totalFailure);
+    $testsuite->setAttribute("total",$totalCount);
+
+    $testcase=$dom->createElement("testcase");
+    $testsuite->appendChild($testcase);
+    $testcase->setAttribute("name","testcase0");
+    $testcase->setAttribute("time","1");
+    $testcase->setAttribute("failures",0);
+    $testcase->setAttribute("total",1);
 }
 $dom->save($xmlFile);
 ?>
