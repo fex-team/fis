@@ -17,8 +17,9 @@ if [ -z "$root" ]; then {
 fi
 touch exchange.txt
 echo "$root">exchange.txt
-if [ ! -d "./result" ]
+if [ ! -d "./result" ]; then
 mkdir result
+fi
 php tstRight.php
 rm exchange.txt
 if [  -f  "${root}/exchange.txt" ]; then {
