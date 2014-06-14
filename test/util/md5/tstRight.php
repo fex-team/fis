@@ -31,7 +31,7 @@ foreach($data as $value){
     }
 }
 $dom = new DOMDocument("1.0","utf-8");
-$xmlFile = "./result/report.xml";
+$xmlFile = dirname(__FILE__)."/result/report.xml";
 $tatalCount = 0;
 $tatalFailure = 0;
 if(file_exists($xmlFile)){
@@ -46,7 +46,7 @@ if(file_exists($xmlFile)){
     $testsuites->appendChild($testsuite);
 }
 if(!file_exists($xmlFile)){
-    $testsuite->setAttribute("name","diff*  ");
+    $testsuite->setAttribute("name","md5*  ");
     $testsuite->setAttribute("tests",1);
     $testsuite->setAttribute("time",1);
     $testsuite->setAttribute("failures",0);
