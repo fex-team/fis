@@ -17,6 +17,7 @@ if [ -z "$root" ]; then {
 fi
 touch exchange.txt
 echo "$root">exchange.txt
+mkdir result
 php tstRight.php
 rm exchange.txt
 if [  -f  "${root}/exchange.txt" ]; then {
@@ -25,3 +26,4 @@ if [  -f  "${root}/exchange.txt" ]; then {
 fi
 npm uninstall -g lights
 rm -r pc-demo
+rm -r result
