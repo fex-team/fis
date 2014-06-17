@@ -68,7 +68,6 @@ class TestStaticPack{
         return $this->result;
     }
     public function createTestReport(){
-        echo "begin\r\n";
         $dom = new DOMDocument("1.0","utf-8");
         $xmlFile = dirname(__FILE__)."/result/report.xml";
         $totalCount = 0;
