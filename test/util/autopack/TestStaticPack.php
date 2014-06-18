@@ -11,10 +11,8 @@ class TestStaticPack{
     private  $fileData2;
     private  $result;
     private  $data;
-    private  $rate1,$rate2;
+    private  $rate;
     function __construct(){
-        $this->sumStatic=0;
-        $this->sumTrue=0;
         $this->result=0;
     }
     public function setFile($file1,$file2){
@@ -38,42 +36,48 @@ class TestStaticPack{
         foreach($data1 as $key1=>$arrValue1){
             $max=0;
             $tmp="";
+            $outdata=array();
             foreach($data2 as $key2=>$arrValue2){
                 if(array_key_exists($key2,$hash)) continue;
                 $num=0;
+                $data=array();
                 foreach($arrValue1 as $value1){
-                    if(in_array($value1,$arrValue2)){
+                    if(in_array($value1,$arrValue2))
                         $num++;
-                    }
+                    else
+                        $data[]=$value1;
                 }
                 if($num>=(count($arrValue1)+1)/2){
+                    foreach($data as $v){
+                        $this->data["fail"][]=$v;
+                    }
                     $hash[$key2]=1;
                     $sumTrue+=$num;
                     break;
                 }
                 if($num>$max){
                     $max=$num;
+                    $outdata=$data;
                     $tmp=key($arrValue2);
                 }
+                unset($data);
             }
             if(!array_key_exists($tmp,$hash)){
+                foreach($outdata as $v){
+                    $this->data["fail"][]=$v;
+                }
                 $hash[$tmp]=1;
                 $sumTrue+=$max;
             }
+            unset($outdata);
         }
         return ($sumTrue/$sumStatic);
     }
     public function getResult(){
-        $data=array();
-        $this->rate1=$this->calculate($this->fileData1,$this->fileData2);
-        $this->rate2=$this->calculate($this->fileData2,$this->fileData1);
-        $this->result=max($this->rate1,$this->rate2);
-        if($this->result<0.95)
-            $data['fail'][0]="diff autopack";
-        else
-            $data['success'][0]="diff autopack";
-        $data["name"]="autopack";
-        $this->data=$data;
+        $this->rate=$this->calculate($this->fileData1,$this->fileData2);
+        if($this->rate>0.95)
+            $this->data['success'][0]="diff autopack";
+        $this->data["name"]="autopack";
         return $this->result;
     }
     public function getData(){
