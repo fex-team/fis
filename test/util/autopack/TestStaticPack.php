@@ -5,10 +5,12 @@
  * Date: 14-6-17
  * Time: 下午4:20
  */
+require_once dirname(__FILE__)."/TestReport.class.php";
 class TestStaticPack{
     private  $fileData1;
     private  $fileData2;
     private  $result;
+    private  $data;
     private  $rate1,$rate2;
     function __construct(){
         $this->sumStatic=0;
@@ -62,62 +64,26 @@ class TestStaticPack{
         return ($sumTrue/$sumStatic);
     }
     public function getResult(){
+        $data=array();
         $this->rate1=$this->calculate($this->fileData1,$this->fileData2);
         $this->rate2=$this->calculate($this->fileData2,$this->fileData1);
         $this->result=max($this->rate1,$this->rate2);
+        if($this->result<0.95)
+            $data['fail']="diff autopack";
+        else
+            $data['success']="diff autopack";
+        $data["name"]="autopack";
+        $this->data=$data;
         return $this->result;
     }
-    public function createTestReport(){
-        $dom = new DOMDocument("1.0","utf-8");
-        $xmlFile = dirname(__FILE__)."/result/report.xml";
-        $totalCount = 0;
-        $totalFailure = 0;
-        if(file_exists($xmlFile)){
-            $dom->load($xmlFile);
-            $testsuite = $dom->getElementsByTagName("testsuite")->item(0);
-            $totalCount = $testsuite->getAttribute("tests");
-            $totalFailure = $testsuite->getAttribute("failures");
-        }else{
-            $testsuites = $dom->createElement("testsuites");
-            $dom->appendChild($testsuites);
-            $testsuite = $dom->createElement("testsuite");
-            $testsuites->appendChild($testsuite);
-        }
-        if($this->result<0.95){
-            $totalCount+=1;
-            $totalFailure+=1;
-            $testsuite->setAttribute("name","md5*  ");
-            $testsuite->setAttribute("tests",$totalCount);
-            $testsuite->setAttribute("time",$totalCount);
-            $testsuite->setAttribute("failures",$totalFailure);
-            $testsuite->setAttribute("total",$totalCount);
-
-            $testcase=$dom->createElement("testcase");
-            $testsuite->appendChild($testcase);
-            $testcase->setAttribute("name","testcase0");
-            $testcase->setAttribute("time","1");
-            $testcase->setAttribute("failures","1");
-            $testcase->setAttribute("total","1");
-        }else{
-            $totalCount++;
-            $testsuite->setAttribute("name","md5*  ");
-            $testsuite->setAttribute("tests",$totalCount);
-            $testsuite->setAttribute("time",$totalCount);
-            $testsuite->setAttribute("failures",$totalFailure);
-            $testsuite->setAttribute("total",$totalCount);
-
-            $testcase=$dom->createElement("testcase");
-            $testsuite->appendChild($testcase);
-            $testcase->setAttribute("name","testcase0");
-            $testcase->setAttribute("time","1");
-            $testcase->setAttribute("failures",0);
-            $testcase->setAttribute("total",1);
-        }
-        $dom->save($xmlFile);
+    public function getData(){
+        return $this->data;
     }
 };
 $case=new TestStaticPack();
 $case->setFile("a.txt","b.txt");
 $case->getResult();
-$case->createTestReport();
+$report=new TestReport();
+$report->setData($case->getData());
+$report->createTestReport();
 ?>
