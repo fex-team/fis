@@ -11,8 +11,8 @@ class TestAutoPlugin {
     private $libPath;
     private $versionPath;
     private $data;
-    private $multiPackPath="./svntest/hao123/output/config";
-    private $onePackPath="./svntest/tuangou";
+    private $multiPackPath="svntest/hao123/output/config";
+    private $onePackPath="svntest/tuangou";
     function __construct(){
         $this->indexjsPath="/home/work/lib/node_modules/fis-packager-autopack/index.js";
         $this->libPath="/home/work/lib/node_modules/fis-packager-autopack/lib/temp";
