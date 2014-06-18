@@ -69,9 +69,9 @@ class TestStaticPack{
         $this->rate2=$this->calculate($this->fileData2,$this->fileData1);
         $this->result=max($this->rate1,$this->rate2);
         if($this->result<0.95)
-            $data['fail']="diff autopack";
+            $data['fail'][0]="diff autopack";
         else
-            $data['success']="diff autopack";
+            $data['success'][0]="diff autopack";
         $data["name"]="autopack";
         $this->data=$data;
         return $this->result;
