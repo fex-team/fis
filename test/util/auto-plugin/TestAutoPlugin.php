@@ -13,6 +13,7 @@ class TestAutoPlugin {
     private $data;
     private $multiPackPath;
     private $onePackPath;
+    private $realUrl,$realVersion;
     function __construct(){
         $this->multiPackPath=dirname(__FILE__)."/svntest/hao123/output/config";
         $this->onePackPath=dirname(__FILE__)."/svntest/tuangou";
@@ -23,6 +24,7 @@ class TestAutoPlugin {
     }
     private function verificationApiUrl(){
         $string=file_get_contents($this->indexjsPath);
+        $this->realUrl=$string;
         if(strstr($string,"fedev.baidu.com:8889")||strstr($string,"solar.baidu.com"))
             return true;
         else
@@ -37,6 +39,7 @@ class TestAutoPlugin {
     private function checkVersion(){
         $data=json_decode(file_get_contents($this->versionPath),true);
         $data=$data["version"];
+        $this->realVersion=$data;
         if($data=="0.0.1"||$data=="0.0.0")
             return false;
         else
@@ -68,25 +71,25 @@ class TestAutoPlugin {
         $arrPosSu=0;
         $arrPosFa=0;
         if($this->verificationApiUrl())
-            $data['success'][$arrPosSu++]="Api Url";
+            $data['success'][$arrPosSu++]=array("Api Url"=>$this->realUrl);
         else
-            $data['fail'][$arrPosFa++]="Api Url";
+            $data['fail'][$arrPosFa++]=array("Api Url"=>$this->realUrl);
         if($this->checkWritabel())
-            $data['success'][$arrPosSu++]="file Writabel";
+            $data['success'][$arrPosSu++]=array("file Writabel"=>"Writabel");
         else
-            $data['fail'][$arrPosFa++]="file Writabel";
+            $data['fail'][$arrPosFa++]=array("file Writabel"=>"No Writabel");
         if($this->checkVersion())
-            $data['success'][$arrPosSu++]="ext-map verison";
+            $data['success'][$arrPosSu++]=array("ext-map verison"=>"0.0.1");
         else
-            $data['fail'][$arrPosFa++]="ext-map verison";
+            $data['fail'][$arrPosFa++]=array("ext-map verison"=>$this->realVersion);
         if($this->checkFileMulti())
-            $data['success'][$arrPosSu++]="multi map";
+            $data['success'][$arrPosSu++]=array("multi map"=>"success");
         else
-            $data['fail'][$arrPosFa++]="multi map";
+            $data['fail'][$arrPosFa++]=array("multi map"=>"fail");
         if($this->checkFileOne())
-            $data['success'][$arrPosSu++]="one map";
+            $data['success'][$arrPosSu++]=array("one map"=>"success");
         else
-            $data['fail'][$arrPosFa++]="one map";
+            $data['fail'][$arrPosFa++]=array("one map"=>"fail");
         $data['name']="auto-plugin";
         $this->data=$data;
     }

@@ -42,15 +42,20 @@ class TestReport {
         for($i=$totalFailure;$i<$totalCount;$i++){
             $testcase=$dom->createElement("testcase");
             $testsuite->appendChild($testcase);
-            $testcase->setAttribute("name",$data["success"][$i-$totalFailure]);
+            $testcase->setAttribute("name",key($data["success"][$i-$totalFailure]));
             $testcase->setAttribute("time","1");
             $testcase->setAttribute("failures","0");
             $testcase->setAttribute("total","1");
+            $success = $dom->createElement("success");
+            $testcase->appendChild($success);
+            $success->setAttribute("type","OK");
+            $msgText = $dom->createTextNode(current($data["success"][$i-$totalFailure]));
+            $success->appendChild($msgText);
         }
         for($i=0;$i<$totalFailure;$i++){
             $testcase=$dom->createElement("testcase");
             $testsuite->appendChild($testcase);
-            $testcase->setAttribute("name",$data["fail"][$i]);
+            $testcase->setAttribute("name",key($data["fail"][$i]));
             $testcase->setAttribute("time","1");
             $testcase->setAttribute("failures","1");
             $testcase->setAttribute("total","1");
@@ -58,7 +63,7 @@ class TestReport {
             $failure = $dom->createElement("failure");
             $testcase->appendChild($failure);
             $failure->setAttribute("type","junit.framework.AssertionFailedError");
-            $msgText = $dom->createTextNode("diff");
+            $msgText = $dom->createTextNode(current($data["fail"][$i]));
             $failure->appendChild($msgText);
         }
         $dom->save($xmlFile);
