@@ -46,11 +46,9 @@ class TestReport {
             $testcase->setAttribute("time","1");
             $testcase->setAttribute("failures","0");
             $testcase->setAttribute("total","1");
-            $success = $dom->createElement("success");
-            $testcase->appendChild($success);
-            $success->setAttribute("type","OK");
+            $testcase->setAttribute("type","OK");
             $msgText = $dom->createTextNode(current($data["success"][$i-$totalFailure]));
-            $success->appendChild($msgText);
+            $testcase->appendChild($msgText);
         }
         for($i=0;$i<$totalFailure;$i++){
             $testcase=$dom->createElement("testcase");
