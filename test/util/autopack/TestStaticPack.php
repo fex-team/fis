@@ -9,11 +9,10 @@ require_once dirname(__FILE__)."/TestReport.class.php";
 class TestStaticPack{
     private  $fileData1;
     private  $fileData2;
-    private  $result;
     private  $data;
     private  $rate;
     function __construct(){
-        $this->result=0;
+        $this->rate=0;
     }
     public function setFile($file1,$file2){
         $this->fileData1=$file1;
@@ -78,7 +77,7 @@ class TestStaticPack{
         if($this->rate>0.95)
             $this->data['success'][0]="diff autopack";
         $this->data["name"]="autopack";
-        return $this->result;
+        return $this->rate;
     }
     public function getData(){
         return $this->data;
