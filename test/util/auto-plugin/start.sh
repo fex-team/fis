@@ -23,6 +23,3 @@ npm uninstall -g fis-postpackager-ext-map
 npm uninstall -g fis-packager-autopack
 npm uninstall -g fis-parser-bainuo-less
 rm -r svntest
-if [ -d "./result" ]; then
-rm -r result
-fi
