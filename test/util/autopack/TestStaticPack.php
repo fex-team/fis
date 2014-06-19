@@ -44,7 +44,7 @@ class TestStaticPack{
                     if(in_array($value1,$arrValue2))
                         $num++;
                     else
-                        $data[]=$value1;
+                        $data[]=array($value1=>"diff");
                 }
                 if($num>=(count($arrValue1)+1)/2){
                     foreach($data as $v){
@@ -75,7 +75,7 @@ class TestStaticPack{
     public function getResult(){
         $this->rate=$this->calculate($this->fileData1,$this->fileData2);
         if($this->rate>0.95)
-            $this->data['success'][0]="diff autopack";
+            $this->data['success'][0]=array("diff autopack"=>"success");
         $this->data["name"]="autopack";
         return $this->rate;
     }
