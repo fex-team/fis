@@ -10,6 +10,8 @@
 
 * [什么是F.I.S](https://github.com/fis-dev/fis/wiki/什么是F.I.S)
 
+欢迎访问[FIS官网](http://fis.baidu.com)获取最新的文档与教程
+
 ## 功能概述
 
 * 跨平台支持win、mac、linux等系统
