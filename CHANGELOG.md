@@ -1,6 +1,7 @@
 ## 1.7.13 / Tue Jul 01 2014
 
 > 升级fis-command-server至v0.6.10
+
 > 升级fis-kernel至v2.0.4
 
 bugfix #94
