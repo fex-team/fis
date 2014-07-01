@@ -29,7 +29,7 @@
 
         "fis-command-install" : "0.0.7",
         "fis-command-release" : "0.9.7",
-        "fis-command-server" : "0.6.10",
+        "fis-command-server" : "0.6.11",
 
         "fis-postprocessor-jswrapper" : "0.0.8",
 
