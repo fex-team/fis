@@ -1,3 +1,10 @@
+## 1.7.13 / Tue Jul 01 2014
+
+> 升级fis-command-server至v0.6.10
+> 升级fis-kernel至v2.0.4
+
+bugfix #94
+
 ## 1.7.12 / Thu Jun 05 2014
 
 > clean-css 有bug，降级到1.x版本
