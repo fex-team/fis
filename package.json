@@ -1,7 +1,7 @@
 {
     "name" : "fis",
     "description" : "front-end integrated solution.",
-    "version" : "1.7.13",
+    "version" : "1.7.14",
     "author" : "FIS Team <fis@baidu.com>",
     "homepage" : "http://fis.baidu.com/",
     "keywords": [ "fis" ],

@@ -1,3 +1,7 @@
+## 1.7.14 / Tue Jul 02 2014
+
+hotfix 缓存依赖更新失效问题
+
 ## 1.7.13 / Tue Jul 01 2014
 
 > 升级fis-command-server至v0.6.10
