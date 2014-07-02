@@ -5,7 +5,7 @@ cd  ${TEST_PATH}
 if [ -f "result/report.xml" ];then
    rm "result/report.xml"
 fi
-sh product_code.sh
+sh product_code.sh $1 $2
 sh new_fis_ready.sh
 chmod +x old_fis_scp.sh
 ./old_fis_scp.sh
