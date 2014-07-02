@@ -7,7 +7,6 @@ else
     $jsonPath=$filePath."/home-map.json";
 if(!is_file($jsonPath)) exit;
 $strContent = file_get_contents($jsonPath);
-//echo $strContent;
 $flag=0;
 $strContent=json_decode($strContent,true);
 $data=$strContent['res'];
