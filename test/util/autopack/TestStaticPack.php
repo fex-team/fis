@@ -21,7 +21,12 @@ class TestStaticPack{
     private function getJsonData($filePath){
         $fileData=file_get_contents($filePath);
         $fileData=json_decode($fileData,true);
+       if(array_key_exists("_default",$fileData['data']))
         return $fileData['data']['_default'];
+       if(array_key_exists("br",$fileData['data']))
+           return $fileData['data']['br'];
+       if(array_key_exists("ar",$fileData['data']))
+           return $fileData['data']['ar'];
     }
     private function calculate($data1,$data2){
         $data1=$this->getJsonData($data1);
