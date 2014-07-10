@@ -323,13 +323,13 @@ class Diff{
                 //文件内容diff的结果展示
                 $this->smarty->assign('diffdata',mb_convert_encoding($diffdata,'utf-8', 'gbk'));
                 $html = $this->smarty->fetch($smartyConfig['templatedir']."diffdetails.tpl");
-                $htmlpath = $smartyConfig['templatedir'].$this->proInfo['name']."_".str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11)).".html";
+                $htmlpath = $smartyConfig['templatedir'].$this->proInfo['name']."_".str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 13)).".html";
                 $fileurl = self::getConfig('url').str_replace("/home/work/repos/","",$htmlpath);
                 $diff = array(
                     'url' => $fileurl,
-                    'name' => str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11)),
-                    'old' => substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11),
-                    'new' => substr($old,strrpos($new,$outputConfig['newoutputdir']) + 11)
+                    'name' => str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 13)),
+                    'old' => substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 13),
+                    'new' => substr($old,strrpos($new,$outputConfig['newoutputdir']) + 13)
                 );
                 array_push($this->Diff, $diff);
                 File::write($htmlpath,$html);
