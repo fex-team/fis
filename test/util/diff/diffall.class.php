@@ -1,8 +1,9 @@
 <?php
+$_SESSION["o"] = $argv[1];
 require_once dirname(__FILE__) . "/diff.class.php";
 
 $config = array();
-$config = diff::loadConfig(dirname(__FILE__).'/config.php');
+$config = diff::loadConfig(dirname(__FILE__).'/config'.$argv[1].'.php');
 $productlist = $config['product'];
 $smartyConfig = diff::getConfig('smarty');
 require_once $smartyConfig['dir'].'/Smarty.class.php';

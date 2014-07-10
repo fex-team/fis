@@ -45,112 +45,112 @@ v=${arr[1]}
 if [ $1 = 'new' ]
 then
 	#wenku
-	rm -rf ${WENKU_OUTPUT_PATH}/output_new
+	rm -rf ${WENKU_OUTPUT_PATH}/output_o_new
 	cd ${WENKU_CODE_PATH} 
-	${NEW_FISP_FIS_PATH}/bin/fis release -cd ${WENKU_OUTPUT_PATH}/output_new --no-color
-	echo $v > ${WENKU_OUTPUT_PATH}/output_new/fis_version.txt
+	${NEW_FISP_FIS_PATH}/bin/fis release -cd ${WENKU_OUTPUT_PATH}/output_o_new --no-color
+	echo $v > ${WENKU_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${WENKU_OUTPUT_PATH}	
 	
 	#tieba
-	rm -rf ${TIEBA_OUTPUT_PATH}/output_new
+	rm -rf ${TIEBA_OUTPUT_PATH}/output_o_new
 	cd ${TIEBA_CODE_PATH}
-	${NEW_FISP_FIS_PATH}/bin/fis release -cpd ${TIEBA_OUTPUT_PATH}/output_new --no-color
-	echo $v > ${TIEBA_OUTPUT_PATH}/output_new/fis_version.txt
+	${NEW_FISP_FIS_PATH}/bin/fis release -copd ${TIEBA_OUTPUT_PATH}/output_o_new --no-color
+	echo $v > ${TIEBA_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${TIEBA_OUTPUT_PATH}
 	
 	#batman
-	rm -rf ${BATMAN_OUTPUT_PATH}/output_new
+	rm -rf ${BATMAN_OUTPUT_PATH}/output_o_new
 	for module in ${BATMAN_MODULES[@]} 
 	do
 	    cd ${BATMAN_CODE_PATH}/$module 
-	    fisp release -cpd ${BATMAN_OUTPUT_PATH}/output_new --no-color
+	    fisp release -copd ${BATMAN_OUTPUT_PATH}/output_o_new --no-color
 	done
-	echo $v > ${BATMAN_OUTPUT_PATH}/output_new/fis_version.txt
+	echo $v > ${BATMAN_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${BATMAN_OUTPUT_PATH}
 
     #place
-    rm -rf ${PLACE_OUTPUT_PATH}/output_new
+    rm -rf ${PLACE_OUTPUT_PATH}/output_o_new
     for module in ${PLACE_MODULES[@]}
     do
         cd ${PLACE_CODE_PATH}/$module
-        fisp release -cpd ${PLACE_OUTPUT_PATH}/output_new --no-color
+        fisp release -copd ${PLACE_OUTPUT_PATH}/output_o_new --no-color
     done
-    echo $v > ${PLACE_OUTPUT_PATH}/output_new/fis_version.txt
+    echo $v > ${PLACE_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${PLACE_OUTPUT_PATH}
 
     #hao123
-    rm -rf ${HAO123_OUTPUT_PATH}/output_new
+    rm -rf ${HAO123_OUTPUT_PATH}/output_o_new
     for module in ${HAO123_MODULES[@]}
     do
         cd ${HAO123_CODE_PATH}/$module
-        fisp release -cpd ${HAO123_OUTPUT_PATH}/output_new --no-color
+        fisp release -copd ${HAO123_OUTPUT_PATH}/output_o_new --no-color
     done
-    echo $v > ${HAO123_OUTPUT_PATH}/output_new/fis_version.txt
+    echo $v > ${HAO123_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${HAO123_OUTPUT_PATH}
 
     #superman
-    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_new
+    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_o_new
     for module in ${SUPERMAN_MODULES[@]}
     do
         cd ${SUPERMAN_CODE_PATH}/$module
-        fisp release -cpd ${SUPERMAN_OUTPUT_PATH}/output_new --no-color
+        fisp release -copd ${SUPERMAN_OUTPUT_PATH}/output_o_new --no-color
     done
-    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_new/fis_version.txt
+    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_o_new/fis_version.txt
     chmod 777 ${SUPERMAN_OUTPUT_PATH}
 
 else
 	#wenku
-	rm -rf ${WENKU_OUTPUT_PATH}/output_old
+	rm -rf ${WENKU_OUTPUT_PATH}/output_o_old
 	cd ${WENKU_CODE_PATH}
-	${OLD_FISP_FIS_PATH}/bin/fis release -cd ${WENKU_OUTPUT_PATH}/output_old --no-color
-	echo $v > ${WENKU_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${WENKU_OUTPUT_PATH}/output_old	
+	${OLD_FISP_FIS_PATH}/bin/fis release -cd ${WENKU_OUTPUT_PATH}/output_o_old --no-color
+	echo $v > ${WENKU_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${WENKU_OUTPUT_PATH}/output_o_old	
 	
 	#tieba
-	rm -rf ${TIEBA_OUTPUT_PATH}/output_old
+	rm -rf ${TIEBA_OUTPUT_PATH}/output_o_old
 	cd ${TIEBA_CODE_PATH}
-	${OLD_FISP_FIS_PATH}/bin/fis release -cpd ${TIEBA_OUTPUT_PATH}/output_old --no-color
-	echo $v > ${TIEBA_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${TIEBA_OUTPUT_PATH}/output_old
+	${OLD_FISP_FIS_PATH}/bin/fis release -copd ${TIEBA_OUTPUT_PATH}/output_o_old --no-color
+	echo $v > ${TIEBA_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${TIEBA_OUTPUT_PATH}/output_o_old
 	
     #batman
-	rm -rf ${BATMAN_OUTPUT_PATH}/output_old
+	rm -rf ${BATMAN_OUTPUT_PATH}/output_o_old
 	for module in ${BATMAN_MODULES[@]}
 	do
 		cd ${BATMAN_CODE_PATH}/$module
-		fisp release -cpd ${BATMAN_OUTPUT_PATH}/output_old --no-color
+		fisp release -copd ${BATMAN_OUTPUT_PATH}/output_o_old --no-color
 	done
-	echo $v > ${BATMAN_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${BATMAN_OUTPUT_PATH}/output_old
+	echo $v > ${BATMAN_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${BATMAN_OUTPUT_PATH}/output_o_old
 
     #place
-    rm -rf ${PLACE_OUTPUT_PATH}/output_old
+    rm -rf ${PLACE_OUTPUT_PATH}/output_o_old
     for module in ${PLACE_MODULES[@]}
     do
         cd ${PLACE_CODE_PATH}/$module
-        fisp release -cpd ${PLACE_OUTPUT_PATH}/output_old --no-color
+        fisp release -copd ${PLACE_OUTPUT_PATH}/output_o_old --no-color
     done
-    echo $v > ${PLACE_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${PLACE_OUTPUT_PATH}/output_old
+    echo $v > ${PLACE_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${PLACE_OUTPUT_PATH}/output_o_old
 
     #hao123
-    rm -rf ${HAO123_OUTPUT_PATH}/output_old
+    rm -rf ${HAO123_OUTPUT_PATH}/output_o_old
     for module in ${HAO123_MODULES[@]}
     do
         cd ${HAO123_CODE_PATH}/$module
-        fisp release -cpd ${HAO123_OUTPUT_PATH}/output_old --no-color
+        fisp release -copd ${HAO123_OUTPUT_PATH}/output_o_old --no-color
     done
-    echo $v > ${HAO123_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${HAO123_OUTPUT_PATH}/output_old
+    echo $v > ${HAO123_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${HAO123_OUTPUT_PATH}/output_o_old
 
     #superman
-    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_old
+    rm -rf ${SUPERMAN_OUTPUT_PATH}/output_o_old
     for module in ${SUPERMAN_MODULES[@]}
     do
         cd ${SUPERMAN_CODE_PATH}/$module
-        fisp release -cpd ${SUPERMAN_OUTPUT_PATH}/output_old --no-color
+        fisp release -copd ${SUPERMAN_OUTPUT_PATH}/output_o_old --no-color
     done
-    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_old/fis_version.txt
-    chmod 777 -R ${SUPERMAN_OUTPUT_PATH}/output_old
+    echo $v > ${SUPERMAN_OUTPUT_PATH}/output_o_old/fis_version.txt
+    chmod 777 -R ${SUPERMAN_OUTPUT_PATH}/output_o_old
 
 fi

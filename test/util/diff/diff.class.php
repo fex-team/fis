@@ -40,7 +40,7 @@ class Diff{
     public function __construct($productName){
         self::$rootPath = File::normalize(dirname(__FILE__));
 //        FILE::delete(self::$rootPath."/".$productName);
-        self::loadConfig(self::$rootPath.'/config.php');
+        self::loadConfig(self::$rootPath.'/config'.$_SESSION['o'].'.php');
         $product = self::getConfig('product');
         $this->proInfo = $product[$productName];
 //        $this->analyze = new Analyze();
@@ -303,6 +303,7 @@ class Diff{
      */
     public function DisplayDetails(){
         $smartyConfig = self::getConfig('smarty');
+        $outputConfig = self::getConfig('output');
 		$diffdatas = array();
         $this->proInfo['files'] = array();
 
@@ -310,7 +311,7 @@ class Diff{
 
         foreach($this->proInfo['files'] as $path){
             $old = $path;
-            $new = str_replace("output_old","output_new",$old);
+            $new = str_replace($outputConfig['oldoutputdir'],$outputConfig['newoutputdir'],$old);
             if(filesize($old) != filesize($new) && !preg_match("/fis_version.txt$/", $old)){
                 $this->smarty->assign('new',$new);
                 $this->smarty->assign('old',$old);
@@ -322,13 +323,13 @@ class Diff{
                 //文件内容diff的结果展示
                 $this->smarty->assign('diffdata',mb_convert_encoding($diffdata,'utf-8', 'gbk'));
                 $html = $this->smarty->fetch($smartyConfig['templatedir']."diffdetails.tpl");
-                $htmlpath = $smartyConfig['templatedir'].$this->proInfo['name']."_".str_replace("/", "_",substr($old,strrpos($old,'output_old') + 11)).".html";
+                $htmlpath = $smartyConfig['templatedir'].$this->proInfo['name']."_".str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11)).".html";
                 $fileurl = self::getConfig('url').str_replace("/home/work/repos/","",$htmlpath);
                 $diff = array(
                     'url' => $fileurl,
-                    'name' => str_replace("/", "_",substr($old,strrpos($old,'output_old') + 11)),
-                    'old' => substr($old,strrpos($old,'output_old') + 11),
-                    'new' => substr($old,strrpos($new,'output_new') + 11)
+                    'name' => str_replace("/", "_",substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11)),
+                    'old' => substr($old,strrpos($old,$outputConfig['oldoutputdir']) + 11),
+                    'new' => substr($old,strrpos($new,$outputConfig['newoutputdir']) + 11)
                 );
                 array_push($this->Diff, $diff);
                 File::write($htmlpath,$html);
@@ -454,8 +455,9 @@ class Diff{
 	 *
 	*/
 	private function generateReport($diffdatas){
+        $smartyConfig = self::getConfig('smarty');
 		$dom = new DOMDocument("1.0","utf-8");
-		$xmlFile = "./result/report.xml";
+		$xmlFile = $smartyConfig['templatedir']."report.xml";
 		$tatalCount = 0;
 		$tatalFailure = 0;
 
@@ -521,11 +523,12 @@ class Diff{
      *  生成diff文件，提供给report工具使用
      * */
     private function createDiffDate($diffdatas){
-          $saveFile = dirname(__FILE__)."/result/diffDate.php";
-          $fileData = array();
-          if(file_exists($saveFile)){
-                $fileData = include $saveFile;
-          }
+        $smartyConfig = self::getConfig('smarty');
+        $saveFile = $smartyConfig['templatedir']."diffDate.php";
+        $fileData = array();
+        if(file_exists($saveFile)){
+              $fileData = include $saveFile;
+        }
         //$res = array_diff($fileData,$diffdatas);
         //$fileData = $res;
         $fileData = array_merge($fileData,$diffdatas);
