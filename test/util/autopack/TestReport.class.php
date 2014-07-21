@@ -5,6 +5,18 @@
  * Date: 14-6-18
  * Time: 上午11:52
  */
+/*
+ * 传入数据的数组格式
+ * [
+ *      "name":youprojectname,
+ *      "success" : [
+ *          key=>value
+ *      ]
+ *      "fail" : [
+ *          key=>value
+ *      ]
+ * ]
+ */
 class TestReport {
     private $data;
     public function __construct(){
