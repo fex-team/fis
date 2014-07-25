@@ -6,17 +6,39 @@
  * Time: 上午11:52
  */
 /*
- * 传入数据的数组格式
- * [
- *      "name":youprojectname,
- *      "success" : [
- *          key=>value
- *      ]
- *      "fail" : [
- *          key=>value
- *      ]
- * ]
- */
+ * 传入数据格式
+Array
+(
+    [fail] => Array
+    (
+        [0] => Array
+        (
+            [/widget/hot-site/hot-site-async.js] => diff
+                )
+
+            [1] => Array
+            (
+                [/widget/sidetoolbar/sidetoolbar-async.js] => diff
+            )
+
+            [2] => Array
+            (
+                [/widget/sort-area/shop/shop-async.js] => diff
+            )
+
+    )
+
+    [success] => Array
+    (
+        [0] => Array
+        (
+            [diff autopack] => success
+        )
+    )
+
+    [name] => autopack
+)
+*/
 class TestReport {
     private $data;
     public function __construct(){
@@ -24,6 +46,7 @@ class TestReport {
     }
     public function setData($data){
         $this->data=$data;
+        print_r($data);
     }
     public function createTestReport(){
         $dom = new DOMDocument("1.0","utf-8");
