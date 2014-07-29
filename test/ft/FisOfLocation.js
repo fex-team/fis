@@ -214,7 +214,6 @@ describe('Resource insert',function(){
 
     describe('of js',function(){
         des = desRootDir+main_js_dir;
-        console.log(src);
         var string = fs.readFileSync(des).toString();
         it('insert js',function(){
             var str = "console.log('inline file');";
