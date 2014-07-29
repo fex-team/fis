@@ -1,0 +1,11 @@
+{
+  "name": "fis-quickstart-demo",
+  "version": "0.0.9",
+  "description": "a fis quick get started demo",
+  "keywords": [
+    "fis",
+    "demo"
+  ],
+  "repository": "https://github.com/hefangshi/fis-quickstart-demo",
+  "license": "MIT"
+}
