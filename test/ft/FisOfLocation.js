@@ -288,7 +288,7 @@ describe('Resource dependence',function(){
     })
 
     //js中的资源依赖
-    describe('of css',function(){
+    describe('of js',function(){
         src = srcRootDir+'/fis-quickstart-demo/modules/deptest.js';
         var srcArr = getResourceArr(src,reg);
         var arr = mapContent['modules/deptest.js'].deps;
