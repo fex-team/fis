@@ -23,6 +23,7 @@ do{
 
 
 });
+
 var img =__uri('/lib/bg.png');
 var css =__uri('/lib/base.css');
 var js =__uri('/modules/views/app.js');

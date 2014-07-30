@@ -1,5 +1,7 @@
 /**
  * Created by wangfangguo on 14-7-29.
+ * var desRootDir = "/home/work/.fis-tmp/www";
+ * var srcRootDir = "/home/work/repos/fis/test/ft";
  */
 var assert = require('assert');
 var fs = require('fs');
@@ -87,6 +89,20 @@ function is_file(desArr){
     return true;
 }
 
+//增加文件后缀，暂未用到
+function addSuffix(srcArr){
+    var length = srcArr.length;
+    var desArr = [];
+    for(var i in srcArr){
+        desArr[i] = srcArr[i];
+    }
+    for(var i = 0;i < length; i ++){
+        var arr = desArr[i].split('.');
+        if(arr.length == 1)
+            desArr[i] = desArr[i]+'.js';
+    }
+    return desArr;
+}
 /*
 测试资源定位
 分四点测试
@@ -97,6 +113,7 @@ function is_file(desArr){
  */
 describe('Resource location',function(){
 
+    //html中的资源定位
     describe('of html',function(){
         src =srcRootDir+"/fis-quickstart-demo/index.html";
         des = desRootDir+"/index.html";
@@ -121,6 +138,7 @@ describe('Resource location',function(){
         })
     })
 
+    //css中的资源定位
     describe('of css',function(){
         src =srcRootDir+"/fis-quickstart-demo/lib/base.css";
         des = desRootDir+base_css_dir;
@@ -143,6 +161,7 @@ describe('Resource location',function(){
         })
     })
 
+    //js中的资源定位
     describe('of js',function(){
         src = srcRootDir+"/fis-quickstart-demo/modules/main.js";
         des = desRootDir+main_js_dir;
@@ -170,6 +189,7 @@ describe('Resource location',function(){
 直接查找编译后是否生成对应字符串
  */
 describe('Resource insert',function(){
+    //html中的资源嵌入
     describe('of html',function(){
         des = desRootDir+"/index.html";
         var string = fs.readFileSync(des).toString();
@@ -197,6 +217,7 @@ describe('Resource insert',function(){
         })
     })
 
+    //css中的资源嵌入
     describe('of css',function(){
         des = desRootDir+base_css_dir;
         var string = fs.readFileSync(des).toString();
@@ -212,6 +233,7 @@ describe('Resource insert',function(){
         })
     })
 
+    //js中的资源嵌入
     describe('of js',function(){
         des = desRootDir+main_js_dir;
         var string = fs.readFileSync(des).toString();
@@ -230,6 +252,51 @@ describe('Resource insert',function(){
         it('insert gif',function(){
             var result = string.indexOf(logobase64) > 0;
             assert.equal(true,result);
+        })
+    })
+})
+
+/*
+资源依赖测试
+将编译前文件中的被依赖资源数组与编译后的deps数组进行较，如果相同则生成map.json成功
+*/
+describe('Resource dependence',function(){
+    des = desRootDir+'/map.json';
+    var mapContent = JSON.parse(fs.readFileSync(des)).res;
+    var reg = /(?:@|)require\s*(?:\(\'|\"|)([^\'\"\s]*)/g
+    //html中的资源依赖
+    describe('of html',function(){
+        src = srcRootDir+'/fis-quickstart-demo/index.html';
+        var srcArr = getResourceArr(src,reg);
+        var arr = mapContent['index.html'].deps;
+        it('should equal',function(){
+            assert.equal(arr.toString(),srcArr.toString());
+        })
+    })
+
+    //css中的资源依赖
+    describe('of css',function(){
+        src = srcRootDir+'/fis-quickstart-demo/lib/base.css';
+        var srcArr = getResourceArr(src,reg);
+        var arr = mapContent['lib/base.css'].deps;
+        for(var i=0;i < srcArr.length;i ++){
+            srcArr[i] = 'lib/' + srcArr[i];
+        }
+        it('should equal',function(){
+            assert.equal(arr.toString(),srcArr.toString());
+        })
+    })
+
+    //js中的资源依赖
+    describe('of css',function(){
+        src = srcRootDir+'/fis-quickstart-demo/modules/deptest.js';
+        var srcArr = getResourceArr(src,reg);
+        var arr = mapContent['modules/deptest.js'].deps;
+        for(var i=0;i < srcArr.length;i ++){
+            srcArr[i] = 'modules/' + srcArr[i];
+        }
+        it('should equal',function(){
+            assert.equal(arr.toString(),srcArr.toString());
         })
     })
 })

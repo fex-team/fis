@@ -23,6 +23,10 @@ fis.config.merge({
                 reg : /(.*\.(?:png|gif))/i,
                 //发布到/static/pic/xxx目录下
                 release : '/static/pic/$&'
+            },
+            {
+                reg : '**.html',
+                useMap : true
             }
         ]
     }

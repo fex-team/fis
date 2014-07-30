@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 0;
 }
+/**
+ * @require demo.css
+ * @require demo.js
+ */
 @import url('demo.css?__inline');
 .style {
     background: url(/lib/logo.gif?__inline);
