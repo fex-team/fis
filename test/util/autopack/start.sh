@@ -1,6 +1,7 @@
 #!/bin/sh
 cd ./fis-auto-packager
 npm install -g
+cd ..
 npm install -g fis-postpackager-ext-map
 if [ -d "./result" ]; then
 rm -r result
