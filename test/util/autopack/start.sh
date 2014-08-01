@@ -1,4 +1,7 @@
 #!/bin/sh
+cd ./fis-auto-packager
+npm install -g
+npm install -g fis-postpackager-ext-map
 if [ -d "./result" ]; then
 rm -r result
 fi
@@ -13,3 +16,4 @@ wget -O a.txt "http://fedev.baidu.com:8803/autopack?return=json&fid=globalhao123
 wget -O b.txt "http://solar.baidu.com/autopack?return=json&fid=globalhao123&svn=https://svn.baidu.com/app/global/hao123/branches/fe/flat-home/hao123_1-0-988_BRANCH"
 php TestStaticPack.php
 rm a.txt b.txt
+npm uninstall -g fis-postpackager-ext-map
