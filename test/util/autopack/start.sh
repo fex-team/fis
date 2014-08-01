@@ -1,8 +1,7 @@
 #!/bin/sh
-cd ./fis-auto-packager
-npm install -g
-cd ..
 npm install -g fis-postpackager-ext-map
+npm install -g fis-packager-autopack
+npm isntall -g fis-parser-bainuo-less
 if [ -d "./result" ]; then
 rm -r result
 fi
@@ -18,3 +17,5 @@ wget -O b.txt "http://solar.baidu.com/autopack?return=json&fid=globalhao123&svn=
 php TestStaticPack.php
 rm a.txt b.txt
 npm uninstall -g fis-postpackager-ext-map
+npm uninstall -g fis-packager-autopack
+npm uninstall -g fis-parser-bainuo-less
