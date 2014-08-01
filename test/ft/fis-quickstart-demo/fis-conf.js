@@ -31,6 +31,7 @@ fis.config.merge({
         ]
     }
 });
+fis.config.set('project.md5Length', 8);
 //Step 3. 取消下面的注释可以开启simple对零散资源的自动合并
 // fis.config.set('settings.postpackager.simple.autoCombine', true);
 
