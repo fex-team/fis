@@ -10,14 +10,12 @@ class TestStaticPack{
     private  $fileData1;
     private  $fileData2;
     private  $data;
-    private  $rate;
     function __construct(){
-        $this->rate=0;
+        $this->data['fail'] = array();
     }
     public function setFile($file1,$file2){
         $this->fileData1=$file1;
         $this->fileData2=$file2;
-        $this->data['fail'] = array();
     }
     private function getJsonData($filePath){
         $fileData=file_get_contents($filePath);
@@ -71,8 +69,9 @@ class TestStaticPack{
             unset($outdata);
         }
     }
+
     public function getResult(){
-        $this->rate=$this->calculate($this->fileData1,$this->fileData2);
+        $this->calculate($this->fileData1,$this->fileData2);
         $this->data["name"]="autopack";
         return $this->rate;
     }
@@ -80,6 +79,7 @@ class TestStaticPack{
         return $this->data;
     }
 };
+
 $case=new TestStaticPack();
 $case->setFile("a.txt","b.txt");
 $case->getResult();
