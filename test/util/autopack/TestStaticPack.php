@@ -46,10 +46,11 @@ class TestStaticPack{
                     else
                         array_push($data,array($value1=>"diff"));
                 }
-                if($num>=(count($arrValue2))/2){
+                if($num>=(count($arrValue2)+1)/2){
                     foreach($data as $v){
                         array_push($this->data["fail"],$v);
                     }
+                    $tmp = $key2;
                     $hash[$key2]=1;
                     break;
                 }
