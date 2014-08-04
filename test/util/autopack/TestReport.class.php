@@ -54,6 +54,8 @@ class TestReport {
         $data=$this->data;
         $totalCount=0;
         $totalFailure=0;
+        $Count = 0;
+        $Failure = 0;
         if(file_exists($xmlFile)){
             $dom->load($xmlFile);
             $testsuite = $dom->getElementsByTagName("testsuite")->item(0);
@@ -64,18 +66,22 @@ class TestReport {
             $dom->appendChild($testsuite);
         }
         $name=$data['name'];
-        if(array_key_exists("success",$data))
-            $totalCount += count($data['success']);
+        if(array_key_exists("success",$data)){
+            $Count = count($data['success']);
+            $totalCount += $Count;
+        }
         if(array_key_exists("fail",$data)){
-            $totalFailure += count($data['fail']);
-            $totalCount += count($data['fail']);
+            $Failure = count($data['fail']);
+            $Count += count($data['fail']);
+            $totalFailure += $Failure;
+            $totalCount += $Count;
         }
         $testsuite->setAttribute("name","$name*  ");
         $testsuite->setAttribute("tests",$totalCount);
         $testsuite->setAttribute("time",$totalCount);
         $testsuite->setAttribute("failures",$totalFailure);
         $testsuite->setAttribute("total",$totalCount);
-        for($i=$totalFailure;$i<$totalCount;$i++){
+        for($i=$Failure;$i<$Count;$i++){
             $testcase=$dom->createElement("testcase");
             $testsuite->appendChild($testcase);
             $testcase->setAttribute("name",key($data["success"][$i-$totalFailure]));
@@ -86,7 +92,7 @@ class TestReport {
             $msgText = $dom->createTextNode(current($data["success"][$i-$totalFailure]));
             $testcase->appendChild($msgText);
         }
-        for($i=0;$i<$totalFailure;$i++){
+        for($i=0;$i<$Failure;$i++){
             $testcase=$dom->createElement("testcase");
             $testsuite->appendChild($testcase);
             $testcase->setAttribute("name",key($data["fail"][$i]));
