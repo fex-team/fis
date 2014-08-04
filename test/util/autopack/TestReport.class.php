@@ -84,12 +84,12 @@ class TestReport {
         for($i=$Failure;$i<$Count;$i++){
             $testcase=$dom->createElement("testcase");
             $testsuite->appendChild($testcase);
-            $testcase->setAttribute("name",key($data["success"][$i-$totalFailure]));
+            $testcase->setAttribute("name",key($data["success"][$i-$Failure]));
             $testcase->setAttribute("time","1");
             $testcase->setAttribute("failures","0");
             $testcase->setAttribute("total","1");
             $testcase->setAttribute("type","OK");
-            $msgText = $dom->createTextNode(current($data["success"][$i-$totalFailure]));
+            $msgText = $dom->createTextNode(current($data["success"][$i-$Failure]));
             $testcase->appendChild($msgText);
         }
         for($i=0;$i<$Failure;$i++){
