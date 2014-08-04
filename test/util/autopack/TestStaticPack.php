@@ -73,7 +73,7 @@ class TestStaticPack{
     public function getResult(){
         $this->calculate($this->fileData1,$this->fileData2);
         $this->data["name"]="autopack";
-        return $this->rate;
+        $this->data['success'][0]=array("diff autopack"=>"success");
     }
     public function getData(){
         return $this->data;

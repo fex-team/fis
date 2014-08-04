@@ -14,7 +14,7 @@ Array
         [0] => Array
         (
             [/widget/hot-site/hot-site-async.js] => diff
-                )
+        )
 
             [1] => Array
             (
@@ -54,21 +54,22 @@ class TestReport {
         $data=$this->data;
         $totalCount=0;
         $totalFailure=0;
-        if(count($data)==0){
-            echo "no array data!";
-            exit;
+        if(file_exists($xmlFile)){
+            $dom->load($xmlFile);
+            $testsuite = $dom->getElementsByTagName("testsuite")->item(0);
+            $totalCount = $testsuite->getAttribute("tests");
+            $totalFailure = $testsuite->getAttribute("failures");
+        }else{
+            $testsuite = $dom->createElement("testsuite");
+            $dom->appendChild($testsuite);
         }
         $name=$data['name'];
         if(array_key_exists("success",$data))
-            $totalCount = count($data['success']);
+            $totalCount += count($data['success']);
         if(array_key_exists("fail",$data)){
-            $totalFailure = count($data['fail']);
-            $totalCount+=count($data['fail']);
+            $totalFailure += count($data['fail']);
+            $totalCount += count($data['fail']);
         }
-        $testsuites = $dom->createElement("testsuites");
-        $dom->appendChild($testsuites);
-        $testsuite = $dom->createElement("testsuite");
-        $testsuites->appendChild($testsuite);
         $testsuite->setAttribute("name","$name*  ");
         $testsuite->setAttribute("tests",$totalCount);
         $testsuite->setAttribute("time",$totalCount);
