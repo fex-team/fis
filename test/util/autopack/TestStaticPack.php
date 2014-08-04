@@ -17,25 +17,22 @@ class TestStaticPack{
     public function setFile($file1,$file2){
         $this->fileData1=$file1;
         $this->fileData2=$file2;
+        $this->data['fail'] = array();
     }
     private function getJsonData($filePath){
         $fileData=file_get_contents($filePath);
         $fileData=json_decode($fileData,true);
-       if(array_key_exists("_default",$fileData['data']))
-        return $fileData['data']['_default'];
-       if(array_key_exists("br",$fileData['data']))
-           return $fileData['data']['br'];
-       if(array_key_exists("ar",$fileData['data']))
-           return $fileData['data']['ar'];
+        $arr = array();
+        foreach($fileData['data'] as $pack){
+            foreach($pack as $key=>$value){
+                $arr[$key]=$value;
+            }
+        }
+        return $arr;
     }
     private function calculate($data1,$data2){
         $data1=$this->getJsonData($data1);
         $data2=$this->getJsonData($data2);
-        $sumStatic=0;
-        $sumTrue=0;
-        foreach($data1 as $key => $value){
-            $sumStatic+=count($value);
-        }
         $hash=array();
         foreach($data1 as $key1=>$arrValue1){
             $max=0;
@@ -49,38 +46,33 @@ class TestStaticPack{
                     if(in_array($value1,$arrValue2))
                         $num++;
                     else
-                        $data[]=array($value1=>"diff");
+                        array_push($data,array($value1=>"diff"));
                 }
-                if($num>=(count($arrValue1)+1)/2){
+                if($num>=(count($arrValue2))/2){
                     foreach($data as $v){
-                        $this->data["fail"][]=$v;
+                        array_push($this->data["fail"],$v);
                     }
                     $hash[$key2]=1;
-                    $sumTrue+=$num;
                     break;
                 }
-                if($num>$max){
+                if($num>$max||$max == 0){
                     $max=$num;
                     $outdata=$data;
-                    $tmp=key($arrValue2);
+                    $tmp=$key2;
                 }
                 unset($data);
             }
             if(!array_key_exists($tmp,$hash)){
                 foreach($outdata as $v){
-                    $this->data["fail"][]=$v;
+                    array_push($this->data["fail"],$v);
                 }
                 $hash[$tmp]=1;
-                $sumTrue+=$max;
             }
             unset($outdata);
         }
-        return ($sumTrue/$sumStatic);
     }
     public function getResult(){
         $this->rate=$this->calculate($this->fileData1,$this->fileData2);
-        if($this->rate>0.95)
-            $this->data['success'][0]=array("diff autopack"=>"success");
         $this->data["name"]="autopack";
         return $this->rate;
     }
