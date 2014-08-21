@@ -1,3 +1,15 @@
+## 1.7.15 / Thu Aug 21 2014
+
+修复若干bug
+
+> 升级fis-command-server至v0.6.12
+
+> 升级fis-optimizer-png-compressor至v0.0.6
+
+> 升级fis-spriter-csssprites至v0.2.5
+
+> 升级fis-kernel至v2.0.7
+
 ## 1.7.14 / Tue Jul 02 2014
 
 hotfix 缓存依赖更新失效问题
