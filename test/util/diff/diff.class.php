@@ -48,7 +48,7 @@ class Diff{
 
 //    protected  function getProduct(){
 //        $productsvn = $this->proInfo['svn'];
-//        $svncmd = "svn co --username=mawenlin --password=mwl1985326 --no-auth-cache $productsvn ".$this->proInfo['dir']." 2>&1";
+//        $svncmd = "svn co --username=mawenlin --password= --no-auth-cache $productsvn ".$this->proInfo['dir']." 2>&1";
 //        exec($svncmd,$info,$ret);
 //        if($ret != 0){
 //            echo "svn get code error! exist!"."\n";
