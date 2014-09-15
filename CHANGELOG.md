@@ -1,3 +1,11 @@
+## 1.7.17 / Mon Sep 15 2014
+
+修复`project.exclude`的文件，在扫描文件的时候依然被处理的问题
+
+> 升级fis-command-release至v0.9.10
+
+> 升级fis-kernel至v2.0.9
+
 ## 1.7.16 / Fri Aug 29 2014
 
 hotfix
