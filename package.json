@@ -39,6 +39,8 @@
 
         "fis-spriter-csssprites" : "0.2.5",
 
+        "fis-packager-derived" : "0.0.1",
+
         "fis-packager-map" : "0.0.9"
     }
 }
