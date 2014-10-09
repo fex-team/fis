@@ -20,7 +20,8 @@ fis.config.merge({
             png : 'png-compressor'
         },
         spriter : 'csssprites',
-        packager : 'map'
+        packager : 'map',
+        prepackager: 'derived'
     }
 });
 
@@ -102,11 +103,11 @@ function hasArgv(argv, search){
 
 //run cli tools
 fis.cli.run = function(argv){
-    
+
     if(hasArgv(argv, '--no-color')){
         fis.cli.colors.mode = 'none';
     }
-    
+
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
         fis.cli.help();
