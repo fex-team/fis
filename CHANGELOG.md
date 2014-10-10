@@ -1,3 +1,7 @@
+## 1.7.18 - 1.7.20 / Fri Oct 10 2014
+
+升级 fis-optimizer-uglify-js 至 0.1.3
+
 ## 1.7.17 / Mon Sep 15 2014
 
 修复`project.exclude`的文件，在扫描文件的时候依然被处理的问题
