@@ -1,3 +1,9 @@
+## 1.7.22 / Mon Oct 13 2014
+
+升级 fis-optimizer-uglify-js 至 0.1.5
+
+    添加开关 sourcemap
+
 ## 1.7.21 / Sat Oct 11 2014
 
 升级 fis-optimizer-uglify-js 至 0.1.4
