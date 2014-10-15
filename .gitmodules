@@ -28,3 +28,6 @@
 [submodule "node_modules/fis-spriter-csssprites"]
 	path = node_modules/fis-spriter-csssprites
 	url = https://github.com/fex-team/fis-spriter-csssprites
+[submodule "node_modules/fis-deploy-default"]
+	path = node_modules/fis-deploy-default
+	url = https://github.com/fex-team/fis-deploy-default
