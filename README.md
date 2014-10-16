@@ -2,6 +2,8 @@
 
 [![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fex-team/fis.png)](https://david-dm.org/fex-team/fis)
 
+[![NPM Download](https://nodei.co/npm-dl/fis.png?months=1)](https://www.npmjs.org/package/fis)
+
 ## Front-end Integrated Solution（前端集成解决方案）
 
 > 解决前端工程的根本问题！
@@ -29,7 +31,7 @@
 * 支持文件监听，保存即发布
 * 支持浏览器自动刷新，可同时刷新多个终端中的页面，配合文件监听功能可实现保存即刷新
 * 支持上传到远端服务器，配合文件监听，浏览器自动刷新功能，可实现保存即增量编译上传，上传后即刷新的开发体验
-* 超低学习成本，只须记忆 ``2`` 条命令即可完成开发
+* 超低学习成本，只须记忆 ``3`` 条命令即可完成开发
 * 抹平编码差异，开发中无论是gbk、gb2312、utf8、utf8-bom等编码的文件，输出时都能统一指定为utf8无bom（默认）或者gbk文件
 
 ## 快速入门
