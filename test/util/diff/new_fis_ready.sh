@@ -9,6 +9,7 @@ cd ${FIS_PATH}                                                                  
 npm install
 npm install fis-preprocessor-image-set
 npm install fis-postpackager-ext-map
+npm install fis-packager-autopack
 
 npm cache clean
 npm update -g fis-plus
