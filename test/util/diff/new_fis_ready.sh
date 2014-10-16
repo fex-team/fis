@@ -6,7 +6,7 @@ FISP_PATH=/home/work/lib/node_modules/fis-plus
 FISP_FIS_PATH=${FISP_PATH}/node_modules/fis
 
 cd ${FIS_PATH}                                                                                                                                npm install
-rm -rf ${FIS_PATH}/node-modules
+rm -rf ${FIS_PATH}/node_modules
 npm install
 npm install fis-preprocessor-image-set
 npm install fis-postpackager-ext-map
