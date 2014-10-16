@@ -1,3 +1,27 @@
+## 1.7.22 / Mon Oct 13 2014
+
+升级 fis-optimizer-uglify-js 至 0.1.5
+
+    添加开关 sourcemap
+
+## 1.7.21 / Sat Oct 11 2014
+
+升级 fis-optimizer-uglify-js 至 0.1.4
+直接内嵌源码到 sourcemap
+
+## 1.7.18 - 1.7.20 / Fri Oct 10 2014
+
+升级 fis-optimizer-uglify-js 至 0.1.3
+
+## 1.7.17 / Mon Sep 15 2014
+
+修复`project.exclude`的文件，在扫描文件的时候依然被处理的问题
+
+
+> 升级fis-command-release至v0.9.10
+
+> 升级fis-kernel至v2.0.9
+
 ## 1.7.16 / Fri Aug 29 2014
 
 hotfix
@@ -85,7 +109,7 @@ bugfix #94
 * [bugfix] 单机多用户编译缓存冲突bug
 * [bugfix] csssprites 合并后css一个规则有太多selector导致在ie6下失效的bug
 
-## 1.7.4 / Mon Mar 24 2014 
+## 1.7.4 / Mon Mar 24 2014
 
 > 升级fis-spriter-csssprites至v0.1.9
 
@@ -266,7 +290,7 @@ bugfix #94
 * 升级依赖的uglify-js包至v2.4.6
 
 > 升级fis-command-release至v0.9.4
-> 
+>
 > 升级fis-command-server至v0.6.7
 
 * 不同的解决方案使用不同的缓存目录，彼此不会干扰
@@ -286,7 +310,7 @@ bugfix #94
 > 升级fis-kernel至v1.9.0
 
     注意，这可能是一个需要注意的升级，有一定的兼容性问题。
-    
+
 * 在js中使用__inline()语法来嵌入资源时，如果被嵌入的文件是一个 ``文本文件``，并且文件的 ``isJsLike`` 不为true的话，则会把文件以字符串的形式嵌入到js中。比如：
 
     ```javascript
@@ -296,7 +320,7 @@ bugfix #94
     var txt = __inline('a.txt');     //embed text content
     var img = __inline('a.png');     //embed image
     ```
-    
+
     编译后得到：
 
     ```javascript
@@ -306,9 +330,9 @@ bugfix #94
     var txt = "hello world\nthis is the content of a.txt";     //embed text content
     var img = 'data:image/gif;base64,R0lGODlhDgGBALMAAGBn6eYxLvvy9PnKyfO...Jzna6853wjKc850nPeoYgAgA7';     //embed image
     ```
-    
+
     这种修改会 **影响到前端模板的个别使用情况**，你当前使用前端模板时，如果把模板文件的属性标记为 ``isHtmlLike`` 为 ``true`` 的话，会导致编译得到的模板函数变成了字符串插入到js中，请根据情况适当修改这样的配置，有问题可以在issues中留言。
-    
+
 * 添加 ``.vm`` 后缀为文本文件，并且 ``isHtmlLike`` 为true，vm文件是velocity模板引擎文件的常用后缀。
 
 ## 1.5.5 / Tue Nov 05 2013
@@ -610,7 +634,7 @@ fis.config.set('roadmap.path', [
     ```html
     <link rel="stylesheet" type="text/css" href="pdf.css?__inline" media="print" data-test="msg">
     ```
-    
+
     编译后得到
 
     ```html
@@ -656,26 +680,26 @@ fis.config.set('roadmap.path', [
     1. 收益非常非常小。大多数产品线线上都开启了gzip，线下压缩相当多余，最后送达到用户浏览器的html大小没差别
     1. 各种压缩选项非常危险。比如 ``removeRedundantAttributes`` 会删除 &lt;input type="text"&gt; 元素的type属性，虽然逻辑上是等价的，但是会导致有些css属性选择器失效
     1. ``removeCDATASectionsFromCDATA`` 压缩选项有bug，如下html：
-        
+
         ```html
         <script type="text/template">a<!--div--></script>
         ```
-        
+
         压缩完得到：
-        
+
         ```html
         <script type=text/template>a<!--div</script>
         ```
     1. 就算所有压缩选项都关闭，只保留空格压缩选项，也有问题。删除空格后会影响元素间距，这会给平时开发带来困扰，因为平时开发fis release通常不会加 ``--optimize`` 参数，等到上线才会加上，一旦加上，却和开发中的效果不一致，这是非常郁闷的。
     1. 对于特别留恋html-minifier的同学，不要桑心，它还在npm上，只是不是fis内核提供而已，要想使用它，你需要：
-        
+
         ```bash
         # 安装它
         npm install -g fis-optimizer-html-minifier
         ```
-        
+
         再在项目的配置文件里使用它就可以了：
-        
+
         ```javascript
         fis.config.set('modules.optimizer.html', 'html-minifier');
         ```
@@ -704,9 +728,9 @@ fis.config.set('roadmap.path', [
     ```javascript
     fis.config.set('settings.optimizer.png-compressor.type', 'pngquant');
     ```
-    
+
     或者：
-    
+
     ```javascript
     fis.config.merge({
         settings : {
@@ -718,7 +742,7 @@ fis.config.set('roadmap.path', [
         }
     });
     ```
-    
+
     pngcrush压缩会保持原来的色彩位数，如果原图片的色彩超过256色，在ie6下背景无法透明，会出现灰色的填充色背景。pngquant会强制把各种png图片压缩为png8格式，因此对于png24的图片压缩后会出现一定的质量折损（基本都是可以接受的），对于需要兼容ie6的产品线推荐使用pngquant作为压缩器。
 
 ## 1.2.0
@@ -762,7 +786,7 @@ fis.config.set('roadmap.path', [
         }
     });
     ```
-    
+
     如果执行 fis release -d ``local``，则把编译后的 ``/static`` 目录复制到 ``../output`` 中，得到 ``../output/static``，添加 ``subOnly`` 参数后：
 
     ```javascript
@@ -776,7 +800,7 @@ fis.config.set('roadmap.path', [
         }
     });
     ```
-    
+
     如果执行 fis release -d ``local``，则把编译后的/static的 ``子目录`` 复制到 ``../output`` 中，得到 ``../output/**``
 
 ## 1.1.7
@@ -867,7 +891,7 @@ fis.config.set('roadmap.path', [
         }
     });
     ```
-    
+
     如果在项目中，有a.js依赖了widget/b.js的话，在 ``1.0.6`` 或以前版本，会在吧 ``a.js`` 合并到 ``others.js`` 的时候，就近将 ``widget/b.js`` 也并入到 ``others.js``(很明显，widget/b.js也符合others.js包的合并约束条件) 。1.0.7以后，将不会做这样的处理，而将 ``widget/a.js`` 合入到 ``ui.js`` 中。
 
 ## 1.0.6
