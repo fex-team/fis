@@ -2,6 +2,8 @@
 
 [![NPM version](https://badge.fury.io/js/fis.png)](http://badge.fury.io/js/fis) [![Dependencies Status](https://david-dm.org/fex-team/fis.png)](https://david-dm.org/fex-team/fis)
 
+[![NPM Download](https://nodei.co/npm-dl/fis.png?months=1)](https://www.npmjs.org/package/fis)
+
 ## Front-end Integrated Solution（前端集成解决方案）
 
 > 解决前端工程的根本问题！
