@@ -1,3 +1,15 @@
+## 1.8.0 / Fri Oct 17 2014
+
+升级 fis-command-release 至 0.11.0
+
+    deploy阶段支持插件扩展
+
+    修复若干BUG
+
+修复watch失效BUG
+
+添加project.watch.usePolling配置
+
 ## 1.7.22 / Mon Oct 13 2014
 
 升级 fis-optimizer-uglify-js 至 0.1.5
