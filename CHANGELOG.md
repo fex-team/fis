@@ -1,3 +1,9 @@
+## 1.8.2 / Fri Oct 17 2014
+
+HOTFIX
+    
+    修复fis-command-release堆栈溢出问题
+
 ## 1.8.0 / Fri Oct 17 2014
 
 升级 fis-command-release 至 0.11.0
