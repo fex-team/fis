@@ -1,3 +1,9 @@
+## 1.8.4 / Tue Oct 28 2014
+
+升级 fis-command-release 至 0.11.2
+
+    添加fis-deploy-default默认配置
+
 ## 1.8.2 / Mon Oct 20 2014
 
 HOTFIX
