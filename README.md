@@ -14,7 +14,7 @@
 
 欢迎访问[FIS官网](http://fis.baidu.com)获取最新的文档
 
-同时我们在[慕课网](http://www.imooc.com/learn/220)开通了在线课程，欢迎大家访问
+同时我们在慕课网开通了[在线课程](http://www.imooc.com/learn/220)，欢迎大家访问
 
 ## 功能概述
 
