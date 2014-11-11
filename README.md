@@ -12,7 +12,9 @@
 
 * [什么是F.I.S](https://github.com/fis-dev/fis/wiki/什么是F.I.S)
 
-欢迎访问[FIS官网](http://fis.baidu.com)获取最新的文档与教程
+欢迎访问[FIS官网](http://fis.baidu.com)获取最新的文档
+
+同时我们在[慕课网](http://www.imooc.com/learn/220)开通了在线课程，欢迎大家访问
 
 ## 功能概述
 
