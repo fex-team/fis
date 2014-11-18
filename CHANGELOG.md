@@ -1,3 +1,5 @@
+## 1.8.7 / Tue Nov 18 2014
+回滚 fis-command-server, 待进一步测试。
 ## 1.8.6 / Tue Nov 18 2014
 
 升级 fis-command-server 至 0.7.0
