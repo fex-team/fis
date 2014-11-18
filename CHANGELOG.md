@@ -1,3 +1,9 @@
+## 1.8.6 / Tue Nov 18 2014
+
+升级 fis-command-server 至 0.7.0
+
+    merge 此次修改 https://github.com/fex-team/fis-command-server/pull/5
+
 ## 1.8.4 / Tue Oct 28 2014
 
 升级 fis-command-release 至 0.11.2
@@ -7,7 +13,7 @@
 ## 1.8.2 / Mon Oct 20 2014
 
 HOTFIX
-    
+
     修复fis-command-release堆栈溢出问题
 
 ## 1.8.0 / Fri Oct 17 2014
