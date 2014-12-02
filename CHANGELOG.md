@@ -6,6 +6,12 @@
 
     merge 此次修改 https://github.com/fex-team/fis-command-server/pull/5
 
+## 1.8.5 / Tue Oct 29 2014
+
+升级 fis-command-release 至 0.11.3
+
+    处理 GBK 编码BUG
+
 ## 1.8.4 / Tue Oct 28 2014
 
 升级 fis-command-release 至 0.11.2
