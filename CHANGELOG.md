@@ -1,5 +1,9 @@
 ## 1.8.8 / Tue Dec 16 2014
 
+> commander恢复原来的版本，新版本修改了某些特性，后续再跟进升级
+
+## 1.8.8 / Tue Dec 16 2014
+
 > 升级fis-command-server至v1.7.1
 
 > 升级colors至v1.0.3
