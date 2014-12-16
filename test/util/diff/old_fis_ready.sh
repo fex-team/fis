@@ -1,6 +1,6 @@
 #!/home/work/.jumbo/bin/expect
 
-set timeout 360
+set timeout 480
 set p [lindex $argv 0]
 set o [lindex $argv 1]
 #send_user $s
