@@ -30,7 +30,7 @@
     "fis-command-install": "0.0.7",
     "fis-command-release": "0.11.3",
     "fis-command-server": "0.7.1",
-    "fis-deploy-default": "0.0.1",
+    "fis-deploy-default": "0.0.2",
     "fis-kernel": "2.0.9",
     "fis-optimizer-clean-css": "0.0.9",
     "fis-optimizer-png-compressor": "0.0.6",

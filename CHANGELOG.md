@@ -2,6 +2,8 @@
 
 > colors也有问题，已提交[PR](https://github.com/Marak/colors.js/issues/90)，等更新升级
 
+> 升级fis-deploy-default至v0.0.2
+
 ## 1.8.9 / Tue Dec 16 2014
 
 > commander恢复原来的版本，新版本修改了某些特性，后续再跟进升级
