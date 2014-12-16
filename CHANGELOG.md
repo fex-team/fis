@@ -1,4 +1,4 @@
-## 1.8.8
+## 1.8.8 / Tue Dec 16 2014
 
 > 升级fis-command-server至v1.7.1
 
