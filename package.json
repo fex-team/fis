@@ -1,7 +1,7 @@
 {
   "name": "fis",
   "description": "front-end integrated solution.",
-  "version": "1.8.11",
+  "version": "1.8.12",
   "author": "FIS Team <fis@baidu.com>",
   "homepage": "http://fis.baidu.com/",
   "keywords": [
@@ -31,7 +31,7 @@
     "fis-command-release": "0.11.3",
     "fis-command-server": "0.7.1",
     "fis-deploy-default": "0.0.2",
-    "fis-kernel": "2.0.10",
+    "fis-kernel": "2.0.11",
     "fis-optimizer-clean-css": "0.0.9",
     "fis-optimizer-png-compressor": "0.0.6",
     "fis-optimizer-uglify-js": "0.1.6",
