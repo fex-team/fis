@@ -1,3 +1,9 @@
+## 1.8.11 / Tue Dec 30 2014
+
+> 彻底排除文件以优化性能
+
+> 升级fis-kernel至v2.0.10
+
 ## 1.8.10 / Tue Dec 16 2014
 
 > colors也有问题，已提交[PR](https://github.com/Marak/colors.js/issues/90)，等更新升级
