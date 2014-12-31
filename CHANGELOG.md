@@ -1,3 +1,9 @@
+## 1.8.13 / Tue Dec 31 2014
+
+> hotfix
+
+> 升级fis-kernel至v2.0.12
+
 ## 1.8.12 / Tue Dec 30 2014
 
 > hotfix
