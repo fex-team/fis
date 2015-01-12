@@ -11,6 +11,11 @@ var fis = module.exports = require('fis-kernel');
 //merge standard conf
 fis.config.merge({
     modules : {
+        preprocessor: {
+            js: 'components',
+            css: 'components',
+            html: 'components'
+        },
         postprocessor : {
             js : 'jswrapper'
         },
@@ -22,6 +27,15 @@ fis.config.merge({
         spriter : 'csssprites',
         packager : 'map',
         deploy : 'default'
+    },
+
+    roadmap: {
+        path: [
+            {
+                reg: 'components/**/*.js',
+                isMod: true
+            }
+        ]
     }
 });
 
@@ -103,11 +117,11 @@ function hasArgv(argv, search){
 
 //run cli tools
 fis.cli.run = function(argv){
-    
+
     if(hasArgv(argv, '--no-color')){
         fis.cli.colors.mode = 'none';
     }
-    
+
     var first = argv[2];
     if(argv.length < 3 || first === '-h' ||  first === '--help'){
         fis.cli.help();

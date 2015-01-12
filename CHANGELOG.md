@@ -1,3 +1,7 @@
+## 1.9.1 / Mon Jan 12
+
+> 添加[组件生态](https://github.com/fis-components/components)功能。
+
 ## 1.8.13 / Tue Dec 31 2014
 
 > hotfix
