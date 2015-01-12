@@ -1,5 +1,39 @@
+## 1.8.12 / Tue Dec 30 2014
+
+> hotfix
+
+> 升级fis-kernel至v2.0.11
+
+## 1.8.11 / Tue Dec 30 2014
+
+> 彻底排除文件以优化性能
+
+> 升级fis-kernel至v2.0.10
+
+## 1.8.10 / Tue Dec 16 2014
+
+> colors也有问题，已提交[PR](https://github.com/Marak/colors.js/issues/90)，等更新升级
+
+> 升级fis-deploy-default至v0.0.2
+
+## 1.8.9 / Tue Dec 16 2014
+
+> commander恢复原来的版本，新版本修改了某些特性，后续再跟进升级
+
+## 1.8.8 / Tue Dec 16 2014
+
+> 升级fis-command-server至v1.7.1
+
+> 升级colors至v1.0.3
+
+> 升级commander至v2.5.1
+
+> 升级fis-optimizer-uglify-js至v0.1.6，升级uglify-js到2.4.15
+
 ## 1.8.7 / Tue Nov 18 2014
+
 回滚 fis-command-server, 待进一步测试。
+
 ## 1.8.6 / Tue Nov 18 2014
 
 升级 fis-command-server 至 0.7.0
