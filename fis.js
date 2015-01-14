@@ -27,15 +27,6 @@ fis.config.merge({
         spriter : 'csssprites',
         packager : 'map',
         deploy : 'default'
-    },
-
-    roadmap: {
-        path: [
-            {
-                reg: 'components/**/*.js',
-                isMod: true
-            }
-        ]
     }
 });
 
