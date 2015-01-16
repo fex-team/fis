@@ -16,7 +16,7 @@
   },
   "main": "fis.js",
   "scripts": {
-    "uninstall": "node bin/fis server stop",
+    "uninstall": "node -e 'var cp = require(\"child_process\"); cp.exec(\"bin/fis server stop\");'",
     "test": "mocha test/ut --recursive"
   },
   "repository": {
