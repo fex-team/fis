@@ -1,7 +1,7 @@
 {
   "name": "fis",
   "description": "front-end integrated solution.",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "author": "FIS Team <fis@baidu.com>",
   "homepage": "http://fis.baidu.com/",
   "keywords": [
@@ -38,6 +38,7 @@
     "fis-optimizer-uglify-js": "0.1.6",
     "fis-packager-map": "0.0.9",
     "fis-postprocessor-jswrapper": "0.0.9",
-    "fis-spriter-csssprites": "0.2.5"
+    "fis-spriter-csssprites": "0.2.5",
+    "fis-prepackager-derived": "~0.0.2"
   }
 }

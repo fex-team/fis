@@ -1,4 +1,8 @@
-## 1.9.1 / Mon Jan 12
+## 19.3 / Wed Jan 28 2015
+
+添加 fis-prepackager-derived 插件，允许编译期派生出新文件来。
+
+## 1.9.1 / Mon Jan 12 2015
 
 > 添加[组件生态](https://github.com/fis-components/components)功能。
 
