@@ -1,4 +1,11 @@
-## 19.3 / Wed Jan 28 2015
+## 1.9.4 / Mon Feb 02 2015
+
+> 升级fis-command-release至v0.11.4
+
+- 修复`-m 2`无法保留不带md5文件的问题
+
+
+## 1.9.3 / Wed Jan 28 2015
 
 添加 fis-prepackager-derived 插件，允许编译期派生出新文件来。
 
