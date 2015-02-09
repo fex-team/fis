@@ -1,3 +1,7 @@
+## 1.9.5 / Mon Feb 09 2015
+
+hotfix
+
 ## 1.9.4 / Mon Feb 02 2015
 
 > 升级fis-command-release至v0.11.4
