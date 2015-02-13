@@ -6,6 +6,8 @@
 
 ## Front-end Integrated Solution（前端集成解决方案）
 
+[![Join the chat at https://gitter.im/fex-team/fis](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fex-team/fis?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > 解决前端工程的根本问题！
 
 ## F.I.S简介
