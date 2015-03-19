@@ -110,6 +110,8 @@ function hasArgv(argv, search){
 //run cli tools
 fis.cli.run = function(argv){
 
+    fis.config.set('process.cwd',  process.cwd());
+
     if(hasArgv(argv, '--no-color')){
         fis.cli.colors.mode = 'none';
     }
