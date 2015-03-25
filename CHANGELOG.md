@@ -1,3 +1,7 @@
+## 1.9.11 / Wed Mar 25 2015
+
+> 升级 fis-optimizer-uglify-js 到 0.1.7
+
 ## 1.9.10 / Mon Mar 17 2015
 
 - bugfix
