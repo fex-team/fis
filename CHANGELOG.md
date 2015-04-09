@@ -1,3 +1,7 @@
+## 1.9.12 / Thu Apr 09 2015
+
+> 升级 fis-preprocessor-components 到 0.1.16
+
 ## 1.9.11 / Wed Mar 25 2015
 
 > 升级 fis-optimizer-uglify-js 到 0.1.7
