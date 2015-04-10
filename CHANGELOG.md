@@ -1,3 +1,10 @@
+## 1.9.13 / Fri Apr 10 2015
+
+
+> 升级 fis-command-server至v1.7.3
+
+- 提升 node 服务稳定性
+
 ## 1.9.12 / Thu Apr 09 2015
 
 > 升级 fis-preprocessor-components 到 0.1.16
