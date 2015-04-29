@@ -1,3 +1,9 @@
+## 1.9.16 / Wed Apr 29 2015
+
+> 升级 fis-preprocessor-components 到 0.1.18
+
+- 支持 `paths` 设置
+
 ## 1.9.13 / Fri Apr 10 2015
 
 
