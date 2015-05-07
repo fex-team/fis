@@ -1,4 +1,4 @@
-## 1.9.17 / Wed May 06 2015 
+## 1.9.18 / Wed May 06 2015 
 
 > 升级 fis-command-server至v1.7.4
 
