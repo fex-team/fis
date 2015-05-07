@@ -1,7 +1,7 @@
 {
   "name": "fis",
   "description": "front-end integrated solution.",
-  "version": "1.9.17",
+  "version": "1.9.18",
   "author": "FIS Team <fis@baidu.com>",
   "homepage": "http://fis.baidu.com/",
   "keywords": [
@@ -29,15 +29,15 @@
     "commander": "1.3.2",
     "fis-command-install": "~0.1.11",
     "fis-command-release": "0.11.6",
-    "fis-command-server": "0.7.3",
-    "fis-deploy-default": "0.0.5",
+    "fis-command-server": "0.7.4",
+    "fis-deploy-default": "0.0.6",
     "fis-kernel": "2.0.12",
     "fis-preprocessor-components": "1.0.19",
     "fis-optimizer-clean-css": "0.0.9",
     "fis-optimizer-png-compressor": "0.0.8",
     "fis-optimizer-uglify-js": "0.1.7",
     "fis-packager-map": "0.0.9",
-    "fis-postprocessor-jswrapper": "0.0.10",
+    "fis-postprocessor-jswrapper": "0.0.11",
     "fis-spriter-csssprites": "0.2.9",
     "fis-prepackager-derived": "~0.0.2"
   }

@@ -1,3 +1,20 @@
+## 1.9.17 / Wed May 06 2015 
+
+> 升级 fis-command-server至v1.7.4
+
+> 升级 fis-deploy-default至v0.0.6
+
+> 升级 fis-postprocessor-jswrapper至v0.0.11
+
+- 修正 `fis server {open|clean}`, `fis release -d preview` 服务器 root 一致性问题；
+
+    当用户 `fis server start --root=<root>` 设定了某一个目录为服务器 root，那么后续执行
+    `fis server open`、`fis server clean`、`fis release` 的时候都会操作这个目录。这个 root
+     信息会被保存，现在未提供**重置**的接口。
+
+- 修正 jswrapper 如果一个文件已经 define 的情况下仍然去做 define 的问题
+- 更新了所有依赖的代码，可方便在 fis 仓库查看 fis 依赖的核心代码。
+
 ## 1.9.16 / Wed Apr 29 2015
 
 > 升级 fis-preprocessor-components 到 0.1.18
