@@ -1,3 +1,13 @@
+## 1.9.19 / Tue May 12 2015
+
+> 升级 fis-optimizer-png-compressor至v0.1.0
+
+> 升级 fis-spriter-csssprites至v0.3.0
+
+- 禁止 png 图片压缩时 `libpng` warning 信息输出
+- 提升 Linux x64 上的图片压缩的稳定性，提升 csssprites 的稳定性
+- 提供 Linux / Unix 系统下手动编译依赖图形工具的教程及其编译脚本，放置某些系统由于 glibc 版本过低导致已提供二进制扩展无法加载的问题； 
+
 ## 1.9.18 / Wed May 06 2015 
 
 > 升级 fis-command-server至v1.7.4
