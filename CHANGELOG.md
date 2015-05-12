@@ -4,7 +4,7 @@
 
 > 升级 fis-spriter-csssprites至v0.3.0
 
-- 禁止 png 图片压缩时 `libpng` warning 信息输出
+- 禁止 png 图片压缩时 `libpng` warning 信息输出 (非 Windows 环境)
 - 提升 Linux x64 上的图片压缩的稳定性，提升 csssprites 的稳定性
 - 提供 Linux / Unix 系统下手动编译依赖图形工具的[教程]()及其[编译脚本](https://github.com/xiangshouding/some-scripts/blob/master/install-fis-image-deps.sh)，以防某些系统由于 glibc 版本过低导致已提供二进制扩展无法加载时方便修复； 
 
