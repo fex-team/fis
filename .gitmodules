@@ -31,3 +31,6 @@
 [submodule "node_modules/fis-deploy-default"]
 	path = node_modules/fis-deploy-default
 	url = https://github.com/fex-team/fis-deploy-default
+[submodule "node_modules/fis-preprocessor-components"]
+	path = node_modules/fis-preprocessor-components
+	url = https://github.com/fex-team/fis-preprocessor-components
