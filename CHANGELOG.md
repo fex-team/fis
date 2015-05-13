@@ -1,4 +1,11 @@
-## 1.9.19 / Wed May 13 2015 
+
+## 1.9.21 / Wed May 13 2015 
+
+> 升级 fis-command-server至v0.7.5
+
+- 本地调试支持https服务器
+
+## 1.9.20 / Wed May 13 2015 
 
 > 升级 fis-postprocessor-jswrapper至v0.0.12
 
