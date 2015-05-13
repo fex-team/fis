@@ -1,3 +1,9 @@
+## 1.9.19 / Wed May 13 2015 
+
+> 升级 fis-postprocessor-jswrapper至v0.0.12
+
+- 恢复原有 `define` 包裹逻辑，防止现有代码异常
+
 ## 1.9.19 / Tue May 12 2015
 
 > 升级 fis-optimizer-png-compressor至v0.1.0
