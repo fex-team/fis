@@ -1,11 +1,15 @@
 
-## 1.9.21 / Wed May 13 2015 
+## 1.9.22 / Tue May 26 2015
+
+> 升级 fis-kenerl 至 v2.0.13
+
+## 1.9.21 / Wed May 13 2015
 
 > 升级 fis-command-server至v0.7.5
 
 - 本地调试支持https服务器
 
-## 1.9.20 / Wed May 13 2015 
+## 1.9.20 / Wed May 13 2015
 
 > 升级 fis-postprocessor-jswrapper至v0.0.12
 
@@ -19,9 +23,9 @@
 
 - 禁止 png 图片压缩时 `libpng` warning 信息输出 (非 Windows 环境)
 - 提升 Linux x64 上的图片压缩的稳定性，提升 csssprites 的稳定性
-- 提供 Linux / Unix 系统下手动编译依赖图形工具的[教程]()及其[编译脚本](https://github.com/xiangshouding/some-scripts/blob/master/install-fis-image-deps.sh)，以防某些系统由于 glibc 版本过低导致已提供二进制扩展无法加载时方便修复； 
+- 提供 Linux / Unix 系统下手动编译依赖图形工具的[教程]()及其[编译脚本](https://github.com/xiangshouding/some-scripts/blob/master/install-fis-image-deps.sh)，以防某些系统由于 glibc 版本过低导致已提供二进制扩展无法加载时方便修复；
 
-## 1.9.18 / Wed May 06 2015 
+## 1.9.18 / Wed May 06 2015
 
 > 升级 fis-command-server至v1.7.4
 
