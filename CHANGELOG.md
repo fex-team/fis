@@ -1,7 +1,7 @@
 
-## 1.9.22 / Tue May 26 2015
+## 1.9.23 / Tue May 26 2015
 
-> 升级 fis-kenerl 至 v2.0.13
+> 升级 fis-kenerl 至 v2.0.14
 
 ## 1.9.21 / Wed May 13 2015
 
