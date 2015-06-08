@@ -1,11 +1,14 @@
 ## 1.9.26 / Mon Jun 08 2015
 
 > 升级 fis-command-release 至 v0.12.0
+> 升级 fis-kernel 至 v2.0.16
 
 - 修复 Bug #455
 - 修复 Bug #527
 - project.exclude & project.include 过滤条件也在 watch 时能正常工作
 - 固定 fis-command-install 的版本号
+- 支持 img `srcset`
+
 
 ## 1.9.24 / Tue May 26 2015
 
