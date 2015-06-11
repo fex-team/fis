@@ -1,3 +1,11 @@
+## 1.9.27 / Thu Jun 11 2015 
+
+> 升级 fis-kernel 至 v2.0.17 <br>
+> 升级 fis-commond-release 至 v0.12.1
+
+- 修复 Bug [#530](https://github.com/fex-team/fis/issues/530)
+    - 缓存 File 对象导致的 watch 两次相互影响的问题
+
 ## 1.9.26 / Mon Jun 08 2015
 
 > 升级 fis-command-release 至 v0.12.0 <br>
