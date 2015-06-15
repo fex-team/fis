@@ -1,3 +1,7 @@
+## 1.9.28 / Mon Jun 15 2015 
+
+> 升级 fis-command-release 解决 watch 时文件夹被删的 bug.
+
 ## 1.9.27 / Thu Jun 11 2015 
 
 > 升级 fis-kernel 至 v2.0.17 <br>
