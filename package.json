@@ -1,7 +1,7 @@
 {
   "name": "fis",
   "description": "front-end integrated solution.",
-  "version": "1.9.28",
+  "version": "1.9.29",
   "author": "FIS Team <fis@baidu.com>",
   "homepage": "http://fis.baidu.com/",
   "keywords": [
@@ -27,7 +27,7 @@
   "dependencies": {
     "colors": "0.6.2",
     "commander": "1.3.2",
-    "fis-command-install": "0.1.28",
+    "fis-command-install": "0.1.29",
     "fis-command-release": "0.12.2",
     "fis-command-server": "0.7.5",
     "fis-deploy-default": "0.0.6",

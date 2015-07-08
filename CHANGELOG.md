@@ -1,3 +1,7 @@
+## 1.9.29 / Wed Jul 08 2015
+
+> 升级 fis-command-install，解决 component.json 可能被替换成 0 的问题。
+
 ## 1.9.28 / Mon Jun 15 2015 
 
 > 升级 fis-command-release 解决 watch 时文件夹被删的 bug.
