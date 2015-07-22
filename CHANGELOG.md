@@ -1,3 +1,7 @@
+## 1.9.30 / Wed Jul 22 2015
+
+- 升级 fis-command-install 通过镜像下载 fis-components。
+
 ## 1.9.29 / Wed Jul 08 2015
 
 > 升级 fis-command-install，解决 component.json 可能被替换成 0 的问题。
