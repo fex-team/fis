@@ -1,3 +1,7 @@
+## 1.9.31 / Wed Jul 29 2015
+
+- 升级 fis-optimizer-uglify-js, 优化 sourcemap
+
 ## 1.9.30 / Wed Jul 22 2015
 
 - 升级 fis-command-install 通过镜像下载 fis-components。
