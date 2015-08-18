@@ -1,3 +1,7 @@
+## 1.9.32 / Tue Aug 18 2015
+
+- 升级 fis-optimizer-uglify-js, 修复 uglify 报错时的提示错误。
+
 ## 1.9.31 / Wed Jul 29 2015
 
 - 升级 fis-optimizer-uglify-js, 优化 sourcemap
