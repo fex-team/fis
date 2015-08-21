@@ -1,3 +1,7 @@
+## 1.9.33 / Tue Aug 21 2015
+
+- hotfix [fex-team/fis#646](https://github.com/fex-team/fis/issues/646)
+
 ## 1.9.32 / Tue Aug 18 2015
 
 - 升级 fis-optimizer-uglify-js, 修复 uglify 报错时的提示错误。
