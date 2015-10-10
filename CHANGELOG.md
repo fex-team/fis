@@ -1,3 +1,7 @@
+## 1.9.34 / Sat Oct 10 2015
+
+- 更新 fis-optimizer-uglify-js，支持sourcemap 文件 domain 设置。
+
 ## 1.9.33 / Tue Aug 21 2015
 
 - hotfix [fex-team/fis#646](https://github.com/fex-team/fis/issues/646)
