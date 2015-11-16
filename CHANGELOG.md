@@ -1,3 +1,7 @@
+## 1.9.38 / Mon Nov 16 2015
+- 更新 node 4.x 支持
+- 更新 fis-kernel 解决编译机并发编译问题。
+
 ## 1.9.34 / Sat Oct 10 2015
 
 - 更新 fis-optimizer-uglify-js，支持sourcemap 文件 domain 设置。
