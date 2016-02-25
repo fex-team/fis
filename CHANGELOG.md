@@ -1,3 +1,7 @@
+## 1.9.44 / Thu Feb 25 2016
+
+- 升级依赖中多个二进制插件版本选择错误的版本修复。
+
 ## 1.9.38 / Mon Nov 16 2015
 - 更新 node 4.x 支持
 - 更新 fis-kernel 解决编译机并发编译问题。
@@ -26,11 +30,11 @@
 
 > 升级 fis-command-install，解决 component.json 可能被替换成 0 的问题。
 
-## 1.9.28 / Mon Jun 15 2015 
+## 1.9.28 / Mon Jun 15 2015
 
 > 升级 fis-command-release 解决 watch 时文件夹被删的 bug.
 
-## 1.9.27 / Thu Jun 11 2015 
+## 1.9.27 / Thu Jun 11 2015
 
 > 升级 fis-kernel 至 v2.0.17 <br>
 > 升级 fis-commond-release 至 v0.12.1
