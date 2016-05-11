@@ -3,10 +3,11 @@
 提供 Node.js 6.x 支持
 
 - 升级 fis-command-release 依赖支持 Node.js 6.x
-- 升级 fis-command-server 依赖支持 Node.js 6.x
 - 升级 fis-optimizer-png-compressor 依赖支持 Node.js 6.x
 - 升级 fis-spriter-csssprites 依赖支持 Node.js 6.x
-
+- 升级 fis-spriter-csssprites 依赖
+- 升级 fis-command-server 依赖
+- 升级 fis-kernel 依赖
 
 ## 1.9.44 / Thu Feb 25 2016
 
