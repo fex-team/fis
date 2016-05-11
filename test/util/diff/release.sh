@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export PATH=/home/work/bin:$PATH
 TEST_PATH=/home/work/repos/fis/test/util/diff
 FIS_PATH=/home/work/repos/fis/
 NEW_FISP_FIS_PATH=/home/work/lib/node_modules/fis-plus/node_modules/fis
