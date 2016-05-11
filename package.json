@@ -28,17 +28,17 @@
     "colors": "0.6.2",
     "commander": "1.3.2",
     "fis-command-install": "0.2.15",
-    "fis-command-release": "0.12.2",
-    "fis-command-server": "0.7.5",
+    "fis-command-release": "0.13.0",
+    "fis-command-server": "0.7.8",
     "fis-deploy-default": "0.0.6",
     "fis-kernel": "2.0.18",
     "fis-preprocessor-components": "1.0.19",
     "fis-optimizer-clean-css": "0.0.9",
-    "fis-optimizer-png-compressor": "0.1.5",
+    "fis-optimizer-png-compressor": "0.1.6",
     "fis-optimizer-uglify-js": "0.1.14",
     "fis-packager-map": "0.0.9",
     "fis-postprocessor-jswrapper": "0.0.12",
-    "fis-spriter-csssprites": "0.3.10",
+    "fis-spriter-csssprites": "0.3.11",
     "fis-prepackager-derived": "0.0.3"
   }
 }
