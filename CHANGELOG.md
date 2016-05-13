@@ -1,3 +1,7 @@
+## 1.10.1 / Wed May 13 2016
+
+- 升级 fis-command-server 支持 qrcode。
+
 ## 1.10.0 / Wed May 11 2016
 
 提供 Node.js 6.x 支持
